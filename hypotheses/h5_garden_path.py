@@ -301,19 +301,22 @@ def _sentinel_activations(
     tokenizer,
     texts: Sequence[str],
     word: str,
-    layer_idx: int,
+    layer_indices: Sequence[int],
     batch_size: int = 4,
-) -> np.ndarray:
-    """Extract the last-token state; every input must end in the same sentinel."""
+) -> Dict[int, np.ndarray]:
+    """Extract the last-token state at every requested layer, in one forward
+    pass; every input must end in the same sentinel. Returns {layer: array},
+    so scoring several candidate layers for the same word only costs one
+    forward pass, not one per candidate."""
     _, final_acts = get_dual_position_activations(
         model,
         tokenizer,
         list(texts),
         [word] * len(texts),
         batch_size=batch_size,
-        layer_indices=[layer_idx],
+        layer_indices=list(layer_indices),
     )
-    return final_acts[layer_idx].numpy()
+    return {layer: final_acts[layer].numpy() for layer in layer_indices}
 
 
 def _raw_margin(h: np.ndarray, c_correct: np.ndarray, c_primed: np.ndarray) -> float:
@@ -358,20 +361,30 @@ def run_h5(
     allow_incomplete_design: bool = False,
     output_base: Path = OUTPUT_BASE,
     layer_lookup: Optional[Callable[[str, str, str], int]] = None,
+    layer_candidates_lookup: Optional[Callable[[str, str, str], List[int]]] = None,
 ) -> None:
     """Run fixed-sentinel prefix reruns; block incomplete designs by default.
 
     layer_lookup, if given, replaces _select_layer (the H1-homonym-position
     best layer) as the (model_name, results_dir, word) -> layer_idx callable
     used for every readout (prime/homonym/resolution/matched-control/
-    resolver-only). Pass hypotheses.q4_endpoint_layer_selection.q4_selected_layer
-    to rerun H5 on the endpoint-selected layer instead. output_base lets that
-    alternate run write to a separate directory so the original H1-based H5
-    results are never overwritten.
+    resolver-only). output_base lets an alternate run write to a separate
+    directory so the original H1-based H5 results are never overwritten.
+
+    layer_candidates_lookup, if given, takes priority over layer_lookup: it
+    maps (model_name, results_dir, word) -> a *list* of candidate layers, and
+    H5 is run once per candidate for that word (all sharing a single forward
+    pass per text set, not one pass per candidate). Every output row is
+    tagged with the layer actually used ("layer"/"layer_used" columns), and
+    in this mode each word's per-item CSV is suffixed with the layer
+    (h5_{word}_L{layer}.csv) so candidates never overwrite one another. When
+    layer_candidates_lookup is not given (the default), behaviour is
+    unchanged: exactly one layer per word, original h5_{word}.csv filename.
     """
     model_names = model_names or H3_MODELS
     words = words or DEFAULT_WORDS
     select_layer = layer_lookup or _select_layer
+    multi_layer_mode = layer_candidates_lookup is not None
     output_base.mkdir(parents=True, exist_ok=True)
 
     with open(gp_data_path) as f:
@@ -410,7 +423,13 @@ def run_h5(
                 logger.warning("[H5] No items for '%s'", word)
                 continue
             try:
-                layer_idx = select_layer(model_name, results_dir, word)
+                if multi_layer_mode:
+                    candidate_layers = layer_candidates_lookup(model_name, results_dir, word)
+                else:
+                    candidate_layers = [select_layer(model_name, results_dir, word)]
+                if not candidate_layers:
+                    logger.warning("[H5] No candidate layers for %s/%s", model_name, word)
+                    continue
                 profile_sentences, profile_senses = _load_profiling_examples(
                     profiling_data_path, word
                 )
@@ -418,14 +437,13 @@ def run_h5(
                 logger.warning("[H5] %s", exc)
                 continue
 
+            # One forward pass per text set covers every candidate layer for
+            # this word (layer_indices=candidate_layers), rather than one
+            # forward pass per candidate.
             profile_texts = [_append_sentinel(s, sentinel) for s in profile_sentences]
-            profile_h = _sentinel_activations(
-                model, tokenizer, profile_texts, word, layer_idx
+            profile_h_by_layer = _sentinel_activations(
+                model, tokenizer, profile_texts, word, candidate_layers
             )
-            sentinel_centroids = {
-                sense: profile_h[profile_senses == sense].mean(axis=0)
-                for sense in (0, 1)
-            }
 
             extraction_texts: List[str] = []
             extraction_keys: List[Tuple[int, str]] = []
@@ -444,162 +462,174 @@ def run_h5(
                     extraction_texts.append(control)
                     extraction_keys.append((i, "matched_control"))
 
-            h_all = _sentinel_activations(
-                model, tokenizer, extraction_texts, word, layer_idx
+            h_all_by_layer = _sentinel_activations(
+                model, tokenizer, extraction_texts, word, candidate_layers
             )
-            h_by_key = {key: h for key, h in zip(extraction_keys, h_all)}
 
-            csv_rows: List[Dict] = []
-            for i, item in enumerate(items):
-                correct = int(item["correct_sense"])
-                primed = int(item["primed_sense"])
-                c_correct = sentinel_centroids[correct]
-                c_primed = sentinel_centroids[primed]
-                scores = {
-                    stage: _score_margin(h_by_key[(i, stage)], c_correct, c_primed)
-                    for stage in ("prime", "homonym", "resolution", "resolver_isolated")
+            for layer_idx in candidate_layers:
+                profile_h = profile_h_by_layer[layer_idx]
+                sentinel_centroids = {
+                    sense: profile_h[profile_senses == sense].mean(axis=0)
+                    for sense in (0, 1)
                 }
-                control_score = (
-                    _score_margin(h_by_key[(i, "matched_control")], c_correct, c_primed)
-                    if (i, "matched_control") in h_by_key
-                    else (math.nan, math.nan)
-                )
-                prime_raw, prime_norm = scores["prime"]
-                homonym_raw, homonym_norm = scores["homonym"]
-                resolution_raw, resolution_norm = scores["resolution"]
-                isolated_raw, isolated_norm = scores["resolver_isolated"]
-                control_raw, control_norm = control_score
-                # Priming context alone is a bias baseline. A garden-path
-                # commitment is defined only after the ambiguous word has
-                # actually been encountered.
-                primed_at_homonym = homonym_raw < epsilon
-                resolved_correct = resolution_raw > epsilon
+                h_by_key = {
+                    key: h for key, h in zip(extraction_keys, h_all_by_layer[layer_idx])
+                }
 
-                row = {
+                csv_rows: List[Dict] = []
+                for i, item in enumerate(items):
+                    correct = int(item["correct_sense"])
+                    primed = int(item["primed_sense"])
+                    c_correct = sentinel_centroids[correct]
+                    c_primed = sentinel_centroids[primed]
+                    scores = {
+                        stage: _score_margin(h_by_key[(i, stage)], c_correct, c_primed)
+                        for stage in ("prime", "homonym", "resolution", "resolver_isolated")
+                    }
+                    control_score = (
+                        _score_margin(h_by_key[(i, "matched_control")], c_correct, c_primed)
+                        if (i, "matched_control") in h_by_key
+                        else (math.nan, math.nan)
+                    )
+                    prime_raw, prime_norm = scores["prime"]
+                    homonym_raw, homonym_norm = scores["homonym"]
+                    resolution_raw, resolution_norm = scores["resolution"]
+                    isolated_raw, isolated_norm = scores["resolver_isolated"]
+                    control_raw, control_norm = control_score
+                    # Priming context alone is a bias baseline. A garden-path
+                    # commitment is defined only after the ambiguous word has
+                    # actually been encountered.
+                    primed_at_homonym = homonym_raw < epsilon
+                    resolved_correct = resolution_raw > epsilon
+
+                    row = {
+                        "model": safe_model,
+                        "arch_type": arch_type,
+                        "word": word,
+                        "sentence_id": item.get("id", f"{word}_gp_{i}"),
+                        "sentence": item["sentence"],
+                        "primed_sense": primed,
+                        "correct_sense": correct,
+                        "direction": f"{primed}_to_{correct}",
+                        "resolution_word": item["resolution_word"],
+                        "sentinel": sentinel,
+                        "prime_prefix": prefixes_by_item[i]["prime"],
+                        "homonym_prefix": prefixes_by_item[i]["homonym"],
+                        "resolution_prefix": prefixes_by_item[i]["resolution"],
+                        "prime_token_count": _token_count(tokenizer, prefixes_by_item[i]["prime"]),
+                        "homonym_token_count": _token_count(tokenizer, prefixes_by_item[i]["homonym"]),
+                        "resolution_token_count": _token_count(tokenizer, prefixes_by_item[i]["resolution"]),
+                        "prime_correct_margin_raw": round(prime_raw, 4),
+                        "homonym_correct_margin_raw": round(homonym_raw, 4),
+                        "resolution_correct_margin_raw": round(resolution_raw, 4),
+                        "resolver_isolated_correct_margin_raw": round(isolated_raw, 4),
+                        "matched_control_correct_margin_raw": (
+                            round(control_raw, 4) if math.isfinite(control_raw) else math.nan
+                        ),
+                        "prime_correct_margin_norm": round(prime_norm, 4),
+                        "homonym_correct_margin_norm": round(homonym_norm, 4),
+                        "resolution_correct_margin_norm": round(resolution_norm, 4),
+                        "resolver_isolated_correct_margin_norm": round(isolated_norm, 4),
+                        "matched_control_correct_margin_norm": (
+                            round(control_norm, 4) if math.isfinite(control_norm) else math.nan
+                        ),
+                        "delta_homonym_minus_prime_norm": round(homonym_norm - prime_norm, 4),
+                        "delta_resolution_minus_homonym_norm": round(resolution_norm - homonym_norm, 4),
+                        "delta_resolution_minus_prime_norm": round(resolution_norm - prime_norm, 4),
+                        "delta_resolution_minus_isolated_resolver_norm": round(
+                            resolution_norm - isolated_norm, 4
+                        ),
+                        "garden_path_cost_vs_matched_control_norm": (
+                            round(resolution_norm - control_norm, 4)
+                            if math.isfinite(control_norm) else math.nan
+                        ),
+                        "primed_at_homonym": primed_at_homonym,
+                        "resolved_correct": resolved_correct,
+                        "successful_primed_to_correct_transition": (
+                            primed_at_homonym and resolved_correct
+                        ),
+                        "human_prime_strength": item.get("human_prime_strength", math.nan),
+                        "human_resolution_clarity": item.get("human_resolution_clarity", math.nan),
+                        "layer": layer_idx,
+                        "analysis_status": (
+                            "model_internal_ready" if model_internal_ready else "exploratory_incomplete_design"
+                        ),
+                    }
+                    for threshold in SENSITIVITY_THRESHOLDS:
+                        suffix = str(threshold).replace(".", "p")
+                        row[f"prime_state_thr_{suffix}"] = _sensitivity_label(prime_norm, threshold)
+                        row[f"homonym_state_thr_{suffix}"] = _sensitivity_label(
+                            homonym_norm, threshold
+                        )
+                        row[f"resolution_state_thr_{suffix}"] = _sensitivity_label(
+                            resolution_norm, threshold
+                        )
+                    csv_rows.append(row)
+                    all_sentence_rows.append(row)
+
+                word_filename = (
+                    f"h5_{word}_L{layer_idx}.csv" if multi_layer_mode else f"h5_{word}.csv"
+                )
+                with open(model_out / word_filename, "w", newline="") as f:
+                    writer = csv.DictWriter(f, fieldnames=csv_rows[0].keys())
+                    writer.writeheader()
+                    writer.writerows(csv_rows)
+
+                primed_homonym_rows = [row for row in csv_rows if row["primed_at_homonym"]]
+                transitions = sum(
+                    row["successful_primed_to_correct_transition"]
+                    for row in primed_homonym_rows
+                )
+                aggregate_rows.append({
                     "model": safe_model,
                     "arch_type": arch_type,
                     "word": word,
-                    "sentence_id": item.get("id", f"{word}_gp_{i}"),
-                    "sentence": item["sentence"],
-                    "primed_sense": primed,
-                    "correct_sense": correct,
-                    "direction": f"{primed}_to_{correct}",
-                    "resolution_word": item["resolution_word"],
+                    "n_items": len(csv_rows),
+                    "n_primed_at_homonym": len(primed_homonym_rows),
+                    "n_successful_primed_to_correct": transitions,
+                    "p_resolved_correct_given_primed_at_homonym": (
+                        round(transitions / len(primed_homonym_rows), 3)
+                        if primed_homonym_rows else math.nan
+                    ),
+                    "mean_prime_correct_margin_norm": round(
+                        _mean(row["prime_correct_margin_norm"] for row in csv_rows), 4
+                    ),
+                    "mean_homonym_correct_margin_norm": round(
+                        _mean(row["homonym_correct_margin_norm"] for row in csv_rows), 4
+                    ),
+                    "mean_resolution_correct_margin_norm": round(
+                        _mean(row["resolution_correct_margin_norm"] for row in csv_rows), 4
+                    ),
+                    "mean_delta_resolution_minus_homonym_norm": round(
+                        _mean(row["delta_resolution_minus_homonym_norm"] for row in csv_rows), 4
+                    ),
+                    "mean_delta_resolution_minus_prime_norm": round(
+                        _mean(row["delta_resolution_minus_prime_norm"] for row in csv_rows), 4
+                    ),
+                    "mean_delta_resolution_minus_isolated_resolver_norm": round(
+                        _mean(
+                            row["delta_resolution_minus_isolated_resolver_norm"]
+                            for row in csv_rows
+                        ), 4
+                    ),
+                    "mean_garden_path_cost_vs_matched_control_norm": round(
+                        _mean(
+                            row["garden_path_cost_vs_matched_control_norm"]
+                            for row in csv_rows
+                            if math.isfinite(row["garden_path_cost_vs_matched_control_norm"])
+                        ), 4
+                    ),
+                    "layer_used": layer_idx,
                     "sentinel": sentinel,
-                    "prime_prefix": prefixes_by_item[i]["prime"],
-                    "homonym_prefix": prefixes_by_item[i]["homonym"],
-                    "resolution_prefix": prefixes_by_item[i]["resolution"],
-                    "prime_token_count": _token_count(tokenizer, prefixes_by_item[i]["prime"]),
-                    "homonym_token_count": _token_count(tokenizer, prefixes_by_item[i]["homonym"]),
-                    "resolution_token_count": _token_count(tokenizer, prefixes_by_item[i]["resolution"]),
-                    "prime_correct_margin_raw": round(prime_raw, 4),
-                    "homonym_correct_margin_raw": round(homonym_raw, 4),
-                    "resolution_correct_margin_raw": round(resolution_raw, 4),
-                    "resolver_isolated_correct_margin_raw": round(isolated_raw, 4),
-                    "matched_control_correct_margin_raw": (
-                        round(control_raw, 4) if math.isfinite(control_raw) else math.nan
-                    ),
-                    "prime_correct_margin_norm": round(prime_norm, 4),
-                    "homonym_correct_margin_norm": round(homonym_norm, 4),
-                    "resolution_correct_margin_norm": round(resolution_norm, 4),
-                    "resolver_isolated_correct_margin_norm": round(isolated_norm, 4),
-                    "matched_control_correct_margin_norm": (
-                        round(control_norm, 4) if math.isfinite(control_norm) else math.nan
-                    ),
-                    "delta_homonym_minus_prime_norm": round(homonym_norm - prime_norm, 4),
-                    "delta_resolution_minus_homonym_norm": round(resolution_norm - homonym_norm, 4),
-                    "delta_resolution_minus_prime_norm": round(resolution_norm - prime_norm, 4),
-                    "delta_resolution_minus_isolated_resolver_norm": round(
-                        resolution_norm - isolated_norm, 4
-                    ),
-                    "garden_path_cost_vs_matched_control_norm": (
-                        round(resolution_norm - control_norm, 4)
-                        if math.isfinite(control_norm) else math.nan
-                    ),
-                    "primed_at_homonym": primed_at_homonym,
-                    "resolved_correct": resolved_correct,
-                    "successful_primed_to_correct_transition": (
-                        primed_at_homonym and resolved_correct
-                    ),
-                    "human_prime_strength": item.get("human_prime_strength", math.nan),
-                    "human_resolution_clarity": item.get("human_resolution_clarity", math.nan),
-                    "layer": layer_idx,
                     "analysis_status": (
                         "model_internal_ready" if model_internal_ready else "exploratory_incomplete_design"
                     ),
-                }
-                for threshold in SENSITIVITY_THRESHOLDS:
-                    suffix = str(threshold).replace(".", "p")
-                    row[f"prime_state_thr_{suffix}"] = _sensitivity_label(prime_norm, threshold)
-                    row[f"homonym_state_thr_{suffix}"] = _sensitivity_label(
-                        homonym_norm, threshold
-                    )
-                    row[f"resolution_state_thr_{suffix}"] = _sensitivity_label(
-                        resolution_norm, threshold
-                    )
-                csv_rows.append(row)
-                all_sentence_rows.append(row)
-
-            with open(model_out / f"h5_{word}.csv", "w", newline="") as f:
-                writer = csv.DictWriter(f, fieldnames=csv_rows[0].keys())
-                writer.writeheader()
-                writer.writerows(csv_rows)
-
-            primed_homonym_rows = [row for row in csv_rows if row["primed_at_homonym"]]
-            transitions = sum(
-                row["successful_primed_to_correct_transition"]
-                for row in primed_homonym_rows
-            )
-            aggregate_rows.append({
-                "model": safe_model,
-                "arch_type": arch_type,
-                "word": word,
-                "n_items": len(csv_rows),
-                "n_primed_at_homonym": len(primed_homonym_rows),
-                "n_successful_primed_to_correct": transitions,
-                "p_resolved_correct_given_primed_at_homonym": (
-                    round(transitions / len(primed_homonym_rows), 3)
-                    if primed_homonym_rows else math.nan
-                ),
-                "mean_prime_correct_margin_norm": round(
-                    _mean(row["prime_correct_margin_norm"] for row in csv_rows), 4
-                ),
-                "mean_homonym_correct_margin_norm": round(
-                    _mean(row["homonym_correct_margin_norm"] for row in csv_rows), 4
-                ),
-                "mean_resolution_correct_margin_norm": round(
-                    _mean(row["resolution_correct_margin_norm"] for row in csv_rows), 4
-                ),
-                "mean_delta_resolution_minus_homonym_norm": round(
-                    _mean(row["delta_resolution_minus_homonym_norm"] for row in csv_rows), 4
-                ),
-                "mean_delta_resolution_minus_prime_norm": round(
-                    _mean(row["delta_resolution_minus_prime_norm"] for row in csv_rows), 4
-                ),
-                "mean_delta_resolution_minus_isolated_resolver_norm": round(
-                    _mean(
-                        row["delta_resolution_minus_isolated_resolver_norm"]
-                        for row in csv_rows
-                    ), 4
-                ),
-                "mean_garden_path_cost_vs_matched_control_norm": round(
-                    _mean(
-                        row["garden_path_cost_vs_matched_control_norm"]
-                        for row in csv_rows
-                        if math.isfinite(row["garden_path_cost_vs_matched_control_norm"])
-                    ), 4
-                ),
-                "layer_used": layer_idx,
-                "sentinel": sentinel,
-                "analysis_status": (
-                    "model_internal_ready" if model_internal_ready else "exploratory_incomplete_design"
-                ),
-            })
-            logger.info(
-                "[H5] %s/%s | resolved after primed homonym=%s/%s | status=%s",
-                model_name, word, transitions, len(primed_homonym_rows),
-                "model-internal-ready" if model_internal_ready else "exploratory-incomplete",
-            )
+                })
+                logger.info(
+                    "[H5] %s/%s | layer=%s | resolved after primed homonym=%s/%s | status=%s",
+                    model_name, word, layer_idx, transitions, len(primed_homonym_rows),
+                    "model-internal-ready" if model_internal_ready else "exploratory-incomplete",
+                )
 
     if aggregate_rows:
         with open(output_base / "h5_aggregate.csv", "w", newline="") as f:
