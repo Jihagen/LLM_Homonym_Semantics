@@ -37,8 +37,6 @@ data/h5_additions_proposal.md
 !data/garden_path_sentences.json
 
 # Final project report — track despite the blanket *.pdf rule above.
-!/llm brainscore - homonym disambiguation study.pdf
+!Where Do Semantics Live - Project Summary.pdf
 
-# LaTeX source for the report above — track despite the blanket
-# report_revision/* rule above.
-!report_revision/report.tex
+
