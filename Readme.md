@@ -4,29 +4,16 @@ A reproducible study of whether transformer hidden states carry word-sense infor
 
 ## Project report
 
-The full write-up is [Where Do Semantics Live - Project Summary.pdf](Where%20Do%20Semantics%20Live%20-%20Project%20Summary.pdf), covering the hypothesis structure, methods, and results for all six analyses (H0–H5).
+- [Where Do Semantics Live - Report.pdf](Where%20Do%20Semantics%20Live%20-%20Report.pdf) — the full write-up: methods, results, and discussion for all six analyses (H0–H5).
+- [Where Do Semantics Live - Project Summary.pdf](Where%20Do%20Semantics%20Live%20-%20Project%20Summary.pdf) — a one-page visual summary of the hypothesis structure and results (embedded below).
 
 ## How the hypotheses relate
 
 H1 identifies candidate semantic layer(s); H0, H2–H5 each test, revise, or correct that result rather than standing alone. Tests increase in specificity — if H1 identifies a set of layers, H2–H5 help narrow them to fewer candidates, and if one layer dominates across all tests, it may contain a robust representation of contextual semantic processing.
 
-| | Question | Role |
-|---|---|---|
-| **H0** — Starting bias | A model may be biased toward one sense of a homonym because of its training data. If a model consistently chooses one sense, that choice is not meaningful evidence in the later hypotheses. | Corrects results from H1–H5 |
-| **H1** — Meaning across depth | Is language processing hierarchical in the model? If early layers mainly preserve word-form information, sense groups should overlap for both homonyms; if contextual meaning emerges with depth, they should increasingly separate. If a hierarchy emerges, there should be a single layer or region where semantic processing dominates. | Identifies semantic layer(s), if any |
-| **H2** — Readout validation | If candidate semantic layer(s) can be identified, their role must be validated by testing whether they also classify unseen sentences and unseen homonyms. | Tests H1 result |
-| **H3** — Context and anchor | If semantic layer(s) exist, token representations should show the model moving from an ambiguous homonym state toward either sense once resolving context is added — and this should differ between encoders and decoders, since they have different access to context. | Tests H1 result |
-| **H4** — Decoder-anchor revision | Because causal decoders cannot access subsequent tokens, are the estimated starting biases affected by the homonym's position in the sentence? H1 is repeated at the end-of-sentence token rather than the homonym position to test whether the identified semantic layer(s) change. | Revises H1 result |
-| **H5** — Meaning revision | H3 tests ambiguity resolution; H5 tests whether a model can revise an interpretation encouraged by earlier context when later context requires the alternative sense. | Tests H1 result |
+![Hypothesis structure, quick view of results, and methods for H0–H5](assets/hypothesis_summary_table.png)
 
-### Methods per hypothesis
-
-- **H0**: activation collection (bare word vs. carrier), centroid probing (two-sense geometry), sense-margin scoring (prior direction), carrier consistency (baseline stability)
-- **H1**: layer-wise activations, centroid separation (sense distance), PCA trajectories (geometric progression), candidate-layer selection (semantic region)
-- **H2**: nested leave-one-out (sentence generalization), held-out homonym test (homonym generalisation), adequacy (item-level accuracy), GDV (global class separation), layer comparison
-- **H3**: resolver reordering (left- vs. right-context), PCA trajectories (ambiguity to resolution), correct-sense margin (movement direction), paired bootstrap (order effect)
-- **H4**: position-specific centroids (endpoint vs. homonym position sense-geometry)
-- **H5**: garden-path priming, fixed-sentinel probing (constant readout for controls), trajectories (prime to resolver), matched controls, boundary crossing
+*(from [Where Do Semantics Live - Project Summary.pdf](Where%20Do%20Semantics%20Live%20-%20Project%20Summary.pdf))*
 
 ## Key results by hypothesis
 
