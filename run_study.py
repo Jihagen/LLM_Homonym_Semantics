@@ -33,7 +33,7 @@ H4  Token-position sense decodability
     Models : all 8
 
 H5  Incremental garden-path updating at a fixed sentinel (exploratory)
-    Data   : data/garden_path_sentences.json + data/synthetic_data_h2.pkl
+    Data   : data/garden_path_sentences.json + data/profiling_sentences.json
     Guard  : blocked until direction/control/structure audit passes unless the
              explicitly exploratory override is supplied
     Models : all 8

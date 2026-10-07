@@ -50,10 +50,8 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import numpy as np
-import torch
 
 from experiments.adequacy import symmetric_adequacy_margins, symmetric_normalized_adequacy_margins, load_centroids
-from models import get_target_activations, is_decoder_only, load_model_and_tokenizer  # is_decoder_only used for arch_type label only
 from utils.model_registry import ALL_MODELS
 from utils.hpc import configure_hpc_runtime
 
@@ -141,6 +139,7 @@ def run_h3(
         model_out  = OUTPUT_BASE / safe_model
         model_out.mkdir(parents=True, exist_ok=True)
 
+        from models import get_target_activations, is_decoder_only, load_model_and_tokenizer
         model, tokenizer = load_model_and_tokenizer(model_name)
         # Always target-token: we measure the homonym's own representation.
         # For decoders this is causal (left-context only) — which is exactly the

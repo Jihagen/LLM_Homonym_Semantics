@@ -75,7 +75,6 @@ from experiments.adequacy import (
     symmetric_normalized_adequacy_margins,
 )
 from hypotheses.h3_context_position import H3_MODELS, PAIRED_DATA_PATH, _load_paired_sentences
-from models import get_target_activations, load_model_and_tokenizer
 from utils.hpc import configure_hpc_runtime
 
 configure_hpc_runtime()
@@ -172,6 +171,7 @@ def extract_l_condition_activations(
             logger.info("[Q4] %s: all words already cached, skipping model load.", model_name)
             continue
 
+        from models import get_target_activations, load_model_and_tokenizer
         model, tokenizer = load_model_and_tokenizer(model_name)
         logger.info("[Q4] %s: extracting L-condition activations for %s", model_name, words_todo)
         for word in words_todo:

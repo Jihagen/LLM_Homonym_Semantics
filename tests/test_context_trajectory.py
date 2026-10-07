@@ -4,7 +4,7 @@ from pathlib import Path
 
 import numpy as np
 
-from context_revelation_trajectory import (
+from analysis.context_revelation_trajectory import (
     STAGES,
     _pair_heldout_scores,
     build_prefix_stages,

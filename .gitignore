@@ -1,46 +1,33 @@
-run.slurm
-*.slurm
-logs/
-/env.yml
-/data/synthetic/.env
-**/.env
+# --- pipeline outputs and caches (regenerable; see STATUS.md) ---------------
+/results/
+/build/
+/logs/
+/hf_cache/
+/offload_dir/
+*.h5
+*.pkl
+*.pt
+*.safetensors
 
-results/
+# --- local launchers and credentials ---------------------------------------
+/*.slurm
+.env
+**/.env
+/env.yml
+
+# --- working drafts that are not part of the release -----------------------
+/report_revision/*
+!/report_revision/report.tex
+/data/h5_additions_proposal.md
+/legacy/
+
+# --- Python / editor / OS ---------------------------------------------------
 __pycache__/
-**/__pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.gif
-*.png
-*.svg
-*.pdf
 .pytest_cache/
 .ipynb_checkpoints/
 .mypy_cache/
 .ruff_cache/
+.venv/
+.vscode/
 .DS_Store
-offload_dir/
-
-hf_cache/
-*.pkl
-*.json
-
-legacy/*
-
-report_revision/*
-data/h5_additions_proposal.md
-# Stimulus/profiling data is small, hand-curated, and required to reproduce
-# H0/H1/H2/H3/H4/H5 — track it despite the blanket *.pkl/*.json rules above.
-!data/synthetic_data_h2.pkl
-!data/paired_sentences.json
-!data/garden_path_sentences.json
-
-# Final project report — track despite the blanket *.pdf rule above.
-!Where Do Semantics Live - Project Summary.pdf
-!Where Do Semantics Live - Report.pdf
-
-# README hero image — track despite the blanket *.png rule above.
-!assets/hypothesis_summary_table.png
-
-

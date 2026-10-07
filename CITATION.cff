@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: >-
+  If you use the stimuli, the result tables, or the code in this repository,
+  please cite it as below.
+title: >-
+  Where Do Semantics Live? A Homonym-Based Study of Semantic Disambiguation in
+  Large Language Models (code, stimuli and processed results)
+type: software
+authors:
+  - family-names: Hagen
+    given-names: Julia
+    affiliation: Friedrich-Alexander-Universität Erlangen-Nürnberg
+version: 1.0.0
+date-released: "2026-10-07"
+license: MIT
+repository-code: "https://github.com/Jihagen/LLM_Homonym_Semantics"
+url: "https://github.com/Jihagen/LLM_Homonym_Semantics"
+abstract: >-
+  Code, stimuli and processed results for a study of contextual word-sense
+  information in the hidden states of four bidirectional encoders and four
+  causal decoders, using seven two-sense English homonyms. The release
+  supports reproduction of all report figures from compact result tables and
+  documents how to rerun the models.
+keywords:
+  - large language models
+  - semantic representations
+  - homonyms
+  - word sense disambiguation
+  - representational geometry
+  - layer selection
+references:
+  - type: report
+    title: >-
+      Where Do Semantics Live? A Homonym-Based Study of Semantic
+      Disambiguation in Large Language Models
+    authors:
+      - family-names: Hagen
+        given-names: Julia
+    institution:
+      name: Friedrich-Alexander-Universität Erlangen-Nürnberg
+    year: 2026
+    notes: "Project report, included in this repository as a PDF."

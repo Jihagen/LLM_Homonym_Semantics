@@ -1,0 +1,1121 @@
+model,word,sentence_id,pair_id,condition,sense,carrier,M_l_raw,M_l_norm,adequate,layer
+answerdotai_ModernBERT-large,bank,bank_L_01,bank_01,L,0,The bank was unstable.,9.6879,0.0855,True,24
+answerdotai_ModernBERT-large,bank,bank_R_01,bank_01,R,0,The bank was unstable.,22.3817,0.1975,True,24
+answerdotai_ModernBERT-large,bank,bank_L_03,bank_03,L,0,They examined the bank.,-15.8695,-0.14,False,24
+answerdotai_ModernBERT-large,bank,bank_R_03,bank_03,R,0,They examined the bank.,-32.8702,-0.29,False,24
+answerdotai_ModernBERT-large,bank,bank_L_05,bank_05,L,0,The bank had changed.,41.7807,0.3686,True,24
+answerdotai_ModernBERT-large,bank,bank_R_05,bank_05,R,0,The bank had changed.,38.6264,0.3408,True,24
+answerdotai_ModernBERT-large,bank,bank_L_07,bank_07,L,0,The bank needed protection.,-3.0655,-0.027,False,24
+answerdotai_ModernBERT-large,bank,bank_R_07,bank_07,R,0,The bank needed protection.,9.6115,0.0848,True,24
+answerdotai_ModernBERT-large,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,-4.396,-0.0388,False,24
+answerdotai_ModernBERT-large,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,18.7817,0.1657,True,24
+answerdotai_ModernBERT-large,bank,bank_L_02,bank_02,L,1,The bank was unstable.,25.4431,0.2245,True,24
+answerdotai_ModernBERT-large,bank,bank_R_02,bank_02,R,1,The bank was unstable.,10.8389,0.0956,True,24
+answerdotai_ModernBERT-large,bank,bank_L_04,bank_04,L,1,They examined the bank.,22.4475,0.198,True,24
+answerdotai_ModernBERT-large,bank,bank_R_04,bank_04,R,1,They examined the bank.,40.9853,0.3616,True,24
+answerdotai_ModernBERT-large,bank,bank_L_06,bank_06,L,1,The bank had changed.,-18.0501,-0.1592,False,24
+answerdotai_ModernBERT-large,bank,bank_R_06,bank_06,R,1,The bank had changed.,-8.965,-0.0791,False,24
+answerdotai_ModernBERT-large,bank,bank_L_08,bank_08,L,1,The bank needed protection.,71.8057,0.6335,True,24
+answerdotai_ModernBERT-large,bank,bank_R_08,bank_08,R,1,The bank needed protection.,57.3832,0.5062,True,24
+answerdotai_ModernBERT-large,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,55.4777,0.4894,True,24
+answerdotai_ModernBERT-large,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,19.259,0.1699,True,24
+answerdotai_ModernBERT-large,bark,bark_L_01,bark_01,L,0,The bark drew attention.,-18.0096,-0.1337,False,25
+answerdotai_ModernBERT-large,bark,bark_R_01,bark_01,R,0,The bark drew attention.,-7.3497,-0.0546,False,25
+answerdotai_ModernBERT-large,bark,bark_L_03,bark_03,L,0,They studied the bark.,-29.8571,-0.2216,False,25
+answerdotai_ModernBERT-large,bark,bark_R_03,bark_03,R,0,They studied the bark.,-33.3342,-0.2474,False,25
+answerdotai_ModernBERT-large,bark,bark_L_05,bark_05,L,0,The bark was unusual.,-5.9349,-0.0441,False,25
+answerdotai_ModernBERT-large,bark,bark_R_05,bark_05,R,0,The bark was unusual.,-5.59,-0.0415,False,25
+answerdotai_ModernBERT-large,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,-4.9615,-0.0368,False,25
+answerdotai_ModernBERT-large,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,0.5114,0.0038,True,25
+answerdotai_ModernBERT-large,bark,bark_L_09,bark_09,L,0,The bark became the focus.,-18.8596,-0.14,False,25
+answerdotai_ModernBERT-large,bark,bark_R_09,bark_09,R,0,The bark became the focus.,-17.5371,-0.1302,False,25
+answerdotai_ModernBERT-large,bark,bark_L_02,bark_02,L,1,The bark drew attention.,60.3822,0.4482,True,25
+answerdotai_ModernBERT-large,bark,bark_R_02,bark_02,R,1,The bark drew attention.,52.5397,0.39,True,25
+answerdotai_ModernBERT-large,bark,bark_L_04,bark_04,L,1,They studied the bark.,56.6227,0.4203,True,25
+answerdotai_ModernBERT-large,bark,bark_R_04,bark_04,R,1,They studied the bark.,61.1404,0.4538,True,25
+answerdotai_ModernBERT-large,bark,bark_L_06,bark_06,L,1,The bark was unusual.,31.9211,0.2369,True,25
+answerdotai_ModernBERT-large,bark,bark_R_06,bark_06,R,1,The bark was unusual.,20.8962,0.1551,True,25
+answerdotai_ModernBERT-large,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,54.4571,0.4042,True,25
+answerdotai_ModernBERT-large,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,66.0146,0.49,True,25
+answerdotai_ModernBERT-large,bark,bark_L_10,bark_10,L,1,The bark became the focus.,59.4767,0.4415,True,25
+answerdotai_ModernBERT-large,bark,bark_R_10,bark_10,R,1,The bark became the focus.,45.0179,0.3341,True,25
+answerdotai_ModernBERT-large,bat,bat_L_01,bat_01,L,0,They watched the bat.,15.5056,0.4554,True,14
+answerdotai_ModernBERT-large,bat,bat_R_01,bat_01,R,0,They watched the bat.,13.5339,0.3975,True,14
+answerdotai_ModernBERT-large,bat,bat_L_03,bat_03,L,0,She checked the bat.,21.3875,0.6282,True,14
+answerdotai_ModernBERT-large,bat,bat_R_03,bat_03,R,0,She checked the bat.,22.5063,0.6611,True,14
+answerdotai_ModernBERT-large,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,6.7045,0.1969,True,14
+answerdotai_ModernBERT-large,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,7.0962,0.2084,True,14
+answerdotai_ModernBERT-large,bat,bat_L_07,bat_07,L,0,The bat was marked.,10.0255,0.2945,True,14
+answerdotai_ModernBERT-large,bat,bat_R_07,bat_07,R,0,The bat was marked.,7.0278,0.2064,True,14
+answerdotai_ModernBERT-large,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,9.8942,0.2906,True,14
+answerdotai_ModernBERT-large,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,12.6819,0.3725,True,14
+answerdotai_ModernBERT-large,bat,bat_L_02,bat_02,L,1,They watched the bat.,2.2822,0.067,True,14
+answerdotai_ModernBERT-large,bat,bat_R_02,bat_02,R,1,They watched the bat.,3.2381,0.0951,True,14
+answerdotai_ModernBERT-large,bat,bat_L_04,bat_04,L,1,She checked the bat.,-4.8315,-0.1419,False,14
+answerdotai_ModernBERT-large,bat,bat_R_04,bat_04,R,1,She checked the bat.,0.0971,0.0029,True,14
+answerdotai_ModernBERT-large,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,-3.0896,-0.0907,False,14
+answerdotai_ModernBERT-large,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-7.6945,-0.226,False,14
+answerdotai_ModernBERT-large,bat,bat_L_08,bat_08,L,1,The bat was marked.,5.5407,0.1627,True,14
+answerdotai_ModernBERT-large,bat,bat_R_08,bat_08,R,1,The bat was marked.,2.8762,0.0845,True,14
+answerdotai_ModernBERT-large,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,-7.8777,-0.2314,False,14
+answerdotai_ModernBERT-large,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,-3.9787,-0.1169,False,14
+answerdotai_ModernBERT-large,crane,crane_L_01,crane_01,L,0,They watched the crane.,-26.4965,-0.2344,False,26
+answerdotai_ModernBERT-large,crane,crane_R_01,crane_01,R,0,They watched the crane.,42.0725,0.3722,True,26
+answerdotai_ModernBERT-large,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,33.0083,0.292,True,26
+answerdotai_ModernBERT-large,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,20.8433,0.1844,True,26
+answerdotai_ModernBERT-large,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,68.1279,0.6027,True,26
+answerdotai_ModernBERT-large,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,62.9011,0.5564,True,26
+answerdotai_ModernBERT-large,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,58.6672,0.519,True,26
+answerdotai_ModernBERT-large,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,69.8601,0.618,True,26
+answerdotai_ModernBERT-large,crane,crane_L_09,crane_09,L,0,The crane became the focus.,76.224,0.6743,True,26
+answerdotai_ModernBERT-large,crane,crane_R_09,crane_09,R,0,The crane became the focus.,70.9128,0.6273,True,26
+answerdotai_ModernBERT-large,crane,crane_L_02,crane_02,L,1,They watched the crane.,68.8389,0.609,True,26
+answerdotai_ModernBERT-large,crane,crane_R_02,crane_02,R,1,They watched the crane.,19.3778,0.1714,True,26
+answerdotai_ModernBERT-large,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,51.0708,0.4518,True,26
+answerdotai_ModernBERT-large,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,64.2054,0.568,True,26
+answerdotai_ModernBERT-large,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,23.1593,0.2049,True,26
+answerdotai_ModernBERT-large,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,62.3075,0.5512,True,26
+answerdotai_ModernBERT-large,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,36.1487,0.3198,True,26
+answerdotai_ModernBERT-large,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,45.363,0.4013,True,26
+answerdotai_ModernBERT-large,crane,crane_L_10,crane_10,L,1,The crane became the focus.,35.1389,0.3109,True,26
+answerdotai_ModernBERT-large,crane,crane_R_10,crane_10,R,1,The crane became the focus.,54.5344,0.4824,True,26
+answerdotai_ModernBERT-large,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,56.772,0.4783,True,24
+answerdotai_ModernBERT-large,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,56.4886,0.4759,True,24
+answerdotai_ModernBERT-large,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-60.6194,-0.5107,False,24
+answerdotai_ModernBERT-large,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-66.1956,-0.5577,False,24
+answerdotai_ModernBERT-large,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,-51.0552,-0.4301,False,24
+answerdotai_ModernBERT-large,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,-53.3944,-0.4498,False,24
+answerdotai_ModernBERT-large,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-20.1968,-0.1702,False,24
+answerdotai_ModernBERT-large,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-19.5711,-0.1649,False,24
+answerdotai_ModernBERT-large,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-3.2931,-0.0277,False,24
+answerdotai_ModernBERT-large,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-22.8622,-0.1926,False,24
+answerdotai_ModernBERT-large,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,-2.8262,-0.0238,False,24
+answerdotai_ModernBERT-large,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,6.4494,0.0543,True,24
+answerdotai_ModernBERT-large,spring,spring_L_04,spring_04,L,1,They monitored the spring.,75.9018,0.6395,True,24
+answerdotai_ModernBERT-large,spring,spring_R_04,spring_04,R,1,They monitored the spring.,78.6993,0.663,True,24
+answerdotai_ModernBERT-large,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,61.8516,0.5211,True,24
+answerdotai_ModernBERT-large,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,62.682,0.5281,True,24
+answerdotai_ModernBERT-large,spring,spring_L_08,spring_08,L,1,The spring became a concern.,63.3161,0.5334,True,24
+answerdotai_ModernBERT-large,spring,spring_R_08,spring_08,R,1,The spring became a concern.,85.9636,0.7242,True,24
+answerdotai_ModernBERT-large,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,55.0698,0.464,True,24
+answerdotai_ModernBERT-large,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,60.1636,0.5069,True,24
+answerdotai_ModernBERT-large,match,match_L_01,match_01,L,0,The match was difficult to start.,101.0117,0.6202,True,28
+answerdotai_ModernBERT-large,match,match_R_01,match_01,R,0,The match was difficult to start.,106.3115,0.6527,True,28
+answerdotai_ModernBERT-large,match,match_L_03,match_03,L,0,The match ended quickly.,107.5253,0.6602,True,28
+answerdotai_ModernBERT-large,match,match_R_03,match_03,R,0,The match ended quickly.,107.972,0.6629,True,28
+answerdotai_ModernBERT-large,match,match_L_05,match_05,L,0,They checked the match.,-28.5065,-0.175,False,28
+answerdotai_ModernBERT-large,match,match_R_05,match_05,R,0,They checked the match.,-30.4027,-0.1867,False,28
+answerdotai_ModernBERT-large,match,match_L_07,match_07,L,0,The match caused trouble.,94.8055,0.5821,True,28
+answerdotai_ModernBERT-large,match,match_R_07,match_07,R,0,The match caused trouble.,97.9901,0.6016,True,28
+answerdotai_ModernBERT-large,match,match_L_09,match_09,L,0,The match was watched closely.,118.0325,0.7247,True,28
+answerdotai_ModernBERT-large,match,match_R_09,match_09,R,0,The match was watched closely.,92.0262,0.565,True,28
+answerdotai_ModernBERT-large,match,match_L_02,match_02,L,1,The match was difficult to start.,51.4023,0.3156,True,28
+answerdotai_ModernBERT-large,match,match_R_02,match_02,R,1,The match was difficult to start.,32.1795,0.1976,True,28
+answerdotai_ModernBERT-large,match,match_L_04,match_04,L,1,The match ended quickly.,42.8506,0.2631,True,28
+answerdotai_ModernBERT-large,match,match_R_04,match_04,R,1,The match ended quickly.,25.2303,0.1549,True,28
+answerdotai_ModernBERT-large,match,match_L_06,match_06,L,1,They checked the match.,82.9529,0.5093,True,28
+answerdotai_ModernBERT-large,match,match_R_06,match_06,R,1,They checked the match.,89.2592,0.548,True,28
+answerdotai_ModernBERT-large,match,match_L_08,match_08,L,1,The match caused trouble.,69.5372,0.4269,True,28
+answerdotai_ModernBERT-large,match,match_R_08,match_08,R,1,The match caused trouble.,55.4993,0.3407,True,28
+answerdotai_ModernBERT-large,match,match_L_10,match_10,L,1,The match was watched closely.,24.6161,0.1511,True,28
+answerdotai_ModernBERT-large,match,match_R_10,match_10,R,1,The match was watched closely.,-28.6501,-0.1759,False,28
+answerdotai_ModernBERT-large,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,59.0562,0.4378,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,75.5824,0.5603,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,8.7906,0.0652,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,42.2182,0.313,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,27.304,0.2024,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,24.5912,0.1823,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,3.7557,0.0278,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,-4.1359,-0.0307,False,27
+answerdotai_ModernBERT-large,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,22.9702,0.1703,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,51.568,0.3823,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,57.1563,0.4237,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,57.1605,0.4237,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,66.4985,0.493,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,62.8114,0.4656,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,58.1819,0.4313,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,47.9536,0.3555,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,59.1634,0.4386,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,47.8327,0.3546,True,27
+answerdotai_ModernBERT-large,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,55.3958,0.4107,True,27
+answerdotai_ModernBERT-large,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,60.4678,0.4482,True,27
+microsoft_deberta-v3-large,bank,bank_L_01,bank_01,L,0,The bank was unstable.,8.304,0.2778,True,9
+microsoft_deberta-v3-large,bank,bank_R_01,bank_01,R,0,The bank was unstable.,12.9512,0.4333,True,9
+microsoft_deberta-v3-large,bank,bank_L_03,bank_03,L,0,They examined the bank.,17.0114,0.5691,True,9
+microsoft_deberta-v3-large,bank,bank_R_03,bank_03,R,0,They examined the bank.,16.9111,0.5658,True,9
+microsoft_deberta-v3-large,bank,bank_L_05,bank_05,L,0,The bank had changed.,16.2749,0.5445,True,9
+microsoft_deberta-v3-large,bank,bank_R_05,bank_05,R,0,The bank had changed.,16.4531,0.5505,True,9
+microsoft_deberta-v3-large,bank,bank_L_07,bank_07,L,0,The bank needed protection.,13.4604,0.4503,True,9
+microsoft_deberta-v3-large,bank,bank_R_07,bank_07,R,0,The bank needed protection.,8.6161,0.2883,True,9
+microsoft_deberta-v3-large,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,20.031,0.6702,True,9
+microsoft_deberta-v3-large,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,18.455,0.6174,True,9
+microsoft_deberta-v3-large,bank,bank_L_02,bank_02,L,1,The bank was unstable.,11.5225,0.3855,True,9
+microsoft_deberta-v3-large,bank,bank_R_02,bank_02,R,1,The bank was unstable.,12.0372,0.4027,True,9
+microsoft_deberta-v3-large,bank,bank_L_04,bank_04,L,1,They examined the bank.,12.9322,0.4327,True,9
+microsoft_deberta-v3-large,bank,bank_R_04,bank_04,R,1,They examined the bank.,13.1406,0.4396,True,9
+microsoft_deberta-v3-large,bank,bank_L_06,bank_06,L,1,The bank had changed.,14.4955,0.485,True,9
+microsoft_deberta-v3-large,bank,bank_R_06,bank_06,R,1,The bank had changed.,15.0646,0.504,True,9
+microsoft_deberta-v3-large,bank,bank_L_08,bank_08,L,1,The bank needed protection.,18.2252,0.6097,True,9
+microsoft_deberta-v3-large,bank,bank_R_08,bank_08,R,1,The bank needed protection.,18.2336,0.61,True,9
+microsoft_deberta-v3-large,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,17.0129,0.5692,True,9
+microsoft_deberta-v3-large,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,17.8318,0.5966,True,9
+microsoft_deberta-v3-large,bark,bark_L_01,bark_01,L,0,The bark drew attention.,15.544,0.6068,True,10
+microsoft_deberta-v3-large,bark,bark_R_01,bark_01,R,0,The bark drew attention.,14.1127,0.5509,True,10
+microsoft_deberta-v3-large,bark,bark_L_03,bark_03,L,0,They studied the bark.,-9.8996,-0.3864,False,10
+microsoft_deberta-v3-large,bark,bark_R_03,bark_03,R,0,They studied the bark.,-8.9088,-0.3478,False,10
+microsoft_deberta-v3-large,bark,bark_L_05,bark_05,L,0,The bark was unusual.,11.5469,0.4507,True,10
+microsoft_deberta-v3-large,bark,bark_R_05,bark_05,R,0,The bark was unusual.,9.5412,0.3724,True,10
+microsoft_deberta-v3-large,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,3.6819,0.1437,True,10
+microsoft_deberta-v3-large,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,1.6222,0.0633,True,10
+microsoft_deberta-v3-large,bark,bark_L_09,bark_09,L,0,The bark became the focus.,5.3198,0.2077,True,10
+microsoft_deberta-v3-large,bark,bark_R_09,bark_09,R,0,The bark became the focus.,3.67,0.1433,True,10
+microsoft_deberta-v3-large,bark,bark_L_02,bark_02,L,1,The bark drew attention.,13.6319,0.5321,True,10
+microsoft_deberta-v3-large,bark,bark_R_02,bark_02,R,1,The bark drew attention.,13.5936,0.5306,True,10
+microsoft_deberta-v3-large,bark,bark_L_04,bark_04,L,1,They studied the bark.,12.5847,0.4912,True,10
+microsoft_deberta-v3-large,bark,bark_R_04,bark_04,R,1,They studied the bark.,12.8951,0.5034,True,10
+microsoft_deberta-v3-large,bark,bark_L_06,bark_06,L,1,The bark was unusual.,14.3459,0.56,True,10
+microsoft_deberta-v3-large,bark,bark_R_06,bark_06,R,1,The bark was unusual.,15.2504,0.5953,True,10
+microsoft_deberta-v3-large,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,15.7933,0.6165,True,10
+microsoft_deberta-v3-large,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,15.4155,0.6017,True,10
+microsoft_deberta-v3-large,bark,bark_L_10,bark_10,L,1,The bark became the focus.,14.4462,0.5639,True,10
+microsoft_deberta-v3-large,bark,bark_R_10,bark_10,R,1,The bark became the focus.,14.0837,0.5498,True,10
+microsoft_deberta-v3-large,bat,bat_L_01,bat_01,L,0,They watched the bat.,13.1525,0.4531,True,9
+microsoft_deberta-v3-large,bat,bat_R_01,bat_01,R,0,They watched the bat.,13.8518,0.4772,True,9
+microsoft_deberta-v3-large,bat,bat_L_03,bat_03,L,0,She checked the bat.,18.9749,0.6537,True,9
+microsoft_deberta-v3-large,bat,bat_R_03,bat_03,R,0,She checked the bat.,19.2723,0.664,True,9
+microsoft_deberta-v3-large,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,19.2279,0.6625,True,9
+microsoft_deberta-v3-large,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,19.0908,0.6577,True,9
+microsoft_deberta-v3-large,bat,bat_L_07,bat_07,L,0,The bat was marked.,18.8866,0.6507,True,9
+microsoft_deberta-v3-large,bat,bat_R_07,bat_07,R,0,The bat was marked.,18.841,0.6491,True,9
+microsoft_deberta-v3-large,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,19.2143,0.662,True,9
+microsoft_deberta-v3-large,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,19.0445,0.6561,True,9
+microsoft_deberta-v3-large,bat,bat_L_02,bat_02,L,1,They watched the bat.,17.3197,0.5967,True,9
+microsoft_deberta-v3-large,bat,bat_R_02,bat_02,R,1,They watched the bat.,18.8716,0.6502,True,9
+microsoft_deberta-v3-large,bat,bat_L_04,bat_04,L,1,She checked the bat.,13.6002,0.4686,True,9
+microsoft_deberta-v3-large,bat,bat_R_04,bat_04,R,1,She checked the bat.,7.9512,0.2739,True,9
+microsoft_deberta-v3-large,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,5.7939,0.1996,True,9
+microsoft_deberta-v3-large,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,5.58,0.1923,True,9
+microsoft_deberta-v3-large,bat,bat_L_08,bat_08,L,1,The bat was marked.,20.3468,0.701,True,9
+microsoft_deberta-v3-large,bat,bat_R_08,bat_08,R,1,The bat was marked.,21.0788,0.7262,True,9
+microsoft_deberta-v3-large,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,15.3294,0.5281,True,9
+microsoft_deberta-v3-large,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,16.63,0.573,True,9
+microsoft_deberta-v3-large,crane,crane_L_01,crane_01,L,0,They watched the crane.,13.4391,0.5966,True,10
+microsoft_deberta-v3-large,crane,crane_R_01,crane_01,R,0,They watched the crane.,14.1694,0.6291,True,10
+microsoft_deberta-v3-large,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,14.8309,0.6584,True,10
+microsoft_deberta-v3-large,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,16.43,0.7294,True,10
+microsoft_deberta-v3-large,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,17.0627,0.7575,True,10
+microsoft_deberta-v3-large,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,17.618,0.7822,True,10
+microsoft_deberta-v3-large,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,15.7579,0.6996,True,10
+microsoft_deberta-v3-large,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,17.0086,0.7551,True,10
+microsoft_deberta-v3-large,crane,crane_L_09,crane_09,L,0,The crane became the focus.,16.8045,0.746,True,10
+microsoft_deberta-v3-large,crane,crane_R_09,crane_09,R,0,The crane became the focus.,17.2277,0.7648,True,10
+microsoft_deberta-v3-large,crane,crane_L_02,crane_02,L,1,They watched the crane.,15.3279,0.6805,True,10
+microsoft_deberta-v3-large,crane,crane_R_02,crane_02,R,1,They watched the crane.,15.2947,0.679,True,10
+microsoft_deberta-v3-large,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,16.63,0.7383,True,10
+microsoft_deberta-v3-large,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,17.235,0.7652,True,10
+microsoft_deberta-v3-large,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,15.2523,0.6771,True,10
+microsoft_deberta-v3-large,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,15.0372,0.6676,True,10
+microsoft_deberta-v3-large,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,14.6064,0.6485,True,10
+microsoft_deberta-v3-large,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,14.8068,0.6574,True,10
+microsoft_deberta-v3-large,crane,crane_L_10,crane_10,L,1,The crane became the focus.,12.9153,0.5734,True,10
+microsoft_deberta-v3-large,crane,crane_R_10,crane_10,R,1,The crane became the focus.,13.1486,0.5837,True,10
+microsoft_deberta-v3-large,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,4.8467,0.2666,True,8
+microsoft_deberta-v3-large,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,5.1334,0.2823,True,8
+microsoft_deberta-v3-large,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-0.8264,-0.0455,False,8
+microsoft_deberta-v3-large,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-0.6307,-0.0347,False,8
+microsoft_deberta-v3-large,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,4.519,0.2485,True,8
+microsoft_deberta-v3-large,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,3.3617,0.1849,True,8
+microsoft_deberta-v3-large,spring,spring_L_07,spring_07,L,0,The spring became a concern.,1.341,0.0737,True,8
+microsoft_deberta-v3-large,spring,spring_R_07,spring_07,R,0,The spring became a concern.,1.0215,0.0562,True,8
+microsoft_deberta-v3-large,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,2.7297,0.1501,True,8
+microsoft_deberta-v3-large,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,3.3597,0.1848,True,8
+microsoft_deberta-v3-large,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,11.9779,0.6587,True,8
+microsoft_deberta-v3-large,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,13.4659,0.7406,True,8
+microsoft_deberta-v3-large,spring,spring_L_04,spring_04,L,1,They monitored the spring.,13.1671,0.7241,True,8
+microsoft_deberta-v3-large,spring,spring_R_04,spring_04,R,1,They monitored the spring.,13.5225,0.7437,True,8
+microsoft_deberta-v3-large,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,-0.0484,-0.0027,False,8
+microsoft_deberta-v3-large,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,0.727,0.04,True,8
+microsoft_deberta-v3-large,spring,spring_L_08,spring_08,L,1,The spring became a concern.,12.8329,0.7058,True,8
+microsoft_deberta-v3-large,spring,spring_R_08,spring_08,R,1,The spring became a concern.,12.9454,0.712,True,8
+microsoft_deberta-v3-large,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,4.3893,0.2414,True,8
+microsoft_deberta-v3-large,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,6.792,0.3735,True,8
+microsoft_deberta-v3-large,match,match_L_01,match_01,L,0,The match was difficult to start.,10.0234,0.4646,True,18
+microsoft_deberta-v3-large,match,match_R_01,match_01,R,0,The match was difficult to start.,9.7765,0.4532,True,18
+microsoft_deberta-v3-large,match,match_L_03,match_03,L,0,The match ended quickly.,10.8385,0.5024,True,18
+microsoft_deberta-v3-large,match,match_R_03,match_03,R,0,The match ended quickly.,11.4492,0.5307,True,18
+microsoft_deberta-v3-large,match,match_L_05,match_05,L,0,They checked the match.,5.5409,0.2568,True,18
+microsoft_deberta-v3-large,match,match_R_05,match_05,R,0,They checked the match.,5.9356,0.2751,True,18
+microsoft_deberta-v3-large,match,match_L_07,match_07,L,0,The match caused trouble.,7.4038,0.3432,True,18
+microsoft_deberta-v3-large,match,match_R_07,match_07,R,0,The match caused trouble.,8.421,0.3904,True,18
+microsoft_deberta-v3-large,match,match_L_09,match_09,L,0,The match was watched closely.,12.6834,0.5879,True,18
+microsoft_deberta-v3-large,match,match_R_09,match_09,R,0,The match was watched closely.,12.4362,0.5765,True,18
+microsoft_deberta-v3-large,match,match_L_02,match_02,L,1,The match was difficult to start.,6.0628,0.281,True,18
+microsoft_deberta-v3-large,match,match_R_02,match_02,R,1,The match was difficult to start.,-4.9155,-0.2279,False,18
+microsoft_deberta-v3-large,match,match_L_04,match_04,L,1,The match ended quickly.,10.2983,0.4774,True,18
+microsoft_deberta-v3-large,match,match_R_04,match_04,R,1,The match ended quickly.,10.4176,0.4829,True,18
+microsoft_deberta-v3-large,match,match_L_06,match_06,L,1,They checked the match.,10.8263,0.5019,True,18
+microsoft_deberta-v3-large,match,match_R_06,match_06,R,1,They checked the match.,11.8647,0.55,True,18
+microsoft_deberta-v3-large,match,match_L_08,match_08,L,1,The match caused trouble.,10.7928,0.5003,True,18
+microsoft_deberta-v3-large,match,match_R_08,match_08,R,1,The match caused trouble.,10.2006,0.4729,True,18
+microsoft_deberta-v3-large,match,match_L_10,match_10,L,1,The match was watched closely.,11.3036,0.524,True,18
+microsoft_deberta-v3-large,match,match_R_10,match_10,R,1,The match was watched closely.,11.7147,0.543,True,18
+microsoft_deberta-v3-large,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,2.9761,0.1941,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,3.5417,0.231,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,1.8729,0.1222,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,1.7871,0.1166,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,2.304,0.1503,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,2.0555,0.1341,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,4.671,0.3047,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,4.2743,0.2788,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,2.4067,0.157,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,3.024,0.1973,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,4.3935,0.2866,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,6.0088,0.392,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,7.0924,0.4626,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,8.0077,0.5223,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,6.83,0.4455,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,8.5186,0.5557,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,4.8614,0.3171,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,4.9861,0.3252,True,23
+microsoft_deberta-v3-large,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,8.64,0.5636,True,23
+microsoft_deberta-v3-large,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,9.6738,0.631,True,23
+FacebookAI_roberta-large,bank,bank_L_01,bank_01,L,0,The bank was unstable.,-0.2163,-0.0154,False,21
+FacebookAI_roberta-large,bank,bank_R_01,bank_01,R,0,The bank was unstable.,0.1985,0.0141,True,21
+FacebookAI_roberta-large,bank,bank_L_03,bank_03,L,0,They examined the bank.,4.8628,0.3459,True,21
+FacebookAI_roberta-large,bank,bank_R_03,bank_03,R,0,They examined the bank.,4.8294,0.3435,True,21
+FacebookAI_roberta-large,bank,bank_L_05,bank_05,L,0,The bank had changed.,6.2151,0.4421,True,21
+FacebookAI_roberta-large,bank,bank_R_05,bank_05,R,0,The bank had changed.,6.8245,0.4855,True,21
+FacebookAI_roberta-large,bank,bank_L_07,bank_07,L,0,The bank needed protection.,2.8542,0.203,True,21
+FacebookAI_roberta-large,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-2.3632,-0.1681,False,21
+FacebookAI_roberta-large,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,7.8425,0.5579,True,21
+FacebookAI_roberta-large,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,7.2797,0.5179,True,21
+FacebookAI_roberta-large,bank,bank_L_02,bank_02,L,1,The bank was unstable.,5.2147,0.371,True,21
+FacebookAI_roberta-large,bank,bank_R_02,bank_02,R,1,The bank was unstable.,4.71,0.3351,True,21
+FacebookAI_roberta-large,bank,bank_L_04,bank_04,L,1,They examined the bank.,7.1735,0.5103,True,21
+FacebookAI_roberta-large,bank,bank_R_04,bank_04,R,1,They examined the bank.,7.2437,0.5153,True,21
+FacebookAI_roberta-large,bank,bank_L_06,bank_06,L,1,The bank had changed.,8.403,0.5978,True,21
+FacebookAI_roberta-large,bank,bank_R_06,bank_06,R,1,The bank had changed.,7.211,0.513,True,21
+FacebookAI_roberta-large,bank,bank_L_08,bank_08,L,1,The bank needed protection.,8.3803,0.5961,True,21
+FacebookAI_roberta-large,bank,bank_R_08,bank_08,R,1,The bank needed protection.,7.6996,0.5477,True,21
+FacebookAI_roberta-large,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,8.5851,0.6107,True,21
+FacebookAI_roberta-large,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,8.5685,0.6095,True,21
+FacebookAI_roberta-large,bark,bark_L_01,bark_01,L,0,The bark drew attention.,7.3848,0.5269,True,19
+FacebookAI_roberta-large,bark,bark_R_01,bark_01,R,0,The bark drew attention.,7.8051,0.5569,True,19
+FacebookAI_roberta-large,bark,bark_L_03,bark_03,L,0,They studied the bark.,-3.9007,-0.2783,False,19
+FacebookAI_roberta-large,bark,bark_R_03,bark_03,R,0,They studied the bark.,-5.8634,-0.4183,False,19
+FacebookAI_roberta-large,bark,bark_L_05,bark_05,L,0,The bark was unusual.,5.359,0.3824,True,19
+FacebookAI_roberta-large,bark,bark_R_05,bark_05,R,0,The bark was unusual.,5.7119,0.4075,True,19
+FacebookAI_roberta-large,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,0.8239,0.0588,True,19
+FacebookAI_roberta-large,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,0.9894,0.0706,True,19
+FacebookAI_roberta-large,bark,bark_L_09,bark_09,L,0,The bark became the focus.,-0.4812,-0.0343,False,19
+FacebookAI_roberta-large,bark,bark_R_09,bark_09,R,0,The bark became the focus.,1.8241,0.1301,True,19
+FacebookAI_roberta-large,bark,bark_L_02,bark_02,L,1,The bark drew attention.,7.4392,0.5308,True,19
+FacebookAI_roberta-large,bark,bark_R_02,bark_02,R,1,The bark drew attention.,5.0361,0.3593,True,19
+FacebookAI_roberta-large,bark,bark_L_04,bark_04,L,1,They studied the bark.,8.495,0.6061,True,19
+FacebookAI_roberta-large,bark,bark_R_04,bark_04,R,1,They studied the bark.,8.3045,0.5925,True,19
+FacebookAI_roberta-large,bark,bark_L_06,bark_06,L,1,The bark was unusual.,7.2571,0.5178,True,19
+FacebookAI_roberta-large,bark,bark_R_06,bark_06,R,1,The bark was unusual.,6.571,0.4688,True,19
+FacebookAI_roberta-large,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,8.5766,0.6119,True,19
+FacebookAI_roberta-large,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,7.8846,0.5626,True,19
+FacebookAI_roberta-large,bark,bark_L_10,bark_10,L,1,The bark became the focus.,6.5212,0.4653,True,19
+FacebookAI_roberta-large,bark,bark_R_10,bark_10,R,1,The bark became the focus.,5.8298,0.4159,True,19
+FacebookAI_roberta-large,bat,bat_L_01,bat_01,L,0,They watched the bat.,4.7402,0.3575,True,19
+FacebookAI_roberta-large,bat,bat_R_01,bat_01,R,0,They watched the bat.,4.8305,0.3643,True,19
+FacebookAI_roberta-large,bat,bat_L_03,bat_03,L,0,She checked the bat.,7.8057,0.5887,True,19
+FacebookAI_roberta-large,bat,bat_R_03,bat_03,R,0,She checked the bat.,7.7031,0.5809,True,19
+FacebookAI_roberta-large,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,5.2658,0.3971,True,19
+FacebookAI_roberta-large,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,6.7425,0.5085,True,19
+FacebookAI_roberta-large,bat,bat_L_07,bat_07,L,0,The bat was marked.,4.0417,0.3048,True,19
+FacebookAI_roberta-large,bat,bat_R_07,bat_07,R,0,The bat was marked.,2.8599,0.2157,True,19
+FacebookAI_roberta-large,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,6.9918,0.5273,True,19
+FacebookAI_roberta-large,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,6.9944,0.5275,True,19
+FacebookAI_roberta-large,bat,bat_L_02,bat_02,L,1,They watched the bat.,7.3351,0.5532,True,19
+FacebookAI_roberta-large,bat,bat_R_02,bat_02,R,1,They watched the bat.,8.0601,0.6078,True,19
+FacebookAI_roberta-large,bat,bat_L_04,bat_04,L,1,She checked the bat.,8.1084,0.6115,True,19
+FacebookAI_roberta-large,bat,bat_R_04,bat_04,R,1,She checked the bat.,8.9947,0.6783,True,19
+FacebookAI_roberta-large,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,6.4108,0.4835,True,19
+FacebookAI_roberta-large,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,6.9694,0.5256,True,19
+FacebookAI_roberta-large,bat,bat_L_08,bat_08,L,1,The bat was marked.,8.2072,0.6189,True,19
+FacebookAI_roberta-large,bat,bat_R_08,bat_08,R,1,The bat was marked.,8.2277,0.6205,True,19
+FacebookAI_roberta-large,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,8.6168,0.6498,True,19
+FacebookAI_roberta-large,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,8.8812,0.6698,True,19
+FacebookAI_roberta-large,crane,crane_L_01,crane_01,L,0,They watched the crane.,4.9362,0.3969,True,15
+FacebookAI_roberta-large,crane,crane_R_01,crane_01,R,0,They watched the crane.,4.4155,0.355,True,15
+FacebookAI_roberta-large,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,5.9614,0.4794,True,15
+FacebookAI_roberta-large,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,7.177,0.5771,True,15
+FacebookAI_roberta-large,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,8.8729,0.7135,True,15
+FacebookAI_roberta-large,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,8.4874,0.6825,True,15
+FacebookAI_roberta-large,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,8.308,0.668,True,15
+FacebookAI_roberta-large,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,7.9574,0.6399,True,15
+FacebookAI_roberta-large,crane,crane_L_09,crane_09,L,0,The crane became the focus.,8.9234,0.7175,True,15
+FacebookAI_roberta-large,crane,crane_R_09,crane_09,R,0,The crane became the focus.,8.3556,0.6719,True,15
+FacebookAI_roberta-large,crane,crane_L_02,crane_02,L,1,They watched the crane.,6.4756,0.5207,True,15
+FacebookAI_roberta-large,crane,crane_R_02,crane_02,R,1,They watched the crane.,6.9158,0.5561,True,15
+FacebookAI_roberta-large,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,8.601,0.6916,True,15
+FacebookAI_roberta-large,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,8.9927,0.7231,True,15
+FacebookAI_roberta-large,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,5.9283,0.4767,True,15
+FacebookAI_roberta-large,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,5.5352,0.4451,True,15
+FacebookAI_roberta-large,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,5.9624,0.4794,True,15
+FacebookAI_roberta-large,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,5.6016,0.4504,True,15
+FacebookAI_roberta-large,crane,crane_L_10,crane_10,L,1,The crane became the focus.,5.1913,0.4174,True,15
+FacebookAI_roberta-large,crane,crane_R_10,crane_10,R,1,The crane became the focus.,5.5846,0.4491,True,15
+FacebookAI_roberta-large,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,7.1883,0.532,True,22
+FacebookAI_roberta-large,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,6.5608,0.4855,True,22
+FacebookAI_roberta-large,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-2.9132,-0.2156,False,22
+FacebookAI_roberta-large,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-4.2025,-0.311,False,22
+FacebookAI_roberta-large,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,0.9522,0.0705,True,22
+FacebookAI_roberta-large,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,3.5672,0.264,True,22
+FacebookAI_roberta-large,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-1.4732,-0.109,False,22
+FacebookAI_roberta-large,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-0.436,-0.0323,False,22
+FacebookAI_roberta-large,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,1.4545,0.1076,True,22
+FacebookAI_roberta-large,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,3.0894,0.2286,True,22
+FacebookAI_roberta-large,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,8.3624,0.6189,True,22
+FacebookAI_roberta-large,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,8.6737,0.6419,True,22
+FacebookAI_roberta-large,spring,spring_L_04,spring_04,L,1,They monitored the spring.,8.5879,0.6356,True,22
+FacebookAI_roberta-large,spring,spring_R_04,spring_04,R,1,They monitored the spring.,10.2392,0.7578,True,22
+FacebookAI_roberta-large,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,2.456,0.1818,True,22
+FacebookAI_roberta-large,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,3.2433,0.24,True,22
+FacebookAI_roberta-large,spring,spring_L_08,spring_08,L,1,The spring became a concern.,9.6469,0.7139,True,22
+FacebookAI_roberta-large,spring,spring_R_08,spring_08,R,1,The spring became a concern.,10.0755,0.7457,True,22
+FacebookAI_roberta-large,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,8.0579,0.5963,True,22
+FacebookAI_roberta-large,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,9.917,0.7339,True,22
+FacebookAI_roberta-large,match,match_L_01,match_01,L,0,The match was difficult to start.,8.9214,0.7171,True,23
+FacebookAI_roberta-large,match,match_R_01,match_01,R,0,The match was difficult to start.,9.0478,0.7272,True,23
+FacebookAI_roberta-large,match,match_L_03,match_03,L,0,The match ended quickly.,7.7635,0.624,True,23
+FacebookAI_roberta-large,match,match_R_03,match_03,R,0,The match ended quickly.,8.1928,0.6585,True,23
+FacebookAI_roberta-large,match,match_L_05,match_05,L,0,They checked the match.,1.2882,0.1035,True,23
+FacebookAI_roberta-large,match,match_R_05,match_05,R,0,They checked the match.,2.2834,0.1835,True,23
+FacebookAI_roberta-large,match,match_L_07,match_07,L,0,The match caused trouble.,5.69,0.4573,True,23
+FacebookAI_roberta-large,match,match_R_07,match_07,R,0,The match caused trouble.,8.1686,0.6566,True,23
+FacebookAI_roberta-large,match,match_L_09,match_09,L,0,The match was watched closely.,5.3246,0.428,True,23
+FacebookAI_roberta-large,match,match_R_09,match_09,R,0,The match was watched closely.,5.7396,0.4613,True,23
+FacebookAI_roberta-large,match,match_L_02,match_02,L,1,The match was difficult to start.,5.1867,0.4169,True,23
+FacebookAI_roberta-large,match,match_R_02,match_02,R,1,The match was difficult to start.,-4.0549,-0.3259,False,23
+FacebookAI_roberta-large,match,match_L_04,match_04,L,1,The match ended quickly.,-2.0853,-0.1676,False,23
+FacebookAI_roberta-large,match,match_R_04,match_04,R,1,The match ended quickly.,-4.4907,-0.3609,False,23
+FacebookAI_roberta-large,match,match_L_06,match_06,L,1,They checked the match.,6.7979,0.5464,True,23
+FacebookAI_roberta-large,match,match_R_06,match_06,R,1,They checked the match.,7.2343,0.5815,True,23
+FacebookAI_roberta-large,match,match_L_08,match_08,L,1,The match caused trouble.,5.8104,0.467,True,23
+FacebookAI_roberta-large,match,match_R_08,match_08,R,1,The match caused trouble.,-2.8213,-0.2268,False,23
+FacebookAI_roberta-large,match,match_L_10,match_10,L,1,The match was watched closely.,0.3734,0.03,True,23
+FacebookAI_roberta-large,match,match_R_10,match_10,R,1,The match was watched closely.,-3.7679,-0.3028,False,23
+FacebookAI_roberta-large,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,-0.7075,-0.049,False,21
+FacebookAI_roberta-large,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,4.225,0.2926,True,21
+FacebookAI_roberta-large,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,5.6713,0.3927,True,21
+FacebookAI_roberta-large,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,5.831,0.4038,True,21
+FacebookAI_roberta-large,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,7.962,0.5513,True,21
+FacebookAI_roberta-large,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,8.784,0.6083,True,21
+FacebookAI_roberta-large,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,8.7285,0.6044,True,21
+FacebookAI_roberta-large,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,9.6237,0.6664,True,21
+FacebookAI_roberta-large,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,8.027,0.5558,True,21
+FacebookAI_roberta-large,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,8.6337,0.5979,True,21
+FacebookAI_roberta-large,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,9.2731,0.6421,True,21
+FacebookAI_roberta-large,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,10.3095,0.7139,True,21
+FacebookAI_roberta-large,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,7.7245,0.5349,True,21
+FacebookAI_roberta-large,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,7.6548,0.5301,True,21
+FacebookAI_roberta-large,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,8.341,0.5776,True,21
+FacebookAI_roberta-large,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,9.2638,0.6415,True,21
+FacebookAI_roberta-large,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,0.8656,0.0599,True,21
+FacebookAI_roberta-large,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,-4.2223,-0.2924,False,21
+FacebookAI_roberta-large,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,8.4038,0.5819,True,21
+FacebookAI_roberta-large,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,9.6258,0.6665,True,21
+FacebookAI_xlm-roberta-large,bank,bank_L_01,bank_01,L,0,The bank was unstable.,3.7082,0.3349,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_01,bank_01,R,0,The bank was unstable.,3.4981,0.3159,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_03,bank_03,L,0,They examined the bank.,-0.4417,-0.0399,False,23
+FacebookAI_xlm-roberta-large,bank,bank_R_03,bank_03,R,0,They examined the bank.,-0.2541,-0.0229,False,23
+FacebookAI_xlm-roberta-large,bank,bank_L_05,bank_05,L,0,The bank had changed.,6.2128,0.5611,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_05,bank_05,R,0,The bank had changed.,5.9353,0.536,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_07,bank_07,L,0,The bank needed protection.,-2.9705,-0.2683,False,23
+FacebookAI_xlm-roberta-large,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-0.4869,-0.044,False,23
+FacebookAI_xlm-roberta-large,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,5.7709,0.5211,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,5.2524,0.4743,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_02,bank_02,L,1,The bank was unstable.,1.5428,0.1393,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_02,bank_02,R,1,The bank was unstable.,1.18,0.1066,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_04,bank_04,L,1,They examined the bank.,5.8281,0.5263,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_04,bank_04,R,1,They examined the bank.,6.5379,0.5904,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_06,bank_06,L,1,The bank had changed.,3.6573,0.3303,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_06,bank_06,R,1,The bank had changed.,2.589,0.2338,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_08,bank_08,L,1,The bank needed protection.,7.8359,0.7076,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_08,bank_08,R,1,The bank needed protection.,7.9612,0.7189,True,23
+FacebookAI_xlm-roberta-large,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,7.602,0.6865,True,23
+FacebookAI_xlm-roberta-large,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,7.5709,0.6837,True,23
+FacebookAI_xlm-roberta-large,bark,bark_L_01,bark_01,L,0,The bark drew attention.,2.8651,0.4237,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_01,bark_01,R,0,The bark drew attention.,3.8785,0.5736,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_03,bark_03,L,0,They studied the bark.,-2.9868,-0.4417,False,21
+FacebookAI_xlm-roberta-large,bark,bark_R_03,bark_03,R,0,They studied the bark.,-2.2373,-0.3309,False,21
+FacebookAI_xlm-roberta-large,bark,bark_L_05,bark_05,L,0,The bark was unusual.,1.3381,0.1979,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_05,bark_05,R,0,The bark was unusual.,1.5885,0.2349,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,-0.8188,-0.1211,False,21
+FacebookAI_xlm-roberta-large,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,-0.5074,-0.075,False,21
+FacebookAI_xlm-roberta-large,bark,bark_L_09,bark_09,L,0,The bark became the focus.,2.2659,0.3351,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_09,bark_09,R,0,The bark became the focus.,2.1507,0.3181,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_02,bark_02,L,1,The bark drew attention.,0.9321,0.1378,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_02,bark_02,R,1,The bark drew attention.,0.4364,0.0645,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_04,bark_04,L,1,They studied the bark.,1.1814,0.1747,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_04,bark_04,R,1,They studied the bark.,1.22,0.1804,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_06,bark_06,L,1,The bark was unusual.,3.9373,0.5823,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_06,bark_06,R,1,The bark was unusual.,3.9846,0.5893,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,4.3333,0.6408,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,4.314,0.638,True,21
+FacebookAI_xlm-roberta-large,bark,bark_L_10,bark_10,L,1,The bark became the focus.,3.8688,0.5721,True,21
+FacebookAI_xlm-roberta-large,bark,bark_R_10,bark_10,R,1,The bark became the focus.,3.8002,0.562,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_01,bat_01,L,0,They watched the bat.,5.8708,0.5988,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_01,bat_01,R,0,They watched the bat.,5.963,0.6082,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_03,bat_03,L,0,She checked the bat.,7.079,0.722,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_03,bat_03,R,0,She checked the bat.,7.382,0.7529,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,3.5997,0.3672,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,3.9617,0.4041,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_07,bat_07,L,0,The bat was marked.,2.6883,0.2742,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_07,bat_07,R,0,The bat was marked.,1.6288,0.1661,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,3.892,0.397,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,3.4975,0.3567,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_02,bat_02,L,1,They watched the bat.,4.1216,0.4204,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_02,bat_02,R,1,They watched the bat.,4.0694,0.4151,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_04,bat_04,L,1,She checked the bat.,-3.2404,-0.3305,False,21
+FacebookAI_xlm-roberta-large,bat,bat_R_04,bat_04,R,1,She checked the bat.,-1.1579,-0.1181,False,21
+FacebookAI_xlm-roberta-large,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,-2.3475,-0.2394,False,21
+FacebookAI_xlm-roberta-large,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-1.9191,-0.1957,False,21
+FacebookAI_xlm-roberta-large,bat,bat_L_08,bat_08,L,1,The bat was marked.,3.5233,0.3594,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_08,bat_08,R,1,The bat was marked.,3.2745,0.334,True,21
+FacebookAI_xlm-roberta-large,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,3.3829,0.345,True,21
+FacebookAI_xlm-roberta-large,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,4.2258,0.431,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_01,crane_01,L,0,They watched the crane.,-0.4143,-0.0594,False,21
+FacebookAI_xlm-roberta-large,crane,crane_R_01,crane_01,R,0,They watched the crane.,0.0067,0.001,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,-0.948,-0.136,False,21
+FacebookAI_xlm-roberta-large,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,-2.0826,-0.2988,False,21
+FacebookAI_xlm-roberta-large,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,3.4385,0.4933,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,3.4841,0.4998,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,3.2066,0.46,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,1.8312,0.2627,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_09,crane_09,L,0,The crane became the focus.,3.9685,0.5693,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_09,crane_09,R,0,The crane became the focus.,3.7888,0.5435,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_02,crane_02,L,1,They watched the crane.,3.2425,0.4652,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_02,crane_02,R,1,They watched the crane.,3.6716,0.5267,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,4.7789,0.6856,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,5.0512,0.7247,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,3.2701,0.4691,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,3.5954,0.5158,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,4.1608,0.5969,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,4.2382,0.608,True,21
+FacebookAI_xlm-roberta-large,crane,crane_L_10,crane_10,L,1,The crane became the focus.,4.1759,0.5991,True,21
+FacebookAI_xlm-roberta-large,crane,crane_R_10,crane_10,R,1,The crane became the focus.,3.8988,0.5593,True,21
+FacebookAI_xlm-roberta-large,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,-0.1776,-0.0263,False,13
+FacebookAI_xlm-roberta-large,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,-1.1105,-0.1644,False,13
+FacebookAI_xlm-roberta-large,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-0.2834,-0.042,False,13
+FacebookAI_xlm-roberta-large,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-1.2533,-0.1856,False,13
+FacebookAI_xlm-roberta-large,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,0.6106,0.0904,True,13
+FacebookAI_xlm-roberta-large,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,0.1165,0.0173,True,13
+FacebookAI_xlm-roberta-large,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-0.3454,-0.0511,False,13
+FacebookAI_xlm-roberta-large,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-0.8912,-0.132,False,13
+FacebookAI_xlm-roberta-large,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-0.8245,-0.1221,False,13
+FacebookAI_xlm-roberta-large,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-0.9766,-0.1446,False,13
+FacebookAI_xlm-roberta-large,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,1.9457,0.2881,True,13
+FacebookAI_xlm-roberta-large,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,2.052,0.3038,True,13
+FacebookAI_xlm-roberta-large,spring,spring_L_04,spring_04,L,1,They monitored the spring.,1.1299,0.1673,True,13
+FacebookAI_xlm-roberta-large,spring,spring_R_04,spring_04,R,1,They monitored the spring.,2.2367,0.3312,True,13
+FacebookAI_xlm-roberta-large,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,-0.2809,-0.0416,False,13
+FacebookAI_xlm-roberta-large,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,0.5275,0.0781,True,13
+FacebookAI_xlm-roberta-large,spring,spring_L_08,spring_08,L,1,The spring became a concern.,2.9224,0.4327,True,13
+FacebookAI_xlm-roberta-large,spring,spring_R_08,spring_08,R,1,The spring became a concern.,3.2157,0.4761,True,13
+FacebookAI_xlm-roberta-large,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,2.3477,0.3476,True,13
+FacebookAI_xlm-roberta-large,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,2.0393,0.3019,True,13
+FacebookAI_xlm-roberta-large,match,match_L_01,match_01,L,0,The match was difficult to start.,4.5604,0.5768,True,20
+FacebookAI_xlm-roberta-large,match,match_R_01,match_01,R,0,The match was difficult to start.,4.8562,0.6142,True,20
+FacebookAI_xlm-roberta-large,match,match_L_03,match_03,L,0,The match ended quickly.,4.229,0.5349,True,20
+FacebookAI_xlm-roberta-large,match,match_R_03,match_03,R,0,The match ended quickly.,4.4439,0.562,True,20
+FacebookAI_xlm-roberta-large,match,match_L_05,match_05,L,0,They checked the match.,-0.4089,-0.0517,False,20
+FacebookAI_xlm-roberta-large,match,match_R_05,match_05,R,0,They checked the match.,0.5308,0.0671,True,20
+FacebookAI_xlm-roberta-large,match,match_L_07,match_07,L,0,The match caused trouble.,3.9171,0.4954,True,20
+FacebookAI_xlm-roberta-large,match,match_R_07,match_07,R,0,The match caused trouble.,4.6448,0.5875,True,20
+FacebookAI_xlm-roberta-large,match,match_L_09,match_09,L,0,The match was watched closely.,4.6565,0.5889,True,20
+FacebookAI_xlm-roberta-large,match,match_R_09,match_09,R,0,The match was watched closely.,4.361,0.5516,True,20
+FacebookAI_xlm-roberta-large,match,match_L_02,match_02,L,1,The match was difficult to start.,2.5608,0.3239,True,20
+FacebookAI_xlm-roberta-large,match,match_R_02,match_02,R,1,The match was difficult to start.,2.1217,0.2683,True,20
+FacebookAI_xlm-roberta-large,match,match_L_04,match_04,L,1,The match ended quickly.,-0.6941,-0.0878,False,20
+FacebookAI_xlm-roberta-large,match,match_R_04,match_04,R,1,The match ended quickly.,-2.9628,-0.3747,False,20
+FacebookAI_xlm-roberta-large,match,match_L_06,match_06,L,1,They checked the match.,4.2568,0.5384,True,20
+FacebookAI_xlm-roberta-large,match,match_R_06,match_06,R,1,They checked the match.,4.4872,0.5675,True,20
+FacebookAI_xlm-roberta-large,match,match_L_08,match_08,L,1,The match caused trouble.,2.8382,0.359,True,20
+FacebookAI_xlm-roberta-large,match,match_R_08,match_08,R,1,The match caused trouble.,0.6744,0.0853,True,20
+FacebookAI_xlm-roberta-large,match,match_L_10,match_10,L,1,The match was watched closely.,0.9771,0.1236,True,20
+FacebookAI_xlm-roberta-large,match,match_R_10,match_10,R,1,The match was watched closely.,0.7815,0.0988,True,20
+FacebookAI_xlm-roberta-large,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,4.6774,0.4871,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,4.9035,0.5106,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,5.8262,0.6067,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,3.4875,0.3632,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,6.0992,0.6351,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,5.6762,0.5911,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,5.3829,0.5605,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,4.79,0.4988,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,3.6337,0.3784,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,3.6888,0.3841,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,6.2285,0.6486,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,6.3797,0.6643,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,4.7327,0.4928,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,4.2883,0.4465,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,6.3799,0.6643,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,6.4549,0.6721,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,1.2679,0.132,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,2.3619,0.2459,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,6.0347,0.6284,True,22
+FacebookAI_xlm-roberta-large,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,6.5374,0.6807,True,22
+Qwen_Qwen2.5-3B,bank,bank_L_01,bank_01,L,0,The bank was unstable.,-0.3587,-0.018,False,7
+Qwen_Qwen2.5-3B,bank,bank_R_01,bank_01,R,0,The bank was unstable.,-11.799,-0.5917,False,7
+Qwen_Qwen2.5-3B,bank,bank_L_03,bank_03,L,0,They examined the bank.,5.2678,0.2642,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_03,bank_03,R,0,They examined the bank.,-4.0114,-0.2012,False,7
+Qwen_Qwen2.5-3B,bank,bank_L_05,bank_05,L,0,The bank had changed.,14.4874,0.7265,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_05,bank_05,R,0,The bank had changed.,-11.799,-0.5917,False,7
+Qwen_Qwen2.5-3B,bank,bank_L_07,bank_07,L,0,The bank needed protection.,-5.0105,-0.2513,False,7
+Qwen_Qwen2.5-3B,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-11.799,-0.5917,False,7
+Qwen_Qwen2.5-3B,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,6.3988,0.3209,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,-11.799,-0.5917,False,7
+Qwen_Qwen2.5-3B,bank,bank_L_02,bank_02,L,1,The bank was unstable.,11.1127,0.5573,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_02,bank_02,R,1,The bank was unstable.,11.799,0.5917,True,7
+Qwen_Qwen2.5-3B,bank,bank_L_04,bank_04,L,1,They examined the bank.,9.4087,0.4718,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_04,bank_04,R,1,They examined the bank.,4.0114,0.2012,True,7
+Qwen_Qwen2.5-3B,bank,bank_L_06,bank_06,L,1,The bank had changed.,10.3649,0.5198,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_06,bank_06,R,1,The bank had changed.,11.799,0.5917,True,7
+Qwen_Qwen2.5-3B,bank,bank_L_08,bank_08,L,1,The bank needed protection.,10.3166,0.5174,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_08,bank_08,R,1,The bank needed protection.,11.799,0.5917,True,7
+Qwen_Qwen2.5-3B,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,11.0722,0.5553,True,7
+Qwen_Qwen2.5-3B,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,11.799,0.5917,True,7
+Qwen_Qwen2.5-3B,bark,bark_L_01,bark_01,L,0,The bark drew attention.,28.8715,0.6544,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_01,bark_01,R,0,The bark drew attention.,-30.4836,-0.691,False,14
+Qwen_Qwen2.5-3B,bark,bark_L_03,bark_03,L,0,They studied the bark.,8.7867,0.1992,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_03,bark_03,R,0,They studied the bark.,-22.8447,-0.5178,False,14
+Qwen_Qwen2.5-3B,bark,bark_L_05,bark_05,L,0,The bark was unusual.,24.1111,0.5465,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_05,bark_05,R,0,The bark was unusual.,-30.4836,-0.691,False,14
+Qwen_Qwen2.5-3B,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,16.7665,0.38,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,-30.4836,-0.691,False,14
+Qwen_Qwen2.5-3B,bark,bark_L_09,bark_09,L,0,The bark became the focus.,15.9961,0.3626,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_09,bark_09,R,0,The bark became the focus.,-30.4836,-0.691,False,14
+Qwen_Qwen2.5-3B,bark,bark_L_02,bark_02,L,1,The bark drew attention.,19.0092,0.4309,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_02,bark_02,R,1,The bark drew attention.,30.4836,0.691,True,14
+Qwen_Qwen2.5-3B,bark,bark_L_04,bark_04,L,1,They studied the bark.,18.7495,0.425,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_04,bark_04,R,1,They studied the bark.,22.8447,0.5178,True,14
+Qwen_Qwen2.5-3B,bark,bark_L_06,bark_06,L,1,The bark was unusual.,23.2163,0.5263,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_06,bark_06,R,1,The bark was unusual.,30.4836,0.691,True,14
+Qwen_Qwen2.5-3B,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,19.3103,0.4377,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,30.4836,0.691,True,14
+Qwen_Qwen2.5-3B,bark,bark_L_10,bark_10,L,1,The bark became the focus.,17.5371,0.3975,True,14
+Qwen_Qwen2.5-3B,bark,bark_R_10,bark_10,R,1,The bark became the focus.,30.4836,0.691,True,14
+Qwen_Qwen2.5-3B,bat,bat_L_01,bat_01,L,0,They watched the bat.,17.8046,0.1722,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_01,bat_01,R,0,They watched the bat.,-15.6716,-0.1516,False,32
+Qwen_Qwen2.5-3B,bat,bat_L_03,bat_03,L,0,She checked the bat.,36.0469,0.3487,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_03,bat_03,R,0,She checked the bat.,21.922,0.2121,True,32
+Qwen_Qwen2.5-3B,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,27.966,0.2705,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,39.6933,0.384,True,32
+Qwen_Qwen2.5-3B,bat,bat_L_07,bat_07,L,0,The bat was marked.,17.5334,0.1696,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_07,bat_07,R,0,The bat was marked.,-44.1533,-0.4271,False,32
+Qwen_Qwen2.5-3B,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,19.9798,0.1933,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,-44.1533,-0.4271,False,32
+Qwen_Qwen2.5-3B,bat,bat_L_02,bat_02,L,1,They watched the bat.,40.6237,0.393,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_02,bat_02,R,1,They watched the bat.,15.6716,0.1516,True,32
+Qwen_Qwen2.5-3B,bat,bat_L_04,bat_04,L,1,She checked the bat.,4.301,0.0416,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_04,bat_04,R,1,She checked the bat.,-21.922,-0.2121,False,32
+Qwen_Qwen2.5-3B,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,-8.391,-0.0812,False,32
+Qwen_Qwen2.5-3B,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-39.6933,-0.384,False,32
+Qwen_Qwen2.5-3B,bat,bat_L_08,bat_08,L,1,The bat was marked.,42.3969,0.4101,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_08,bat_08,R,1,The bat was marked.,44.1533,0.4271,True,32
+Qwen_Qwen2.5-3B,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,33.6442,0.3255,True,32
+Qwen_Qwen2.5-3B,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,44.1533,0.4271,True,32
+Qwen_Qwen2.5-3B,crane,crane_L_01,crane_01,L,0,They watched the crane.,45.1029,0.4924,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_01,crane_01,R,0,They watched the crane.,11.7924,0.1287,True,32
+Qwen_Qwen2.5-3B,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,32.683,0.3568,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,-63.3074,-0.6911,False,32
+Qwen_Qwen2.5-3B,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,41.9229,0.4576,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,-63.3074,-0.6911,False,32
+Qwen_Qwen2.5-3B,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,44.7676,0.4887,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,-63.3074,-0.6911,False,32
+Qwen_Qwen2.5-3B,crane,crane_L_09,crane_09,L,0,The crane became the focus.,46.4128,0.5067,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_09,crane_09,R,0,The crane became the focus.,-63.58,-0.6941,False,32
+Qwen_Qwen2.5-3B,crane,crane_L_02,crane_02,L,1,They watched the crane.,36.737,0.401,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_02,crane_02,R,1,They watched the crane.,-11.8526,-0.1294,False,32
+Qwen_Qwen2.5-3B,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,43.7701,0.4778,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,63.58,0.6941,True,32
+Qwen_Qwen2.5-3B,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,53.4005,0.5829,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,63.58,0.6941,True,32
+Qwen_Qwen2.5-3B,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,33.1654,0.362,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,63.3074,0.6911,True,32
+Qwen_Qwen2.5-3B,crane,crane_L_10,crane_10,L,1,The crane became the focus.,41.6928,0.4551,True,32
+Qwen_Qwen2.5-3B,crane,crane_R_10,crane_10,R,1,The crane became the focus.,63.3074,0.6911,True,32
+Qwen_Qwen2.5-3B,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,5.6844,0.0546,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,-67.5569,-0.6485,False,32
+Qwen_Qwen2.5-3B,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-20.9339,-0.2009,False,32
+Qwen_Qwen2.5-3B,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-50.8853,-0.4884,False,32
+Qwen_Qwen2.5-3B,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,-5.9084,-0.0567,False,32
+Qwen_Qwen2.5-3B,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,-67.5569,-0.6485,False,32
+Qwen_Qwen2.5-3B,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-9.9543,-0.0955,False,32
+Qwen_Qwen2.5-3B,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-67.5569,-0.6485,False,32
+Qwen_Qwen2.5-3B,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-9.1615,-0.0879,False,32
+Qwen_Qwen2.5-3B,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-67.5569,-0.6485,False,32
+Qwen_Qwen2.5-3B,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,46.0339,0.4419,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,67.5569,0.6485,True,32
+Qwen_Qwen2.5-3B,spring,spring_L_04,spring_04,L,1,They monitored the spring.,34.2289,0.3286,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_04,spring_04,R,1,They monitored the spring.,50.8853,0.4884,True,32
+Qwen_Qwen2.5-3B,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,25.8787,0.2484,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,67.5569,0.6485,True,32
+Qwen_Qwen2.5-3B,spring,spring_L_08,spring_08,L,1,The spring became a concern.,17.894,0.1718,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_08,spring_08,R,1,The spring became a concern.,67.5569,0.6485,True,32
+Qwen_Qwen2.5-3B,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,51.8001,0.4972,True,32
+Qwen_Qwen2.5-3B,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,67.5569,0.6485,True,32
+Qwen_Qwen2.5-3B,match,match_L_01,match_01,L,0,The match was difficult to start.,24.6913,0.5409,True,15
+Qwen_Qwen2.5-3B,match,match_R_01,match_01,R,0,The match was difficult to start.,16.9318,0.3709,True,15
+Qwen_Qwen2.5-3B,match,match_L_03,match_03,L,0,The match ended quickly.,25.5896,0.5605,True,15
+Qwen_Qwen2.5-3B,match,match_R_03,match_03,R,0,The match ended quickly.,16.9318,0.3709,True,15
+Qwen_Qwen2.5-3B,match,match_L_05,match_05,L,0,They checked the match.,19.4666,0.4264,True,15
+Qwen_Qwen2.5-3B,match,match_R_05,match_05,R,0,They checked the match.,8.4351,0.1848,True,15
+Qwen_Qwen2.5-3B,match,match_L_07,match_07,L,0,The match caused trouble.,27.8683,0.6104,True,15
+Qwen_Qwen2.5-3B,match,match_R_07,match_07,R,0,The match caused trouble.,16.9318,0.3709,True,15
+Qwen_Qwen2.5-3B,match,match_L_09,match_09,L,0,The match was watched closely.,24.4422,0.5354,True,15
+Qwen_Qwen2.5-3B,match,match_R_09,match_09,R,0,The match was watched closely.,16.9318,0.3709,True,15
+Qwen_Qwen2.5-3B,match,match_L_02,match_02,L,1,The match was difficult to start.,30.4415,0.6668,True,15
+Qwen_Qwen2.5-3B,match,match_R_02,match_02,R,1,The match was difficult to start.,-16.9318,-0.3709,False,15
+Qwen_Qwen2.5-3B,match,match_L_04,match_04,L,1,The match ended quickly.,29.5181,0.6466,True,15
+Qwen_Qwen2.5-3B,match,match_R_04,match_04,R,1,The match ended quickly.,-16.9318,-0.3709,False,15
+Qwen_Qwen2.5-3B,match,match_L_06,match_06,L,1,They checked the match.,27.0088,0.5916,True,15
+Qwen_Qwen2.5-3B,match,match_R_06,match_06,R,1,They checked the match.,-8.4351,-0.1848,False,15
+Qwen_Qwen2.5-3B,match,match_L_08,match_08,L,1,The match caused trouble.,27.183,0.5954,True,15
+Qwen_Qwen2.5-3B,match,match_R_08,match_08,R,1,The match caused trouble.,-16.9318,-0.3709,False,15
+Qwen_Qwen2.5-3B,match,match_L_10,match_10,L,1,The match was watched closely.,29.507,0.6463,True,15
+Qwen_Qwen2.5-3B,match,match_R_10,match_10,R,1,The match was watched closely.,-16.9318,-0.3709,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,14.0102,0.3931,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,-4.1882,-0.1175,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,17.9208,0.5029,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,-9.8465,-0.2763,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,13.7935,0.3871,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,-24.5841,-0.6899,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,7.9743,0.2238,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,-24.5841,-0.6899,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,17.3691,0.4874,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,-8.2659,-0.2319,False,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,8.4513,0.2372,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,4.1882,0.1175,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,11.0914,0.3112,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,9.8465,0.2763,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,8.3824,0.2352,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,24.5841,0.6899,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,9.8548,0.2765,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,24.5841,0.6899,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,7.7434,0.2173,True,15
+Qwen_Qwen2.5-3B,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,8.2659,0.2319,True,15
+Qwen_Qwen2.5-7B,bank,bank_L_01,bank_01,L,0,The bank was unstable.,19.9191,0.167,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_01,bank_01,R,0,The bank was unstable.,-57.6624,-0.4835,False,28
+Qwen_Qwen2.5-7B,bank,bank_L_03,bank_03,L,0,They examined the bank.,29.0015,0.2432,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_03,bank_03,R,0,They examined the bank.,-14.8982,-0.1249,False,28
+Qwen_Qwen2.5-7B,bank,bank_L_05,bank_05,L,0,The bank had changed.,40.2071,0.3372,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_05,bank_05,R,0,The bank had changed.,-57.6624,-0.4835,False,28
+Qwen_Qwen2.5-7B,bank,bank_L_07,bank_07,L,0,The bank needed protection.,19.1879,0.1609,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-57.6624,-0.4835,False,28
+Qwen_Qwen2.5-7B,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,0.2757,0.0023,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,-55.9905,-0.4695,False,28
+Qwen_Qwen2.5-7B,bank,bank_L_02,bank_02,L,1,The bank was unstable.,26.5323,0.2225,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_02,bank_02,R,1,The bank was unstable.,55.9905,0.4695,True,28
+Qwen_Qwen2.5-7B,bank,bank_L_04,bank_04,L,1,They examined the bank.,37.2238,0.3121,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_04,bank_04,R,1,They examined the bank.,14.8982,0.1249,True,28
+Qwen_Qwen2.5-7B,bank,bank_L_06,bank_06,L,1,The bank had changed.,21.2239,0.178,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_06,bank_06,R,1,The bank had changed.,57.6624,0.4835,True,28
+Qwen_Qwen2.5-7B,bank,bank_L_08,bank_08,L,1,The bank needed protection.,24.7514,0.2075,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_08,bank_08,R,1,The bank needed protection.,55.9905,0.4695,True,28
+Qwen_Qwen2.5-7B,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,51.5554,0.4323,True,28
+Qwen_Qwen2.5-7B,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,55.9905,0.4695,True,28
+Qwen_Qwen2.5-7B,bark,bark_L_01,bark_01,L,0,The bark drew attention.,64.2208,0.533,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_01,bark_01,R,0,The bark drew attention.,-42.2929,-0.351,False,28
+Qwen_Qwen2.5-7B,bark,bark_L_03,bark_03,L,0,They studied the bark.,29.6421,0.246,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_03,bark_03,R,0,They studied the bark.,-29.312,-0.2433,False,28
+Qwen_Qwen2.5-7B,bark,bark_L_05,bark_05,L,0,The bark was unusual.,52.3243,0.4343,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_05,bark_05,R,0,The bark was unusual.,-42.2929,-0.351,False,28
+Qwen_Qwen2.5-7B,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,28.1675,0.2338,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,-42.2929,-0.351,False,28
+Qwen_Qwen2.5-7B,bark,bark_L_09,bark_09,L,0,The bark became the focus.,40.2933,0.3344,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_09,bark_09,R,0,The bark became the focus.,-43.2618,-0.3591,False,28
+Qwen_Qwen2.5-7B,bark,bark_L_02,bark_02,L,1,The bark drew attention.,16.7714,0.1392,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_02,bark_02,R,1,The bark drew attention.,43.2618,0.3591,True,28
+Qwen_Qwen2.5-7B,bark,bark_L_04,bark_04,L,1,They studied the bark.,36.7476,0.305,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_04,bark_04,R,1,They studied the bark.,29.7055,0.2466,True,28
+Qwen_Qwen2.5-7B,bark,bark_L_06,bark_06,L,1,The bark was unusual.,21.2528,0.1764,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_06,bark_06,R,1,The bark was unusual.,43.2618,0.3591,True,28
+Qwen_Qwen2.5-7B,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,24.2755,0.2015,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,43.2618,0.3591,True,28
+Qwen_Qwen2.5-7B,bark,bark_L_10,bark_10,L,1,The bark became the focus.,22.4297,0.1862,True,28
+Qwen_Qwen2.5-7B,bark,bark_R_10,bark_10,R,1,The bark became the focus.,43.2618,0.3591,True,28
+Qwen_Qwen2.5-7B,bat,bat_L_01,bat_01,L,0,They watched the bat.,6.3069,0.0418,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_01,bat_01,R,0,They watched the bat.,-1.6432,-0.0109,False,28
+Qwen_Qwen2.5-7B,bat,bat_L_03,bat_03,L,0,She checked the bat.,79.3229,0.526,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_03,bat_03,R,0,She checked the bat.,37.8191,0.2508,True,28
+Qwen_Qwen2.5-7B,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,50.2974,0.3335,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,52.9972,0.3514,True,28
+Qwen_Qwen2.5-7B,bat,bat_L_07,bat_07,L,0,The bat was marked.,-0.585,-0.0039,False,28
+Qwen_Qwen2.5-7B,bat,bat_R_07,bat_07,R,0,The bat was marked.,-70.8542,-0.4698,False,28
+Qwen_Qwen2.5-7B,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,7.0663,0.0469,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,-70.8542,-0.4698,False,28
+Qwen_Qwen2.5-7B,bat,bat_L_02,bat_02,L,1,They watched the bat.,36.9496,0.245,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_02,bat_02,R,1,They watched the bat.,1.6432,0.0109,True,28
+Qwen_Qwen2.5-7B,bat,bat_L_04,bat_04,L,1,She checked the bat.,-15.6689,-0.1039,False,28
+Qwen_Qwen2.5-7B,bat,bat_R_04,bat_04,R,1,She checked the bat.,-37.8191,-0.2508,False,28
+Qwen_Qwen2.5-7B,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,-19.394,-0.1286,False,28
+Qwen_Qwen2.5-7B,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-52.9972,-0.3514,False,28
+Qwen_Qwen2.5-7B,bat,bat_L_08,bat_08,L,1,The bat was marked.,74.2443,0.4923,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_08,bat_08,R,1,The bat was marked.,70.8542,0.4698,True,28
+Qwen_Qwen2.5-7B,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,61.5847,0.4084,True,28
+Qwen_Qwen2.5-7B,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,70.8542,0.4698,True,28
+Qwen_Qwen2.5-7B,crane,crane_L_01,crane_01,L,0,They watched the crane.,40.6896,0.3644,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_01,crane_01,R,0,They watched the crane.,8.6431,0.0774,True,28
+Qwen_Qwen2.5-7B,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,24.8703,0.2227,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,-22.2617,-0.1993,False,28
+Qwen_Qwen2.5-7B,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,33.2106,0.2974,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,-22.2617,-0.1993,False,28
+Qwen_Qwen2.5-7B,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,37.9639,0.3399,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,-22.2617,-0.1993,False,28
+Qwen_Qwen2.5-7B,crane,crane_L_09,crane_09,L,0,The crane became the focus.,25.9031,0.2319,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_09,crane_09,R,0,The crane became the focus.,-18.3821,-0.1646,False,28
+Qwen_Qwen2.5-7B,crane,crane_L_02,crane_02,L,1,They watched the crane.,34.5921,0.3098,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_02,crane_02,R,1,They watched the crane.,-7.8881,-0.0706,False,28
+Qwen_Qwen2.5-7B,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,45.8974,0.411,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,18.3821,0.1646,True,28
+Qwen_Qwen2.5-7B,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,70.7805,0.6338,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,18.3821,0.1646,True,28
+Qwen_Qwen2.5-7B,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,18.9662,0.1698,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,22.2617,0.1993,True,28
+Qwen_Qwen2.5-7B,crane,crane_L_10,crane_10,L,1,The crane became the focus.,57.6676,0.5164,True,28
+Qwen_Qwen2.5-7B,crane,crane_R_10,crane_10,R,1,The crane became the focus.,22.2617,0.1993,True,28
+Qwen_Qwen2.5-7B,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,-0.4579,-0.0429,False,3
+Qwen_Qwen2.5-7B,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,-7.011,-0.6563,False,3
+Qwen_Qwen2.5-7B,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-1.4464,-0.1354,False,3
+Qwen_Qwen2.5-7B,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-2.2253,-0.2083,False,3
+Qwen_Qwen2.5-7B,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,-1.9969,-0.1869,False,3
+Qwen_Qwen2.5-7B,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,-7.011,-0.6563,False,3
+Qwen_Qwen2.5-7B,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-0.5075,-0.0475,False,3
+Qwen_Qwen2.5-7B,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-7.011,-0.6563,False,3
+Qwen_Qwen2.5-7B,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-2.239,-0.2096,False,3
+Qwen_Qwen2.5-7B,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-7.0113,-0.6563,False,3
+Qwen_Qwen2.5-7B,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,2.732,0.2557,True,3
+Qwen_Qwen2.5-7B,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,7.0113,0.6563,True,3
+Qwen_Qwen2.5-7B,spring,spring_L_04,spring_04,L,1,They monitored the spring.,1.7655,0.1653,True,3
+Qwen_Qwen2.5-7B,spring,spring_R_04,spring_04,R,1,They monitored the spring.,2.2253,0.2083,True,3
+Qwen_Qwen2.5-7B,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,1.8404,0.1723,True,3
+Qwen_Qwen2.5-7B,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,7.011,0.6563,True,3
+Qwen_Qwen2.5-7B,spring,spring_L_08,spring_08,L,1,The spring became a concern.,2.2659,0.2121,True,3
+Qwen_Qwen2.5-7B,spring,spring_R_08,spring_08,R,1,The spring became a concern.,7.011,0.6563,True,3
+Qwen_Qwen2.5-7B,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,2.8747,0.2691,True,3
+Qwen_Qwen2.5-7B,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,7.011,0.6563,True,3
+Qwen_Qwen2.5-7B,match,match_L_01,match_01,L,0,The match was difficult to start.,47.0371,0.4197,True,28
+Qwen_Qwen2.5-7B,match,match_R_01,match_01,R,0,The match was difficult to start.,-13.0234,-0.1162,False,28
+Qwen_Qwen2.5-7B,match,match_L_03,match_03,L,0,The match ended quickly.,27.2692,0.2433,True,28
+Qwen_Qwen2.5-7B,match,match_R_03,match_03,R,0,The match ended quickly.,-13.0234,-0.1162,False,28
+Qwen_Qwen2.5-7B,match,match_L_05,match_05,L,0,They checked the match.,21.6112,0.1928,True,28
+Qwen_Qwen2.5-7B,match,match_R_05,match_05,R,0,They checked the match.,-37.4199,-0.3339,False,28
+Qwen_Qwen2.5-7B,match,match_L_07,match_07,L,0,The match caused trouble.,34.694,0.3096,True,28
+Qwen_Qwen2.5-7B,match,match_R_07,match_07,R,0,The match caused trouble.,-11.4734,-0.1024,False,28
+Qwen_Qwen2.5-7B,match,match_L_09,match_09,L,0,The match was watched closely.,22.1649,0.1978,True,28
+Qwen_Qwen2.5-7B,match,match_R_09,match_09,R,0,The match was watched closely.,-11.4734,-0.1024,False,28
+Qwen_Qwen2.5-7B,match,match_L_02,match_02,L,1,The match was difficult to start.,33.4169,0.2982,True,28
+Qwen_Qwen2.5-7B,match,match_R_02,match_02,R,1,The match was difficult to start.,11.4734,0.1024,True,28
+Qwen_Qwen2.5-7B,match,match_L_04,match_04,L,1,The match ended quickly.,35.4555,0.3164,True,28
+Qwen_Qwen2.5-7B,match,match_R_04,match_04,R,1,The match ended quickly.,11.4734,0.1024,True,28
+Qwen_Qwen2.5-7B,match,match_L_06,match_06,L,1,They checked the match.,45.8245,0.4089,True,28
+Qwen_Qwen2.5-7B,match,match_R_06,match_06,R,1,They checked the match.,37.4199,0.3339,True,28
+Qwen_Qwen2.5-7B,match,match_L_08,match_08,L,1,The match caused trouble.,13.9164,0.1242,True,28
+Qwen_Qwen2.5-7B,match,match_R_08,match_08,R,1,The match caused trouble.,11.4734,0.1024,True,28
+Qwen_Qwen2.5-7B,match,match_L_10,match_10,L,1,The match was watched closely.,52.8784,0.4718,True,28
+Qwen_Qwen2.5-7B,match,match_R_10,match_10,R,1,The match was watched closely.,11.4734,0.1024,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,57.1252,0.4108,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,-2.4533,-0.0176,False,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,27.2978,0.1963,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,-28.084,-0.202,False,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,21.9131,0.1576,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,-97.4414,-0.7008,False,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,4.846,0.0349,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,-97.4414,-0.7008,False,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,64.5113,0.4639,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,5.0965,0.0367,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,12.5353,0.0901,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,2.4533,0.0176,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,3.5608,0.0256,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,28.084,0.202,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,27.128,0.1951,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,98.3381,0.7072,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,34.3305,0.2469,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,98.3381,0.7072,True,28
+Qwen_Qwen2.5-7B,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,-22.2955,-0.1603,False,28
+Qwen_Qwen2.5-7B,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,-5.0965,-0.0367,False,28
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_01,bank_01,L,0,The bank was unstable.,0.7938,0.2784,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_01,bank_01,R,0,The bank was unstable.,-1.4136,-0.4958,False,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_03,bank_03,L,0,They examined the bank.,0.4298,0.1507,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_03,bank_03,R,0,They examined the bank.,-0.3504,-0.1229,False,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_05,bank_05,L,0,The bank had changed.,1.5885,0.5571,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_05,bank_05,R,0,The bank had changed.,-1.4136,-0.4958,False,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_07,bank_07,L,0,The bank needed protection.,0.8195,0.2874,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-1.4136,-0.4958,False,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,1.4876,0.5218,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,-1.4107,-0.4948,False,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_02,bank_02,L,1,The bank was unstable.,1.2787,0.4485,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_02,bank_02,R,1,The bank was unstable.,1.4107,0.4948,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_04,bank_04,L,1,They examined the bank.,1.074,0.3767,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_04,bank_04,R,1,They examined the bank.,0.3504,0.1229,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_06,bank_06,L,1,The bank had changed.,1.4685,0.515,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_06,bank_06,R,1,The bank had changed.,1.4136,0.4958,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_08,bank_08,L,1,The bank needed protection.,1.4688,0.5152,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_08,bank_08,R,1,The bank needed protection.,1.4136,0.4958,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,1.3001,0.456,True,4
+mistralai_Mistral-Nemo-Base-2407,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,1.4136,0.4958,True,4
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_01,bark_01,L,0,The bark drew attention.,4.1356,0.5974,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_01,bark_01,R,0,The bark drew attention.,-3.2179,-0.4648,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_03,bark_03,L,0,They studied the bark.,-1.4445,-0.2087,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_03,bark_03,R,0,They studied the bark.,-3.6665,-0.5296,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_05,bark_05,L,0,The bark was unusual.,2.7994,0.4044,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_05,bark_05,R,0,The bark was unusual.,-3.2179,-0.4648,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,2.6575,0.3839,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,-3.2179,-0.4648,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_09,bark_09,L,0,The bark became the focus.,0.9629,0.1391,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_09,bark_09,R,0,The bark became the focus.,-3.2179,-0.4648,False,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_02,bark_02,L,1,The bark drew attention.,2.8053,0.4052,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_02,bark_02,R,1,The bark drew attention.,3.2179,0.4648,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_04,bark_04,L,1,They studied the bark.,3.473,0.5017,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_04,bark_04,R,1,They studied the bark.,3.6665,0.5296,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_06,bark_06,L,1,The bark was unusual.,3.1958,0.4616,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_06,bark_06,R,1,The bark was unusual.,3.2179,0.4648,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,3.2537,0.47,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,3.2029,0.4627,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_L_10,bark_10,L,1,The bark became the focus.,3.048,0.4403,True,7
+mistralai_Mistral-Nemo-Base-2407,bark,bark_R_10,bark_10,R,1,The bark became the focus.,3.2029,0.4627,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_01,bat_01,L,0,They watched the bat.,3.699,0.4801,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_01,bat_01,R,0,They watched the bat.,-0.4282,-0.0556,False,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_03,bat_03,L,0,She checked the bat.,4.8576,0.6305,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_03,bat_03,R,0,She checked the bat.,0.0896,0.0116,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,4.7522,0.6168,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,4.4423,0.5766,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_07,bat_07,L,0,The bat was marked.,3.4378,0.4462,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_07,bat_07,R,0,The bat was marked.,-2.9607,-0.3843,False,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,4.8006,0.6231,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,-2.9607,-0.3843,False,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_02,bat_02,L,1,They watched the bat.,4.6343,0.6015,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_02,bat_02,R,1,They watched the bat.,0.4282,0.0556,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_04,bat_04,L,1,She checked the bat.,4.6058,0.5978,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_04,bat_04,R,1,She checked the bat.,-0.0896,-0.0116,False,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,0.8378,0.1087,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-4.4423,-0.5766,False,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_08,bat_08,L,1,The bat was marked.,4.417,0.5733,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_08,bat_08,R,1,The bat was marked.,2.9607,0.3843,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,4.6242,0.6002,True,7
+mistralai_Mistral-Nemo-Base-2407,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,2.9607,0.3843,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_01,crane_01,L,0,They watched the crane.,2.8464,0.6278,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_01,crane_01,R,0,They watched the crane.,-0.4281,-0.0944,False,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,2.9193,0.6438,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,-2.0018,-0.4415,False,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,2.7617,0.6091,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,-2.0213,-0.4458,False,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,2.4627,0.5432,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,-2.0213,-0.4458,False,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_09,crane_09,L,0,The crane became the focus.,2.9668,0.6543,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_09,crane_09,R,0,The crane became the focus.,-2.0213,-0.4458,False,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_02,crane_02,L,1,They watched the crane.,2.0316,0.4481,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_02,crane_02,R,1,They watched the crane.,0.4153,0.0916,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,2.5256,0.557,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,2.0213,0.4458,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,2.3407,0.5162,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,2.0213,0.4458,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,2.5205,0.5559,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,2.0018,0.4415,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_L_10,crane_10,L,1,The crane became the focus.,2.6384,0.5819,True,7
+mistralai_Mistral-Nemo-Base-2407,crane,crane_R_10,crane_10,R,1,The crane became the focus.,2.0018,0.4415,True,7
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,-0.0649,-0.0144,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,-2.0781,-0.4599,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_03,spring_03,L,0,They monitored the spring.,-1.2776,-0.2827,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-1.9427,-0.4299,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,-0.3043,-0.0673,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,-2.0781,-0.4599,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_07,spring_07,L,0,The spring became a concern.,-1.029,-0.2277,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-2.0781,-0.4599,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-0.8363,-0.1851,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-2.0781,-0.4599,False,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,2.1986,0.4866,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,2.0781,0.4599,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_04,spring_04,L,1,They monitored the spring.,1.7107,0.3786,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_04,spring_04,R,1,They monitored the spring.,1.9427,0.4299,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,1.6812,0.3721,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,2.0781,0.4599,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_08,spring_08,L,1,The spring became a concern.,1.8834,0.4168,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_08,spring_08,R,1,The spring became a concern.,2.0781,0.4599,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,2.5708,0.5689,True,6
+mistralai_Mistral-Nemo-Base-2407,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,2.0781,0.4599,True,6
+mistralai_Mistral-Nemo-Base-2407,match,match_L_01,match_01,L,0,The match was difficult to start.,3.6881,0.5353,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_01,match_01,R,0,The match was difficult to start.,2.6029,0.3778,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_03,match_03,L,0,The match ended quickly.,3.1747,0.4608,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_03,match_03,R,0,The match ended quickly.,2.6029,0.3778,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_05,match_05,L,0,They checked the match.,2.5719,0.3733,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_05,match_05,R,0,They checked the match.,1.772,0.2572,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_07,match_07,L,0,The match caused trouble.,3.7581,0.5455,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_07,match_07,R,0,The match caused trouble.,2.6029,0.3778,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_09,match_09,L,0,The match was watched closely.,3.2956,0.4783,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_09,match_09,R,0,The match was watched closely.,2.6029,0.3778,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_02,match_02,L,1,The match was difficult to start.,3.6297,0.5268,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_02,match_02,R,1,The match was difficult to start.,-2.6029,-0.3778,False,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_04,match_04,L,1,The match ended quickly.,4.452,0.6462,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_04,match_04,R,1,The match ended quickly.,-2.6029,-0.3778,False,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_06,match_06,L,1,They checked the match.,4.6463,0.6744,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_06,match_06,R,1,They checked the match.,-1.772,-0.2572,False,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_08,match_08,L,1,The match caused trouble.,1.9005,0.2758,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_08,match_08,R,1,The match caused trouble.,-2.6029,-0.3778,False,7
+mistralai_Mistral-Nemo-Base-2407,match,match_L_10,match_10,L,1,The match was watched closely.,3.6274,0.5265,True,7
+mistralai_Mistral-Nemo-Base-2407,match,match_R_10,match_10,R,1,The match was watched closely.,-2.6029,-0.3778,False,7
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,7.7599,0.3789,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,3.17,0.1548,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,6.9403,0.3389,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,-7.8789,-0.3847,False,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,6.5958,0.3221,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,-13.8054,-0.6741,False,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,4.255,0.2078,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,-13.8054,-0.6741,False,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,7.0311,0.3433,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,-0.4877,-0.0238,False,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,4.8991,0.2392,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,-3.17,-0.1548,False,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,9.7469,0.4759,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,7.8789,0.3847,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,4.0129,0.1959,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,13.8054,0.6741,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,6.2673,0.306,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,13.8054,0.6741,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,7.0488,0.3442,True,21
+mistralai_Mistral-Nemo-Base-2407,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,0.4877,0.0238,True,21
+allenai_OLMo-2-1124-7B,bank,bank_L_01,bank_01,L,0,The bank was unstable.,1.3505,0.2842,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_01,bank_01,R,0,The bank was unstable.,-2.2394,-0.4712,False,6
+allenai_OLMo-2-1124-7B,bank,bank_L_03,bank_03,L,0,They examined the bank.,0.526,0.1107,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_03,bank_03,R,0,They examined the bank.,-0.7664,-0.1613,False,6
+allenai_OLMo-2-1124-7B,bank,bank_L_05,bank_05,L,0,The bank had changed.,2.8207,0.5936,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_05,bank_05,R,0,The bank had changed.,-2.2394,-0.4712,False,6
+allenai_OLMo-2-1124-7B,bank,bank_L_07,bank_07,L,0,The bank needed protection.,2.4978,0.5256,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_07,bank_07,R,0,The bank needed protection.,-2.2394,-0.4712,False,6
+allenai_OLMo-2-1124-7B,bank,bank_L_09,bank_09,L,0,The bank became difficult to access.,3.1762,0.6684,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_09,bank_09,R,0,The bank became difficult to access.,-2.2398,-0.4713,False,6
+allenai_OLMo-2-1124-7B,bank,bank_L_02,bank_02,L,1,The bank was unstable.,1.6675,0.3509,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_02,bank_02,R,1,The bank was unstable.,2.2398,0.4713,True,6
+allenai_OLMo-2-1124-7B,bank,bank_L_04,bank_04,L,1,They examined the bank.,1.5576,0.3278,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_04,bank_04,R,1,They examined the bank.,0.7664,0.1613,True,6
+allenai_OLMo-2-1124-7B,bank,bank_L_06,bank_06,L,1,The bank had changed.,1.8114,0.3812,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_06,bank_06,R,1,The bank had changed.,2.2394,0.4712,True,6
+allenai_OLMo-2-1124-7B,bank,bank_L_08,bank_08,L,1,The bank needed protection.,2.0023,0.4213,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_08,bank_08,R,1,The bank needed protection.,2.2398,0.4713,True,6
+allenai_OLMo-2-1124-7B,bank,bank_L_10,bank_10,L,1,The bank became difficult to access.,2.0157,0.4242,True,6
+allenai_OLMo-2-1124-7B,bank,bank_R_10,bank_10,R,1,The bank became difficult to access.,2.2398,0.4713,True,6
+allenai_OLMo-2-1124-7B,bark,bark_L_01,bark_01,L,0,The bark drew attention.,3.7171,0.565,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_01,bark_01,R,0,The bark drew attention.,-3.1707,-0.482,False,8
+allenai_OLMo-2-1124-7B,bark,bark_L_03,bark_03,L,0,They studied the bark.,0.5127,0.0779,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_03,bark_03,R,0,They studied the bark.,-2.6942,-0.4095,False,8
+allenai_OLMo-2-1124-7B,bark,bark_L_05,bark_05,L,0,The bark was unusual.,2.193,0.3334,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_05,bark_05,R,0,The bark was unusual.,-3.1707,-0.482,False,8
+allenai_OLMo-2-1124-7B,bark,bark_L_07,bark_07,L,0,The bark changed noticeably.,1.8471,0.2808,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_07,bark_07,R,0,The bark changed noticeably.,-3.1707,-0.482,False,8
+allenai_OLMo-2-1124-7B,bark,bark_L_09,bark_09,L,0,The bark became the focus.,1.8926,0.2877,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_09,bark_09,R,0,The bark became the focus.,-3.1707,-0.482,False,8
+allenai_OLMo-2-1124-7B,bark,bark_L_02,bark_02,L,1,The bark drew attention.,2.1809,0.3315,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_02,bark_02,R,1,The bark drew attention.,3.1707,0.482,True,8
+allenai_OLMo-2-1124-7B,bark,bark_L_04,bark_04,L,1,They studied the bark.,2.6489,0.4027,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_04,bark_04,R,1,They studied the bark.,2.6942,0.4095,True,8
+allenai_OLMo-2-1124-7B,bark,bark_L_06,bark_06,L,1,The bark was unusual.,2.7946,0.4248,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_06,bark_06,R,1,The bark was unusual.,3.1707,0.482,True,8
+allenai_OLMo-2-1124-7B,bark,bark_L_08,bark_08,L,1,The bark changed noticeably.,2.1422,0.3256,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_08,bark_08,R,1,The bark changed noticeably.,3.1707,0.482,True,8
+allenai_OLMo-2-1124-7B,bark,bark_L_10,bark_10,L,1,The bark became the focus.,2.3201,0.3527,True,8
+allenai_OLMo-2-1124-7B,bark,bark_R_10,bark_10,R,1,The bark became the focus.,3.1707,0.482,True,8
+allenai_OLMo-2-1124-7B,bat,bat_L_01,bat_01,L,0,They watched the bat.,2.8648,0.4035,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_01,bat_01,R,0,They watched the bat.,-2.2941,-0.3232,False,8
+allenai_OLMo-2-1124-7B,bat,bat_L_03,bat_03,L,0,She checked the bat.,3.9909,0.5622,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_03,bat_03,R,0,She checked the bat.,1.0287,0.1449,True,8
+allenai_OLMo-2-1124-7B,bat,bat_L_05,bat_05,L,0,He moved the bat carefully.,4.3777,0.6166,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_05,bat_05,R,0,He moved the bat carefully.,3.4588,0.4872,True,8
+allenai_OLMo-2-1124-7B,bat,bat_L_07,bat_07,L,0,The bat was marked.,3.3254,0.4684,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_07,bat_07,R,0,The bat was marked.,-3.856,-0.5432,False,8
+allenai_OLMo-2-1124-7B,bat,bat_L_09,bat_09,L,0,The bat was kept aside.,3.8189,0.5379,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_09,bat_09,R,0,The bat was kept aside.,-3.856,-0.5432,False,8
+allenai_OLMo-2-1124-7B,bat,bat_L_02,bat_02,L,1,They watched the bat.,2.9993,0.4225,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_02,bat_02,R,1,They watched the bat.,2.2941,0.3232,True,8
+allenai_OLMo-2-1124-7B,bat,bat_L_04,bat_04,L,1,She checked the bat.,3.1266,0.4404,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_04,bat_04,R,1,She checked the bat.,-1.0287,-0.1449,False,8
+allenai_OLMo-2-1124-7B,bat,bat_L_06,bat_06,L,1,He moved the bat carefully.,0.9851,0.1388,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_06,bat_06,R,1,He moved the bat carefully.,-3.4588,-0.4872,False,8
+allenai_OLMo-2-1124-7B,bat,bat_L_08,bat_08,L,1,The bat was marked.,3.474,0.4893,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_08,bat_08,R,1,The bat was marked.,3.856,0.5432,True,8
+allenai_OLMo-2-1124-7B,bat,bat_L_10,bat_10,L,1,The bat was kept aside.,2.6579,0.3744,True,8
+allenai_OLMo-2-1124-7B,bat,bat_R_10,bat_10,R,1,The bat was kept aside.,3.856,0.5432,True,8
+allenai_OLMo-2-1124-7B,crane,crane_L_01,crane_01,L,0,They watched the crane.,2.0423,0.4592,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_01,crane_01,R,0,They watched the crane.,0.8461,0.1902,True,7
+allenai_OLMo-2-1124-7B,crane,crane_L_03,crane_03,L,0,The crane moved slowly.,2.1376,0.4806,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_03,crane_03,R,0,The crane moved slowly.,-0.8292,-0.1864,False,7
+allenai_OLMo-2-1124-7B,crane,crane_L_05,crane_05,L,0,The crane was visible from far away.,2.1253,0.4778,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_05,crane_05,R,0,The crane was visible from far away.,-0.8292,-0.1864,False,7
+allenai_OLMo-2-1124-7B,crane,crane_L_07,crane_07,L,0,The crane was difficult to approach.,1.0512,0.2364,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_07,crane_07,R,0,The crane was difficult to approach.,-0.8292,-0.1864,False,7
+allenai_OLMo-2-1124-7B,crane,crane_L_09,crane_09,L,0,The crane became the focus.,2.1978,0.4941,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_09,crane_09,R,0,The crane became the focus.,-0.8279,-0.1861,False,7
+allenai_OLMo-2-1124-7B,crane,crane_L_02,crane_02,L,1,They watched the crane.,2.2573,0.5075,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_02,crane_02,R,1,They watched the crane.,-0.8413,-0.1892,False,7
+allenai_OLMo-2-1124-7B,crane,crane_L_04,crane_04,L,1,The crane moved slowly.,2.6313,0.5916,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_04,crane_04,R,1,The crane moved slowly.,0.8279,0.1861,True,7
+allenai_OLMo-2-1124-7B,crane,crane_L_06,crane_06,L,1,The crane was visible from far away.,2.4919,0.5603,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_06,crane_06,R,1,The crane was visible from far away.,0.8279,0.1861,True,7
+allenai_OLMo-2-1124-7B,crane,crane_L_08,crane_08,L,1,The crane was difficult to approach.,2.4865,0.5591,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_08,crane_08,R,1,The crane was difficult to approach.,0.8292,0.1864,True,7
+allenai_OLMo-2-1124-7B,crane,crane_L_10,crane_10,L,1,The crane became the focus.,2.9026,0.6526,True,7
+allenai_OLMo-2-1124-7B,crane,crane_R_10,crane_10,R,1,The crane became the focus.,0.8292,0.1864,True,7
+allenai_OLMo-2-1124-7B,spring,spring_L_01,spring_01,L,0,The spring was unusually dry.,0.7349,0.1216,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_01,spring_01,R,0,The spring was unusually dry.,-3.9794,-0.6584,False,7
+allenai_OLMo-2-1124-7B,spring,spring_L_03,spring_03,L,0,They monitored the spring.,0.0705,0.0117,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_03,spring_03,R,0,They monitored the spring.,-2.046,-0.3385,False,7
+allenai_OLMo-2-1124-7B,spring,spring_L_05,spring_05,L,0,The spring changed quickly.,0.5269,0.0872,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_05,spring_05,R,0,The spring changed quickly.,-3.9794,-0.6584,False,7
+allenai_OLMo-2-1124-7B,spring,spring_L_07,spring_07,L,0,The spring became a concern.,0.0847,0.014,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_07,spring_07,R,0,The spring became a concern.,-3.9794,-0.6584,False,7
+allenai_OLMo-2-1124-7B,spring,spring_L_09,spring_09,L,0,The spring was hard to assess.,-0.3606,-0.0597,False,7
+allenai_OLMo-2-1124-7B,spring,spring_R_09,spring_09,R,0,The spring was hard to assess.,-3.9794,-0.6584,False,7
+allenai_OLMo-2-1124-7B,spring,spring_L_02,spring_02,L,1,The spring was unusually dry.,2.9569,0.4892,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_02,spring_02,R,1,The spring was unusually dry.,3.9794,0.6584,True,7
+allenai_OLMo-2-1124-7B,spring,spring_L_04,spring_04,L,1,They monitored the spring.,2.5311,0.4187,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_04,spring_04,R,1,They monitored the spring.,2.046,0.3385,True,7
+allenai_OLMo-2-1124-7B,spring,spring_L_06,spring_06,L,1,The spring changed quickly.,2.5302,0.4186,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_06,spring_06,R,1,The spring changed quickly.,3.9794,0.6584,True,7
+allenai_OLMo-2-1124-7B,spring,spring_L_08,spring_08,L,1,The spring became a concern.,2.63,0.4351,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_08,spring_08,R,1,The spring became a concern.,3.9794,0.6584,True,7
+allenai_OLMo-2-1124-7B,spring,spring_L_10,spring_10,L,1,The spring was hard to assess.,2.8635,0.4737,True,7
+allenai_OLMo-2-1124-7B,spring,spring_R_10,spring_10,R,1,The spring was hard to assess.,3.9794,0.6584,True,7
+allenai_OLMo-2-1124-7B,match,match_L_01,match_01,L,0,The match was difficult to start.,6.3756,0.3885,True,22
+allenai_OLMo-2-1124-7B,match,match_R_01,match_01,R,0,The match was difficult to start.,3.6276,0.2211,True,22
+allenai_OLMo-2-1124-7B,match,match_L_03,match_03,L,0,The match ended quickly.,6.1266,0.3734,True,22
+allenai_OLMo-2-1124-7B,match,match_R_03,match_03,R,0,The match ended quickly.,3.6276,0.2211,True,22
+allenai_OLMo-2-1124-7B,match,match_L_05,match_05,L,0,They checked the match.,2.7953,0.1704,True,22
+allenai_OLMo-2-1124-7B,match,match_R_05,match_05,R,0,They checked the match.,-1.9348,-0.1179,False,22
+allenai_OLMo-2-1124-7B,match,match_L_07,match_07,L,0,The match caused trouble.,5.9339,0.3616,True,22
+allenai_OLMo-2-1124-7B,match,match_R_07,match_07,R,0,The match caused trouble.,3.6748,0.2239,True,22
+allenai_OLMo-2-1124-7B,match,match_L_09,match_09,L,0,The match was watched closely.,6.9742,0.425,True,22
+allenai_OLMo-2-1124-7B,match,match_R_09,match_09,R,0,The match was watched closely.,3.6276,0.2211,True,22
+allenai_OLMo-2-1124-7B,match,match_L_02,match_02,L,1,The match was difficult to start.,8.5251,0.5195,True,22
+allenai_OLMo-2-1124-7B,match,match_R_02,match_02,R,1,The match was difficult to start.,-3.6276,-0.2211,False,22
+allenai_OLMo-2-1124-7B,match,match_L_04,match_04,L,1,The match ended quickly.,7.47,0.4552,True,22
+allenai_OLMo-2-1124-7B,match,match_R_04,match_04,R,1,The match ended quickly.,-3.6748,-0.2239,False,22
+allenai_OLMo-2-1124-7B,match,match_L_06,match_06,L,1,They checked the match.,9.0004,0.5485,True,22
+allenai_OLMo-2-1124-7B,match,match_R_06,match_06,R,1,They checked the match.,1.9348,0.1179,True,22
+allenai_OLMo-2-1124-7B,match,match_L_08,match_08,L,1,The match caused trouble.,7.9057,0.4818,True,22
+allenai_OLMo-2-1124-7B,match,match_R_08,match_08,R,1,The match caused trouble.,-3.6748,-0.2239,False,22
+allenai_OLMo-2-1124-7B,match,match_L_10,match_10,L,1,The match was watched closely.,8.0312,0.4894,True,22
+allenai_OLMo-2-1124-7B,match,match_R_10,match_10,R,1,The match was watched closely.,-3.6748,-0.2239,False,22
+allenai_OLMo-2-1124-7B,pitch,pitch_L_01,pitch_01,L,0,They prepared the pitch.,2.3628,0.3835,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_01,pitch_01,R,0,They prepared the pitch.,-1.3638,-0.2214,False,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_03,pitch_03,L,0,They reviewed the pitch.,2.3072,0.3745,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_03,pitch_03,R,0,They reviewed the pitch.,-2.3614,-0.3833,False,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_05,pitch_05,L,0,The pitch needed improvement.,2.2456,0.3645,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_05,pitch_05,R,0,The pitch needed improvement.,-3.7771,-0.6131,False,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_07,pitch_07,L,0,The pitch was ready.,1.7571,0.2852,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_07,pitch_07,R,0,The pitch was ready.,-3.7771,-0.6131,False,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_09,pitch_09,L,0,They changed the pitch.,2.1785,0.3536,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_09,pitch_09,R,0,They changed the pitch.,-1.6189,-0.2628,False,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_02,pitch_02,L,1,They prepared the pitch.,1.2605,0.2046,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_02,pitch_02,R,1,They prepared the pitch.,1.3638,0.2214,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_04,pitch_04,L,1,They reviewed the pitch.,1.8674,0.3031,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_04,pitch_04,R,1,They reviewed the pitch.,2.3614,0.3833,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_06,pitch_06,L,1,The pitch needed improvement.,1.6388,0.266,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_06,pitch_06,R,1,The pitch needed improvement.,3.7798,0.6136,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_08,pitch_08,L,1,The pitch was ready.,1.8873,0.3064,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_08,pitch_08,R,1,The pitch was ready.,3.7771,0.6131,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_L_10,pitch_10,L,1,They changed the pitch.,1.2404,0.2014,True,11
+allenai_OLMo-2-1124-7B,pitch,pitch_R_10,pitch_10,R,1,They changed the pitch.,1.6189,0.2628,True,11

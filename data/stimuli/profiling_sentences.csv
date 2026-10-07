@@ -1,0 +1,281 @@
+sentence_id,word,sense,sense_label,profile_index,sentence
+bank_profile_s0_01,bank,0,River / embankment,0,There's a steep bank at the bend of the river.
+bank_profile_s0_02,bank,0,River / embankment,1,The river bank is muddy after yesterday's rain.
+bank_profile_s0_03,bank,0,River / embankment,2,Willow trees lined the opposite bank of the stream.
+bank_profile_s0_04,bank,0,River / embankment,3,The bank crumbled under the pressure of the floodwaters.
+bank_profile_s0_05,bank,0,River / embankment,4,Fishermen sat quietly on the bank waiting for a bite.
+bank_profile_s0_06,bank,0,River / embankment,5,The bank was covered in wildflowers in early summer.
+bank_profile_s0_07,bank,0,River / embankment,6,Otters were spotted playing on the river bank.
+bank_profile_s0_08,bank,0,River / embankment,7,The bank had been reinforced with large stones to prevent erosion.
+bank_profile_s0_09,bank,0,River / embankment,8,She sketched the landscape from the shaded bank.
+bank_profile_s0_10,bank,0,River / embankment,9,The canoe gently scraped against the bank as it came to rest.
+bank_profile_s0_11,bank,0,River / embankment,10,Tall reeds grew thick along the bank.
+bank_profile_s0_12,bank,0,River / embankment,11,"After the storm, debris lined the bank of the creek."
+bank_profile_s0_13,bank,0,River / embankment,12,The bank rose steeply from the water's edge.
+bank_profile_s0_14,bank,0,River / embankment,13,He climbed down the slippery bank to reach the water.
+bank_profile_s0_15,bank,0,River / embankment,14,Ducks waddled up from the water and rested on the bank.
+bank_profile_s0_16,bank,0,River / embankment,15,We set up our picnic on the grassy bank of the river.
+bank_profile_s0_17,bank,0,River / embankment,16,The children splashed along the muddy bank.
+bank_profile_s0_18,bank,0,River / embankment,17,The bank of the river is eroding year by year.
+bank_profile_s0_19,bank,0,River / embankment,18,There is a bank near the river where herons like to stand.
+bank_profile_s0_20,bank,0,River / embankment,19,The bank is submerged in the river during spring floods.
+bank_profile_s1_01,bank,1,Financial institution,20,She went to the bank to open a new account.
+bank_profile_s1_02,bank,1,Financial institution,21,She deposited her paycheck at the bank.
+bank_profile_s1_03,bank,1,Financial institution,22,The bank teller helped her with her transaction.
+bank_profile_s1_04,bank,1,Financial institution,23,She forgot her debit card at the bank.
+bank_profile_s1_05,bank,1,Financial institution,24,The bank was crowded during lunch hour.
+bank_profile_s1_06,bank,1,Financial institution,25,He applied for a mortgage at the local bank.
+bank_profile_s1_07,bank,1,Financial institution,26,The bank charged a fee for the international transfer.
+bank_profile_s1_08,bank,1,Financial institution,27,Her savings account at the bank earned very little interest.
+bank_profile_s1_09,bank,1,Financial institution,28,The bank manager approved her loan application.
+bank_profile_s1_10,bank,1,Financial institution,29,She checked her balance at the bank's ATM.
+bank_profile_s1_11,bank,1,Financial institution,30,The bank was offering competitive rates on personal loans.
+bank_profile_s1_12,bank,1,Financial institution,31,He transferred money between accounts at the bank.
+bank_profile_s1_13,bank,1,Financial institution,32,The bank closed early on public holidays.
+bank_profile_s1_14,bank,1,Financial institution,33,She had been a customer at that bank for over ten years.
+bank_profile_s1_15,bank,1,Financial institution,34,The bank required two forms of identification to open an account.
+bank_profile_s1_16,bank,1,Financial institution,35,He took out a business loan from the bank.
+bank_profile_s1_17,bank,1,Financial institution,36,The bank sent her a notice about her overdraft.
+bank_profile_s1_18,bank,1,Financial institution,37,She visited the bank to dispute a transaction on her statement.
+bank_profile_s1_19,bank,1,Financial institution,38,The bank offered a high-yield savings account with no fees.
+bank_profile_s1_20,bank,1,Financial institution,39,He met with a financial advisor at the bank about his retirement plan.
+bark_profile_s0_01,bark,0,Sound a dog makes,0,The dog let out a loud bark when the doorbell rang.
+bark_profile_s0_02,bark,0,Sound a dog makes,1,Her bark woke the neighbours in the middle of the night.
+bark_profile_s0_03,bark,0,Sound a dog makes,2,The puppy's bark was more of a high-pitched yip.
+bark_profile_s0_04,bark,0,Sound a dog makes,3,He silenced the dog's bark with a firm command.
+bark_profile_s0_05,bark,0,Sound a dog makes,4,The old hound's bark echoed through the empty farmyard.
+bark_profile_s0_06,bark,0,Sound a dog makes,5,She was startled by the sudden bark from the garden.
+bark_profile_s0_07,bark,0,Sound a dog makes,6,The guard dog's bark kept intruders away.
+bark_profile_s0_08,bark,0,Sound a dog makes,7,"Every time a car passed, the dog gave a short bark."
+bark_profile_s0_09,bark,0,Sound a dog makes,8,The bark of the excited spaniel filled the hallway.
+bark_profile_s0_10,bark,0,Sound a dog makes,9,She taught the dog to bark on command during training.
+bark_profile_s0_11,bark,0,Sound a dog makes,10,The faint bark in the distance told them the hunting dogs had found something.
+bark_profile_s0_12,bark,0,Sound a dog makes,11,A sharp bark warned her that someone was approaching.
+bark_profile_s0_13,bark,0,Sound a dog makes,12,The dog's bark softened into a whine when he recognized his owner.
+bark_profile_s0_14,bark,0,Sound a dog makes,13,Neighbours complained about the persistent bark late at night.
+bark_profile_s0_15,bark,0,Sound a dog makes,14,"The bark startled the cat, which leapt off the fence."
+bark_profile_s0_16,bark,0,Sound a dog makes,15,A single bark from the dog was enough to clear the yard of pigeons.
+bark_profile_s0_17,bark,0,Sound a dog makes,16,Her bark turned into a growl as the stranger came closer.
+bark_profile_s0_18,bark,0,Sound a dog makes,17,The police dog gave one bark before sitting obediently.
+bark_profile_s0_19,bark,0,Sound a dog makes,18,He could distinguish between the dog's warning bark and its playful bark.
+bark_profile_s0_20,bark,0,Sound a dog makes,19,The bark rang out across the quiet street.
+bark_profile_s1_01,bark,1,Outer layer of a tree,20,The rough bark of the oak scraped against her hand.
+bark_profile_s1_02,bark,1,Outer layer of a tree,21,She peeled away a strip of bark from the birch tree.
+bark_profile_s1_03,bark,1,Outer layer of a tree,22,The bark of the pine tree was thick and furrowed.
+bark_profile_s1_04,bark,1,Outer layer of a tree,23,He carved their initials into the soft bark.
+bark_profile_s1_05,bark,1,Outer layer of a tree,24,The bark was covered in a thin layer of green moss.
+bark_profile_s1_06,bark,1,Outer layer of a tree,25,The beetle bored its way into the bark of the dead elm.
+bark_profile_s1_07,bark,1,Outer layer of a tree,26,Ancient healers used the bark of the willow to relieve pain.
+bark_profile_s1_08,bark,1,Outer layer of a tree,27,The bark flaked off in large sheets from the eucalyptus.
+bark_profile_s1_09,bark,1,Outer layer of a tree,28,"She pressed her hand against the warm, papery bark."
+bark_profile_s1_10,bark,1,Outer layer of a tree,29,"The dark, cracked bark of the old chestnut was home to many insects."
+bark_profile_s1_11,bark,1,Outer layer of a tree,30,Strips of bark were used by Indigenous peoples to make canoes.
+bark_profile_s1_12,bark,1,Outer layer of a tree,31,The bark had been stripped away where deer had rubbed their antlers.
+bark_profile_s1_13,bark,1,Outer layer of a tree,32,She made a dye from the bark of the alder tree.
+bark_profile_s1_14,bark,1,Outer layer of a tree,33,"The bark protected the tree from cold, disease, and pests."
+bark_profile_s1_15,bark,1,Outer layer of a tree,34,He identified the tree species by examining the texture of its bark.
+bark_profile_s1_16,bark,1,Outer layer of a tree,35,The bark of the cinnamon tree is harvested and dried into quills.
+bark_profile_s1_17,bark,1,Outer layer of a tree,36,She pressed a piece of the silver bark into her journal.
+bark_profile_s1_18,bark,1,Outer layer of a tree,37,Fire had scorched the bark black on the side facing the road.
+bark_profile_s1_19,bark,1,Outer layer of a tree,38,"The bark absorbed rain, channelling it down to the roots."
+bark_profile_s1_20,bark,1,Outer layer of a tree,39,Light filtered through the canopy onto the pale bark below.
+bat_profile_s0_01,bat,0,Sports equipment,0,He swung the bat and hit the ball out of the park.
+bat_profile_s0_02,bat,0,Sports equipment,1,She chose a lightweight bat for the cricket match.
+bat_profile_s0_03,bat,0,Sports equipment,2,The batter gripped the bat tightly as the pitcher wound up.
+bat_profile_s0_04,bat,0,Sports equipment,3,He polished his bat before the game.
+bat_profile_s0_05,bat,0,Sports equipment,4,The cricket bat was made from English willow.
+bat_profile_s0_06,bat,0,Sports equipment,5,She cracked the bat on the first pitch of the season.
+bat_profile_s0_07,bat,0,Sports equipment,6,The child held the bat awkwardly with both hands.
+bat_profile_s0_08,bat,0,Sports equipment,7,His bat connected with the ball with a loud crack.
+bat_profile_s0_09,bat,0,Sports equipment,8,The team manager handed the new player a bat.
+bat_profile_s0_10,bat,0,Sports equipment,9,She practiced her swing with the bat every evening.
+bat_profile_s0_11,bat,0,Sports equipment,10,The batsman walked to the crease and raised his bat to the crowd.
+bat_profile_s0_12,bat,0,Sports equipment,11,He broke his favourite bat during the championship game.
+bat_profile_s0_13,bat,0,Sports equipment,12,The bat slipped from her hands and rolled toward the dugout.
+bat_profile_s0_14,bat,0,Sports equipment,13,The coach told him to choke up on the bat for better control.
+bat_profile_s0_15,bat,0,Sports equipment,14,He selected a heavier bat to improve his hitting power.
+bat_profile_s0_16,bat,0,Sports equipment,15,The bat had a slight crack in the handle from last season.
+bat_profile_s0_17,bat,0,Sports equipment,16,She carried the bat over her shoulder as she walked to the plate.
+bat_profile_s0_18,bat,0,Sports equipment,17,The umpire inspected the bat to ensure it met regulations.
+bat_profile_s0_19,bat,0,Sports equipment,18,He autographed a bat for the young fan after the match.
+bat_profile_s0_20,bat,0,Sports equipment,19,She taped the handle of her bat before every game.
+bat_profile_s1_01,bat,1,Flying mammal,20,A bat swooped overhead in the dusk.
+bat_profile_s1_02,bat,1,Flying mammal,21,"The bat hung upside down in the cave, wrapped in its wings."
+bat_profile_s1_03,bat,1,Flying mammal,22,She spotted a bat darting after insects near the streetlight.
+bat_profile_s1_04,bat,1,Flying mammal,23,Bats are the only mammals capable of true powered flight.
+bat_profile_s1_05,bat,1,Flying mammal,24,The colony of bats flew out of the old barn at sunset.
+bat_profile_s1_06,bat,1,Flying mammal,25,A bat was caught inside the house and had to be released.
+bat_profile_s1_07,bat,1,Flying mammal,26,The bat used echolocation to navigate in complete darkness.
+bat_profile_s1_08,bat,1,Flying mammal,27,She watched a bat skim the surface of the pond catching mosquitoes.
+bat_profile_s1_09,bat,1,Flying mammal,28,The fruit bat hung from the branch eating a mango.
+bat_profile_s1_10,bat,1,Flying mammal,29,Scientists tagged the bat to track its migration patterns.
+bat_profile_s1_11,bat,1,Flying mammal,30,The bat's membrane stretched thinly between its long finger bones.
+bat_profile_s1_12,bat,1,Flying mammal,31,They installed a bat box in the garden to encourage roosting.
+bat_profile_s1_13,bat,1,Flying mammal,32,The little brown bat is common in North American forests.
+bat_profile_s1_14,bat,1,Flying mammal,33,She was frightened when a bat flew past her head in the cave.
+bat_profile_s1_15,bat,1,Flying mammal,34,A bat was roosting behind the loose shutter of the old house.
+bat_profile_s1_16,bat,1,Flying mammal,35,"The vampire bat feeds exclusively on blood, mostly from livestock."
+bat_profile_s1_17,bat,1,Flying mammal,36,Bats pollinate many tropical plants by feeding on their nectar.
+bat_profile_s1_18,bat,1,Flying mammal,37,The injured bat was taken to a wildlife rehabilitation centre.
+bat_profile_s1_19,bat,1,Flying mammal,38,"At twilight, hundreds of bats poured out of the limestone cave."
+bat_profile_s1_20,bat,1,Flying mammal,39,The bat navigated the maze of branches without touching a single one.
+crane_profile_s0_01,crane,0,Large wading bird,0,A crane stood motionless at the edge of the marsh.
+crane_profile_s0_02,crane,0,Large wading bird,1,The flock of cranes circled before landing in the field.
+crane_profile_s0_03,crane,0,Large wading bird,2,She watched a crane wade through the shallow water in search of fish.
+crane_profile_s0_04,crane,0,Large wading bird,3,The whooping crane is one of the rarest birds in North America.
+crane_profile_s0_05,crane,0,Large wading bird,4,A pair of cranes performed their elegant mating dance.
+crane_profile_s0_06,crane,0,Large wading bird,5,The crane spread its broad wings and rose silently into the sky.
+crane_profile_s0_07,crane,0,Large wading bird,6,Cranes migrate thousands of miles between their breeding and wintering grounds.
+crane_profile_s0_08,crane,0,Large wading bird,7,The sandhill crane stood over a metre tall in the wetland.
+crane_profile_s0_09,crane,0,Large wading bird,8,She photographed the crane as it preened its feathers on the riverbank.
+crane_profile_s0_10,crane,0,Large wading bird,9,"The crane's call is a loud, bugling sound that carries for miles."
+crane_profile_s0_11,crane,0,Large wading bird,10,The wetland reserve was created specifically to protect nesting cranes.
+crane_profile_s0_12,crane,0,Large wading bird,11,A crane was spotted feeding in the flooded rice paddy.
+crane_profile_s0_13,crane,0,Large wading bird,12,Bird watchers travelled from across the country to see the rare crane.
+crane_profile_s0_14,crane,0,Large wading bird,13,The crane bent its long neck gracefully to drink from the pool.
+crane_profile_s0_15,crane,0,Large wading bird,14,"The crane balanced on one leg, completely still, for several minutes."
+crane_profile_s0_16,crane,0,Large wading bird,15,Fossil evidence shows cranes have existed for over 50 million years.
+crane_profile_s0_17,crane,0,Large wading bird,16,The crane's red crown patch was clearly visible through binoculars.
+crane_profile_s0_18,crane,0,Large wading bird,17,Farmers sometimes plant their fields with crops that attract cranes.
+crane_profile_s0_19,crane,0,Large wading bird,18,The chick crane stayed close to its parent while crossing the meadow.
+crane_profile_s0_20,crane,0,Large wading bird,19,Origami cranes are folded as symbols of good luck in Japan.
+crane_profile_s1_01,crane,1,Construction lifting machine,20,The crane lifted the steel beam into position.
+crane_profile_s1_02,crane,1,Construction lifting machine,21,Workers guided the load as the crane swung it across the site.
+crane_profile_s1_03,crane,1,Construction lifting machine,22,The tower crane dominated the city skyline during construction.
+crane_profile_s1_04,crane,1,Construction lifting machine,23,He operated the crane with precise controls from the cab.
+crane_profile_s1_05,crane,1,Construction lifting machine,24,The crane's hook caught on the girder and had to be freed.
+crane_profile_s1_06,crane,1,Construction lifting machine,25,A mobile crane was brought in to remove the collapsed roof section.
+crane_profile_s1_07,crane,1,Construction lifting machine,26,The crane operator carefully lowered the prefabricated wall panel.
+crane_profile_s1_08,crane,1,Construction lifting machine,27,Noise from the crane echoed through the surrounding streets.
+crane_profile_s1_09,crane,1,Construction lifting machine,28,"The crane broke down mid-lift, halting work for the afternoon."
+crane_profile_s1_10,crane,1,Construction lifting machine,29,She watched the crane place the rooftop unit on the building.
+crane_profile_s1_11,crane,1,Construction lifting machine,30,The harbour crane unloaded containers from the cargo ship.
+crane_profile_s1_12,crane,1,Construction lifting machine,31,Engineers calculated the maximum load the crane could safely carry.
+crane_profile_s1_13,crane,1,Construction lifting machine,32,The crane rotated slowly and placed the load on the platform below.
+crane_profile_s1_14,crane,1,Construction lifting machine,33,He inspected the crane's cable for signs of wear and fraying.
+crane_profile_s1_15,crane,1,Construction lifting machine,34,The construction crane towered sixty metres above the ground.
+crane_profile_s1_16,crane,1,Construction lifting machine,35,The crane worked through the night to keep the project on schedule.
+crane_profile_s1_17,crane,1,Construction lifting machine,36,A crane was needed to extract the car from the ditch.
+crane_profile_s1_18,crane,1,Construction lifting machine,37,The portable crane folded neatly onto the back of the truck.
+crane_profile_s1_19,crane,1,Construction lifting machine,38,She filmed the demolition as the crane swung the wrecking ball.
+crane_profile_s1_20,crane,1,Construction lifting machine,39,Safety nets surrounded the area beneath the crane's path.
+spring_profile_s0_01,spring,0,Season (after winter),0,The flowers bloomed all over the meadow in spring.
+spring_profile_s0_02,spring,0,Season (after winter),1,She planted her vegetable garden as soon as spring arrived.
+spring_profile_s0_03,spring,0,Season (after winter),2,The birds returned from their migration in the warmth of spring.
+spring_profile_s0_04,spring,0,Season (after winter),3,Spring brought longer days and lighter evenings.
+spring_profile_s0_05,spring,0,Season (after winter),4,He always looked forward to spring after the long winter.
+spring_profile_s0_06,spring,0,Season (after winter),5,The cherry blossoms opened in the first week of spring.
+spring_profile_s0_07,spring,0,Season (after winter),6,Spring showers watered the fields and turned them green.
+spring_profile_s0_08,spring,0,Season (after winter),7,She wore her lightest coat on the first warm day of spring.
+spring_profile_s0_09,spring,0,Season (after winter),8,The lambs were born in early spring.
+spring_profile_s0_10,spring,0,Season (after winter),9,The market filled with fresh produce every spring.
+spring_profile_s0_11,spring,0,Season (after winter),10,Children played outside for the first time in months when spring came.
+spring_profile_s0_12,spring,0,Season (after winter),11,Spring cleaning left the house feeling fresh and airy.
+spring_profile_s0_13,spring,0,Season (after winter),12,The grass grew lush and thick throughout the spring.
+spring_profile_s0_14,spring,0,Season (after winter),13,He planted tulip bulbs in autumn to bloom in spring.
+spring_profile_s0_15,spring,0,Season (after winter),14,Spring brought a sense of renewal after the grey months of winter.
+spring_profile_s0_16,spring,0,Season (after winter),15,Allergies made every spring a miserable season for him.
+spring_profile_s0_17,spring,0,Season (after winter),16,The pond thawed at the start of spring.
+spring_profile_s0_18,spring,0,Season (after winter),17,The warm spring breeze carried the scent of blossoms.
+spring_profile_s0_19,spring,0,Season (after winter),18,Spring migration brought thousands of birds through the valley.
+spring_profile_s0_20,spring,0,Season (after winter),19,The school trip to the countryside was always planned for spring.
+spring_profile_s1_01,spring,1,Natural spring / water source,20,The spring provided the only fresh water for the remote village.
+spring_profile_s1_02,spring,1,Natural spring / water source,21,"After the drought, the spring had dried to a trickle."
+spring_profile_s1_03,spring,1,Natural spring / water source,22,They traced the spring back to a crack in the limestone hillside.
+spring_profile_s1_04,spring,1,Natural spring / water source,23,The spring had been used by travellers for centuries as a reliable watering point.
+spring_profile_s1_05,spring,1,Natural spring / water source,24,Local farmers depended on the spring to fill the troughs during dry spells.
+spring_profile_s1_06,spring,1,Natural spring / water source,25,Geologists mapped the spring as part of the underground aquifer system.
+spring_profile_s1_07,spring,1,Natural spring / water source,26,The spring water was tested and found to be exceptionally pure.
+spring_profile_s1_08,spring,1,Natural spring / water source,27,"After the earthquake, the spring shifted several metres from its original location."
+spring_profile_s1_09,spring,1,Natural spring / water source,28,Children played in the shallow pool that formed where the spring met the meadow.
+spring_profile_s1_10,spring,1,Natural spring / water source,29,"The spring never froze, even in the coldest winters."
+spring_profile_s1_11,spring,1,Natural spring / water source,30,Conservation teams worked to protect the spring from agricultural runoff.
+spring_profile_s1_12,spring,1,Natural spring / water source,31,A wooden bench had been placed beside the spring for walkers to rest.
+spring_profile_s1_13,spring,1,Natural spring / water source,32,Rare ferns grew in the shaded area surrounding the spring.
+spring_profile_s1_14,spring,1,Natural spring / water source,33,The spring increased its flow significantly after a week of heavy rain.
+spring_profile_s1_15,spring,1,Natural spring / water source,34,Engineers dug down to the spring to install a proper collection system.
+spring_profile_s1_16,spring,1,Natural spring / water source,35,The spring attracted wildlife from across the valley during dry months.
+spring_profile_s1_17,spring,1,Natural spring / water source,36,She filled her water bottle from the spring before continuing up the mountain.
+spring_profile_s1_18,spring,1,Natural spring / water source,37,The spring had been capped in the 1960s and only recently restored.
+spring_profile_s1_19,spring,1,Natural spring / water source,38,Measuring the spring's output was part of the regional water management study.
+spring_profile_s1_20,spring,1,Natural spring / water source,39,"The spring flowed year-round, fed by the deep aquifer beneath the hillside."
+match_profile_s0_01,match,0,Sporting contest,0,They watched the final match of the championship on television.
+match_profile_s0_02,match,0,Sporting contest,1,She scored the winning goal in the last minute of the match.
+match_profile_s0_03,match,0,Sporting contest,2,The tennis match lasted three gruelling sets.
+match_profile_s0_04,match,0,Sporting contest,3,The match was postponed due to heavy rain.
+match_profile_s0_05,match,0,Sporting contest,4,He prepared for the chess match with weeks of intensive study.
+match_profile_s0_06,match,0,Sporting contest,5,The match drew a crowd of thirty thousand spectators.
+match_profile_s0_07,match,0,Sporting contest,6,The match ended in a draw after extra time.
+match_profile_s0_08,match,0,Sporting contest,7,She had never lost a match in her professional career.
+match_profile_s0_09,match,0,Sporting contest,8,The referee abandoned the match due to crowd disturbances.
+match_profile_s0_10,match,0,Sporting contest,9,Both teams warmed up on the pitch before the match began.
+match_profile_s0_11,match,0,Sporting contest,10,The boxing match attracted global media coverage.
+match_profile_s0_12,match,0,Sporting contest,11,He reviewed footage of the previous match to prepare his tactics.
+match_profile_s0_13,match,0,Sporting contest,12,The students competed in a debating match against the rival school.
+match_profile_s0_14,match,0,Sporting contest,13,The match was described as the most exciting in recent memory.
+match_profile_s0_15,match,0,Sporting contest,14,She trained every day in the lead-up to the match.
+match_profile_s0_16,match,0,Sporting contest,15,The cricket match was interrupted by a thunderstorm in the afternoon.
+match_profile_s0_17,match,0,Sporting contest,16,Tickets for the match sold out within minutes of going on sale.
+match_profile_s0_18,match,0,Sporting contest,17,Neither team managed to score during the entire match.
+match_profile_s0_19,match,0,Sporting contest,18,The school organised a friendly match between teachers and students.
+match_profile_s0_20,match,0,Sporting contest,19,The hockey match was played on an indoor rink.
+match_profile_s1_01,match,1,Fire-starting stick,20,She struck a match to light the candle on the table.
+match_profile_s1_02,match,1,Fire-starting stick,21,He lit the campfire with a single match.
+match_profile_s1_03,match,1,Fire-starting stick,22,The match sputtered in the wind before finally catching.
+match_profile_s1_04,match,1,Fire-starting stick,23,She kept a box of matches in the kitchen drawer.
+match_profile_s1_05,match,1,Fire-starting stick,24,He fumbled with the match in the dark.
+match_profile_s1_06,match,1,Fire-starting stick,25,The match burned down to her fingers before the torch caught.
+match_profile_s1_07,match,1,Fire-starting stick,26,The cardboard matches were too soft to strike cleanly.
+match_profile_s1_08,match,1,Fire-starting stick,27,He struck the match along the side of the box.
+match_profile_s1_09,match,1,Fire-starting stick,28,The last match in the box broke before he could light it.
+match_profile_s1_10,match,1,Fire-starting stick,29,She lit the gas ring with a match when the igniter failed.
+match_profile_s1_11,match,1,Fire-starting stick,30,He threw the spent match into the ashtray.
+match_profile_s1_12,match,1,Fire-starting stick,31,The match flared briefly and then went out in the draught.
+match_profile_s1_13,match,1,Fire-starting stick,32,She carried waterproof matches on every camping trip.
+match_profile_s1_14,match,1,Fire-starting stick,33,The safety match would only ignite on its own striking surface.
+match_profile_s1_15,match,1,Fire-starting stick,34,He counted out three matches and put them in his pocket.
+match_profile_s1_16,match,1,Fire-starting stick,35,The box of matches was damp and none of them would strike.
+match_profile_s1_17,match,1,Fire-starting stick,36,He used a long match to reach the back of the gas fireplace.
+match_profile_s1_18,match,1,Fire-starting stick,37,She placed the match against the wick and blew gently to help it catch.
+match_profile_s1_19,match,1,Fire-starting stick,38,The match left a small black mark on the floor where it had burned.
+match_profile_s1_20,match,1,Fire-starting stick,39,She used a match to seal the frayed end of the rope.
+pitch_profile_s0_01,pitch,0,Sports playing field,0,The football pitch was in perfect condition after the groundskeepers' work.
+pitch_profile_s0_02,pitch,0,Sports playing field,1,She ran the length of the pitch during warmups.
+pitch_profile_s0_03,pitch,0,Sports playing field,2,The pitch was waterlogged after the overnight rain.
+pitch_profile_s0_04,pitch,0,Sports playing field,3,Players gathered at the centre of the pitch for the coin toss.
+pitch_profile_s0_05,pitch,0,Sports playing field,4,The rugby pitch was marked out with fresh white lines.
+pitch_profile_s0_06,pitch,0,Sports playing field,5,He sprinted down the right side of the pitch and crossed the ball.
+pitch_profile_s0_07,pitch,0,Sports playing field,6,The referee walked on to the pitch to signal the start of play.
+pitch_profile_s0_08,pitch,0,Sports playing field,7,Spectators cheered as the team ran out on to the pitch.
+pitch_profile_s0_09,pitch,0,Sports playing field,8,The pitch dimensions met the requirements for international competition.
+pitch_profile_s0_10,pitch,0,Sports playing field,9,She made her move down the left flank of the pitch.
+pitch_profile_s0_11,pitch,0,Sports playing field,10,The groundsman rolled the cricket pitch early in the morning.
+pitch_profile_s0_12,pitch,0,Sports playing field,11,Players slipped on the icy pitch and the match was abandoned.
+pitch_profile_s0_13,pitch,0,Sports playing field,12,The two teams warmed up at opposite ends of the pitch.
+pitch_profile_s0_14,pitch,0,Sports playing field,13,He was stretchered off the pitch after a tackle.
+pitch_profile_s0_15,pitch,0,Sports playing field,14,The floodlights illuminated the pitch from all four sides.
+pitch_profile_s0_16,pitch,0,Sports playing field,15,The pitch had been resurfaced over the winter break.
+pitch_profile_s0_17,pitch,0,Sports playing field,16,She scored directly from a corner when the ball bounced on the wet pitch.
+pitch_profile_s0_18,pitch,0,Sports playing field,17,The synthetic pitch allowed matches to be played in all weather.
+pitch_profile_s0_19,pitch,0,Sports playing field,18,He admired the perfectly striped pitch as he arrived at the stadium.
+pitch_profile_s0_20,pitch,0,Sports playing field,19,The pitch was too long for a standard football game and had to be shortened.
+pitch_profile_s1_01,pitch,1,Business proposal / investor presentation,20,She rehearsed the pitch until she could deliver it in under three minutes.
+pitch_profile_s1_02,pitch,1,Business proposal / investor presentation,21,The startup team submitted their pitch to the accelerator programme.
+pitch_profile_s1_03,pitch,1,Business proposal / investor presentation,22,He refined the pitch based on feedback from the first round of meetings.
+pitch_profile_s1_04,pitch,1,Business proposal / investor presentation,23,The pitch was delivered to a panel of five investors in the boardroom.
+pitch_profile_s1_05,pitch,1,Business proposal / investor presentation,24,She opened the pitch with a compelling statistic about market size.
+pitch_profile_s1_06,pitch,1,Business proposal / investor presentation,25,The pitch needed to be sharper if they wanted to secure the funding.
+pitch_profile_s1_07,pitch,1,Business proposal / investor presentation,26,"After the pitch, the investors asked detailed questions about the revenue model."
+pitch_profile_s1_08,pitch,1,Business proposal / investor presentation,27,The pitch included a product demonstration and three slides of financial projections.
+pitch_profile_s1_09,pitch,1,Business proposal / investor presentation,28,He was nervous before the pitch but performed well under pressure.
+pitch_profile_s1_10,pitch,1,Business proposal / investor presentation,29,The pitch was rejected at the first stage but invited for a second round.
+pitch_profile_s1_11,pitch,1,Business proposal / investor presentation,30,She spent the weekend reworking the pitch after the initial feedback.
+pitch_profile_s1_12,pitch,1,Business proposal / investor presentation,31,"The pitch was twenty minutes long, followed by a ten-minute question-and-answer session."
+pitch_profile_s1_13,pitch,1,Business proposal / investor presentation,32,Competitors had already submitted their pitch to the same fund.
+pitch_profile_s1_14,pitch,1,Business proposal / investor presentation,33,The pitch deck was sent in advance to give the investors time to prepare.
+pitch_profile_s1_15,pitch,1,Business proposal / investor presentation,34,He closed the pitch with a summary of the team's credentials and traction.
+pitch_profile_s1_16,pitch,1,Business proposal / investor presentation,35,The pitch focused on the problem being solved rather than the technology itself.
+pitch_profile_s1_17,pitch,1,Business proposal / investor presentation,36,"After the pitch, the lead investor signalled interest in a follow-up meeting."
+pitch_profile_s1_18,pitch,1,Business proposal / investor presentation,37,The pitch was strong but the financial projections were questioned closely.
+pitch_profile_s1_19,pitch,1,Business proposal / investor presentation,38,She simplified the pitch after realising the original version was too technical.
+pitch_profile_s1_20,pitch,1,Business proposal / investor presentation,39,The pitch was accepted and the team received a term sheet the following week.

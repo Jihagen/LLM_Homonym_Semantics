@@ -1,5 +1,5 @@
 import run_study
-import validate_study_run
+from analysis import validate_study_run
 
 
 def test_study_defaults_exclude_light():

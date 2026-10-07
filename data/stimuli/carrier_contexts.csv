@@ -1,0 +1,43 @@
+carrier_id,word,condition,text
+bank_carrier_01,bank,ambiguous_carrier,The bank was unstable.
+bank_carrier_02,bank,ambiguous_carrier,They examined the bank.
+bank_carrier_03,bank,ambiguous_carrier,The bank had changed.
+bank_carrier_04,bank,ambiguous_carrier,The bank needed protection.
+bank_carrier_05,bank,ambiguous_carrier,The bank became difficult to access.
+bank_bare,bank,bare_word,bank
+bark_carrier_01,bark,ambiguous_carrier,The bark drew attention.
+bark_carrier_02,bark,ambiguous_carrier,They studied the bark.
+bark_carrier_03,bark,ambiguous_carrier,The bark was unusual.
+bark_carrier_04,bark,ambiguous_carrier,The bark changed noticeably.
+bark_carrier_05,bark,ambiguous_carrier,The bark became the focus.
+bark_bare,bark,bare_word,bark
+bat_carrier_01,bat,ambiguous_carrier,They watched the bat.
+bat_carrier_02,bat,ambiguous_carrier,She checked the bat.
+bat_carrier_03,bat,ambiguous_carrier,He moved the bat carefully.
+bat_carrier_04,bat,ambiguous_carrier,The bat was marked.
+bat_carrier_05,bat,ambiguous_carrier,The bat was kept aside.
+bat_bare,bat,bare_word,bat
+crane_carrier_01,crane,ambiguous_carrier,They watched the crane.
+crane_carrier_02,crane,ambiguous_carrier,The crane moved slowly.
+crane_carrier_03,crane,ambiguous_carrier,The crane was visible from far away.
+crane_carrier_04,crane,ambiguous_carrier,The crane was difficult to approach.
+crane_carrier_05,crane,ambiguous_carrier,The crane became the focus.
+crane_bare,crane,bare_word,crane
+spring_carrier_01,spring,ambiguous_carrier,The spring was unusually dry.
+spring_carrier_02,spring,ambiguous_carrier,They monitored the spring.
+spring_carrier_03,spring,ambiguous_carrier,The spring changed quickly.
+spring_carrier_04,spring,ambiguous_carrier,The spring became a concern.
+spring_carrier_05,spring,ambiguous_carrier,The spring was hard to assess.
+spring_bare,spring,bare_word,spring
+match_carrier_01,match,ambiguous_carrier,The match was difficult to start.
+match_carrier_02,match,ambiguous_carrier,The match ended quickly.
+match_carrier_03,match,ambiguous_carrier,They checked the match.
+match_carrier_04,match,ambiguous_carrier,The match caused trouble.
+match_carrier_05,match,ambiguous_carrier,The match was watched closely.
+match_bare,match,bare_word,match
+pitch_carrier_01,pitch,ambiguous_carrier,They prepared the pitch.
+pitch_carrier_02,pitch,ambiguous_carrier,They reviewed the pitch.
+pitch_carrier_03,pitch,ambiguous_carrier,The pitch needed improvement.
+pitch_carrier_04,pitch,ambiguous_carrier,The pitch was ready.
+pitch_carrier_05,pitch,ambiguous_carrier,They changed the pitch.
+pitch_bare,pitch,bare_word,pitch

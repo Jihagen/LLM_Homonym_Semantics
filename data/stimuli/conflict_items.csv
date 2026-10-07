@@ -1,0 +1,1079 @@
+item_id,word,primed_sense,correct_sense,direction,primed_sense_label_short,correct_sense_label_short,resolution_word,conflicting_sentence,coherent_control_sentence,sentinel,conflicting_prime_prefix,conflicting_homonym_prefix,conflicting_resolution_prefix,coherent_control_resolution_prefix,resolver_only_text,design_note
+bank_gp_01,bank,1,0,1_to_0,financial,river,river,She finished her loan application and walked to the bank to sit by the river.,"After following the riverside path, she walked to the bank to sit by the river.",probe,"She finished her loan application and walked to the
+
+probe","She finished her loan application and walked to the bank
+
+probe","She finished her loan application and walked to the bank to sit by the river
+
+probe","After following the riverside path, she walked to the bank to sit by the river
+
+probe","river
+
+probe",
+bank_gp_02,bank,1,0,1_to_0,financial,river,fish,The branch manager waited at the bank until a fish took the bait.,The angler waited at the bank until a fish took the bait.,probe,"The branch manager waited at the
+
+probe","The branch manager waited at the bank
+
+probe","The branch manager waited at the bank until a fish
+
+probe","The angler waited at the bank until a fish
+
+probe","fish
+
+probe",
+bank_gp_03,bank,1,0,1_to_0,financial,river,boat,He discussed his mortgage at the bank until a passing boat drenched him.,He checked his fishing line at the bank until a passing boat drenched him.,probe,"He discussed his mortgage at the
+
+probe","He discussed his mortgage at the bank
+
+probe","He discussed his mortgage at the bank until a passing boat
+
+probe","He checked his fishing line at the bank until a passing boat
+
+probe","boat
+
+probe",
+bank_gp_04,bank,1,0,1_to_0,financial,river,kayak,The loan officer met her at the bank and helped her into the kayak.,The canoe instructor met her at the bank and helped her into the kayak.,probe,"The loan officer met her at the
+
+probe","The loan officer met her at the bank
+
+probe","The loan officer met her at the bank and helped her into the kayak
+
+probe","The canoe instructor met her at the bank and helped her into the kayak
+
+probe","kayak
+
+probe",
+bank_gp_05,bank,1,0,1_to_0,financial,river,river,He took his overdraft papers to the bank and threw them angrily into the river.,He took his fishing supplies to the bank and threw them angrily into the river.,probe,"He took his overdraft papers to the
+
+probe","He took his overdraft papers to the bank
+
+probe","He took his overdraft papers to the bank and threw them angrily into the river
+
+probe","He took his fishing supplies to the bank and threw them angrily into the river
+
+probe","river
+
+probe",
+bank_gp_06,bank,1,0,1_to_0,financial,river,swimming,Her account adviser met her at the bank and stripped down to his swimming trunks.,Her swimming instructor met her at the bank and stripped down to his swimming trunks.,probe,"Her account adviser met her at the
+
+probe","Her account adviser met her at the bank
+
+probe","Her account adviser met her at the bank and stripped down to his swimming
+
+probe","Her swimming instructor met her at the bank and stripped down to his swimming
+
+probe","swimming
+
+probe",
+bank_gp_07,bank,1,0,1_to_0,financial,river,paddle,The mortgage broker suggested they meet at the bank and paddle into the sunset together.,The canoe guide suggested they meet at the bank and paddle into the sunset together.,probe,"The mortgage broker suggested they meet at the
+
+probe","The mortgage broker suggested they meet at the bank
+
+probe","The mortgage broker suggested they meet at the bank and paddle
+
+probe","The canoe guide suggested they meet at the bank and paddle
+
+probe","paddle
+
+probe",
+bank_gp_08,bank,0,1,0_to_1,river,financial,teller,"After checking the river level, she waited at the bank until the teller called her inside.","After completing her loan form, she waited at the bank until the teller called her inside.",probe,"After checking the river level, she waited at the
+
+probe","After checking the river level, she waited at the bank
+
+probe","After checking the river level, she waited at the bank until the teller
+
+probe","After completing her loan form, she waited at the bank until the teller
+
+probe","teller
+
+probe",
+bank_gp_09,bank,0,1,0_to_1,river,financial,loan,"After packing away his fishing rod, he sat by the bank, until the loan officer waved him inside.","After completing his mortgage application, he sat by the bank, until the loan officer waved him inside.",probe,"After packing away his fishing rod, he sat by the
+
+probe","After packing away his fishing rod, he sat by the bank
+
+probe","After packing away his fishing rod, he sat by the bank, until the loan
+
+probe","After completing his mortgage application, he sat by the bank, until the loan
+
+probe","loan
+
+probe",
+bank_gp_10,bank,0,1,0_to_1,river,financial,cashier,The canoe guide pointed toward the bank as the cashier locked the front doors.,The branch manager pointed toward the bank as the cashier locked the front doors.,probe,"The canoe guide pointed toward the
+
+probe","The canoe guide pointed toward the bank
+
+probe","The canoe guide pointed toward the bank as the cashier
+
+probe","The branch manager pointed toward the bank as the cashier
+
+probe","cashier
+
+probe",
+bank_gp_11,bank,0,1,0_to_1,river,financial,account,"Following the river path, they stopped at the bank to open a business account.","Following their financial adviser, they stopped at the bank to open a business account.",probe,"Following the river path, they stopped at the
+
+probe","Following the river path, they stopped at the bank
+
+probe","Following the river path, they stopped at the bank to open a business account
+
+probe","Following their financial adviser, they stopped at the bank to open a business account
+
+probe","account
+
+probe",
+bank_gp_12,bank,0,1,0_to_1,river,financial,cash,The flood inspector photographed the bank before its cash machine was replaced.,The security inspector photographed the bank before its cash machine was replaced.,probe,"The flood inspector photographed the
+
+probe","The flood inspector photographed the bank
+
+probe","The flood inspector photographed the bank before its cash
+
+probe","The security inspector photographed the bank before its cash
+
+probe","cash
+
+probe",
+bank_gp_13,bank,0,1,0_to_1,river,financial,mortgage,The kayaker returned to the bank because the mortgage adviser had left a message.,The account holder returned to the bank because the mortgage adviser had left a message.,probe,"The kayaker returned to the
+
+probe","The kayaker returned to the bank
+
+probe","The kayaker returned to the bank because the mortgage
+
+probe","The account holder returned to the bank because the mortgage
+
+probe","mortgage
+
+probe",
+bank_gp_14,bank,0,1,0_to_1,river,financial,vault,"After rowing practice, she returned to the bank because the vault alarm had sounded.","After meeting her accountant, she returned to the bank because the vault alarm had sounded.",probe,"After rowing practice, she returned to the
+
+probe","After rowing practice, she returned to the bank
+
+probe","After rowing practice, she returned to the bank because the vault
+
+probe","After meeting her accountant, she returned to the bank because the vault
+
+probe","vault
+
+probe",
+bark_gp_01,bark,0,1,0_to_1,dog,tree,elm,"The dog warden investigated the bark, which was peeling from the old elm.","The arborist investigated the bark, which was peeling from the old elm.",probe,"The dog warden investigated the
+
+probe","The dog warden investigated the bark
+
+probe","The dog warden investigated the bark, which was peeling from the old elm
+
+probe","The arborist investigated the bark, which was peeling from the old elm
+
+probe","elm
+
+probe",
+bark_gp_02,bark,0,1,0_to_1,dog,tree,beetles,The dog trainer studied the bark until she found beetles crawling underneath it.,The forester studied the bark until she found beetles crawling underneath it.,probe,"The dog trainer studied the
+
+probe","The dog trainer studied the bark
+
+probe","The dog trainer studied the bark until she found beetles
+
+probe","The forester studied the bark until she found beetles
+
+probe","beetles
+
+probe",
+bark_gp_03,bark,0,1,0_to_1,dog,tree,tree,The dog warden recorded the bark before the forester stripped it from the tree.,The arborist recorded the bark before the forester stripped it from the tree.,probe,"The dog warden recorded the
+
+probe","The dog warden recorded the bark
+
+probe","The dog warden recorded the bark before the forester stripped it from the tree
+
+probe","The arborist recorded the bark before the forester stripped it from the tree
+
+probe","tree
+
+probe",
+bark_gp_04,bark,0,1,0_to_1,dog,tree,birch,The neighbour complained about the bark until the wind tore it from the birch.,The forester complained about the bark until the wind tore it from the birch.,probe,"The neighbour complained about the
+
+probe","The neighbour complained about the bark
+
+probe","The neighbour complained about the bark until the wind tore it from the birch
+
+probe","The forester complained about the bark until the wind tore it from the birch
+
+probe","birch
+
+probe",
+bark_gp_05,bark,0,1,0_to_1,dog,tree,elm,"Beside the dog kennel, the children noticed the bark, which their father peeled from the elm.","Beside the old elm, the children noticed the bark, which their father peeled from the elm.",probe,"Beside the dog kennel, the children noticed the
+
+probe","Beside the dog kennel, the children noticed the bark
+
+probe","Beside the dog kennel, the children noticed the bark, which their father peeled from the elm
+
+probe","Beside the old elm, the children noticed the bark, which their father peeled from the elm
+
+probe","elm
+
+probe",
+bark_gp_06,bark,0,1,0_to_1,dog,tree,sycamore,"She complained to the neighbours about the bark, which an arborist later cut from the dying sycamore.","She spoke to the arborist about the bark, which an arborist later cut from the dying sycamore.",probe,"She complained to the neighbours about the
+
+probe","She complained to the neighbours about the bark
+
+probe","She complained to the neighbours about the bark, which an arborist later cut from the dying sycamore
+
+probe","She spoke to the arborist about the bark, which an arborist later cut from the dying sycamore
+
+probe","sycamore
+
+probe",
+bark_gp_07,bark,1,0,1_to_0,tree,dog,terrier,"After examining the damaged oak, she recorded the bark when the terrier began growling.","After setting up her microphone, she recorded the bark when the terrier began growling.",probe,"After examining the damaged oak, she recorded the
+
+probe","After examining the damaged oak, she recorded the bark
+
+probe","After examining the damaged oak, she recorded the bark when the terrier
+
+probe","After setting up her microphone, she recorded the bark when the terrier
+
+probe","terrier
+
+probe",
+bark_gp_08,bark,1,0,1_to_0,tree,dog,spaniel,The arborist complained about the bark until the spaniel was taken indoors.,The neighbour complained about the bark until the spaniel was taken indoors.,probe,"The arborist complained about the
+
+probe","The arborist complained about the bark
+
+probe","The arborist complained about the bark until the spaniel
+
+probe","The neighbour complained about the bark until the spaniel
+
+probe","spaniel
+
+probe",
+bark_gp_09,bark,1,0,1_to_0,tree,dog,puppy,"While cataloguing trees, the researcher analysed the bark that the puppy produced during the test.","While studying canine behaviour, the researcher analysed the bark that the puppy produced during the test.",probe,"While cataloguing trees, the researcher analysed the
+
+probe","While cataloguing trees, the researcher analysed the bark
+
+probe","While cataloguing trees, the researcher analysed the bark that the puppy
+
+probe","While studying canine behaviour, the researcher analysed the bark that the puppy
+
+probe","puppy
+
+probe",
+bark_gp_10,bark,1,0,1_to_0,tree,dog,dog,The lumberjack recognised the bark as soon as the dog made the noise again.,The dog trainer recognised the bark as soon as the dog made the noise again.,probe,"The lumberjack recognised the
+
+probe","The lumberjack recognised the bark
+
+probe","The lumberjack recognised the bark as soon as the dog
+
+probe","The dog trainer recognised the bark as soon as the dog
+
+probe","dog
+
+probe",
+bark_gp_11,bark,1,0,1_to_0,tree,dog,terrier,"Beside the timber yard, they discussed the bark until a terrier repeated it from behind the gate.","Beside the dog kennel, they discussed the bark until a terrier repeated it from behind the gate.",probe,"Beside the timber yard, they discussed the
+
+probe","Beside the timber yard, they discussed the bark
+
+probe","Beside the timber yard, they discussed the bark until a terrier
+
+probe","Beside the dog kennel, they discussed the bark until a terrier
+
+probe","terrier
+
+probe",
+bark_gp_12,bark,1,0,1_to_0,tree,dog,hound,The botanist tried to identify the bark before the hound made the sound a second time.,The animal behaviourist tried to identify the bark before the hound made the sound a second time.,probe,"The botanist tried to identify the
+
+probe","The botanist tried to identify the bark
+
+probe","The botanist tried to identify the bark before the hound
+
+probe","The animal behaviourist tried to identify the bark before the hound
+
+probe","hound
+
+probe",
+bark_gp_13,bark,0,1,0_to_1,dog,tree,sap,"After the terrier woke the neighbours, she noticed the bark, where sap was seeping from the trunk.","After the storm split the old oak, she noticed the bark, where sap was seeping from the trunk.",probe,"After the terrier woke the neighbours, she noticed the
+
+probe","After the terrier woke the neighbours, she noticed the bark
+
+probe","After the terrier woke the neighbours, she noticed the bark, where sap
+
+probe","After the storm split the old oak, she noticed the bark, where sap
+
+probe","sap
+
+probe",
+bark_gp_14,bark,1,0,1_to_0,tree,dog,echoed,"After inspecting the split trunk, she noted the bark that echoed across the empty yard.","After listening beside the kennel, she noted the bark that echoed across the empty yard.",probe,"After inspecting the split trunk, she noted the
+
+probe","After inspecting the split trunk, she noted the bark
+
+probe","After inspecting the split trunk, she noted the bark that echoed
+
+probe","After listening beside the kennel, she noted the bark that echoed
+
+probe","echoed
+
+probe",
+bat_gp_01,bat,0,1,0_to_1,sports,animal,wings,"He handed her the bat, which spread its wings and flew away.","The wildlife handler handed her the bat, which spread its wings and flew away.",probe,"He handed her the
+
+probe","He handed her the bat
+
+probe","He handed her the bat, which spread its wings
+
+probe","The wildlife handler handed her the bat, which spread its wings
+
+probe","wings
+
+probe",
+bat_gp_02,bat,0,1,0_to_1,sports,animal,rafter,"After practice, he carried the bat into the shed, where it hung upside down from a rafter.","After the wildlife rescue, he carried the bat into the shed, where it hung upside down from a rafter.",probe,"After practice, he carried the
+
+probe","After practice, he carried the bat
+
+probe","After practice, he carried the bat into the shed, where it hung upside down from a rafter
+
+probe","After the wildlife rescue, he carried the bat into the shed, where it hung upside down from a rafter
+
+probe","rafter
+
+probe",
+bat_gp_03,bat,0,1,0_to_1,sports,animal,shrieked,"She reached for the bat beside the wicket, but it shrieked and flew away.","The wildlife handler reached for the bat beside the wicket, but it shrieked and flew away.",probe,"She reached for the
+
+probe","She reached for the bat
+
+probe","She reached for the bat beside the wicket, but it shrieked
+
+probe","The wildlife handler reached for the bat beside the wicket, but it shrieked
+
+probe","shrieked
+
+probe",
+bat_gp_04,bat,0,1,0_to_1,sports,animal,flew,"The umpire inspected the bat, which bit his finger and flew over the boundary.","The veterinarian inspected the bat, which bit his finger and flew over the boundary.",probe,"The umpire inspected the
+
+probe","The umpire inspected the bat
+
+probe","The umpire inspected the bat, which bit his finger and flew
+
+probe","The veterinarian inspected the bat, which bit his finger and flew
+
+probe","flew
+
+probe",
+bat_gp_05,bat,0,1,0_to_1,sports,animal,wings,"The player reached into the kit bag for the bat, which unfurled its wings and clung to his sleeve.","The wildlife rehabilitator reached into the kit bag for the bat, which unfurled its wings and clung to his sleeve.",probe,"The player reached into the kit bag for the
+
+probe","The player reached into the kit bag for the bat
+
+probe","The player reached into the kit bag for the bat, which unfurled its wings
+
+probe","The wildlife rehabilitator reached into the kit bag for the bat, which unfurled its wings
+
+probe","wings
+
+probe",
+bat_gp_06,bat,0,1,0_to_1,sports,animal,sleeping,"She locked the bat in the equipment room, but by morning it was sleeping upside down from the ceiling.","She secured the rescued bat in the equipment room, but by morning it was sleeping upside down from the ceiling.",probe,"She locked the
+
+probe","She locked the bat
+
+probe","She locked the bat in the equipment room, but by morning it was sleeping
+
+probe","She secured the rescued bat in the equipment room, but by morning it was sleeping
+
+probe","sleeping
+
+probe",
+bat_gp_07,bat,0,1,0_to_1,sports,animal,rafters,"The boy tucked the bat under his arm, but it wriggled free and flew into the rafters.","The wildlife handler tucked the bat under his arm, but it wriggled free and flew into the rafters.",probe,"The boy tucked the
+
+probe","The boy tucked the bat
+
+probe","The boy tucked the bat under his arm, but it wriggled free and flew into the rafters
+
+probe","The wildlife handler tucked the bat under his arm, but it wriggled free and flew into the rafters
+
+probe","rafters
+
+probe",
+bat_gp_08,bat,1,0,1_to_0,animal,sports,batter,"After monitoring the cave all night, she carried the bat until the batter asked for it back.","After clearing the dugout, she carried the bat until the batter asked for it back.",probe,"After monitoring the cave all night, she carried the
+
+probe","After monitoring the cave all night, she carried the bat
+
+probe","After monitoring the cave all night, she carried the bat until the batter
+
+probe","After clearing the dugout, she carried the bat until the batter
+
+probe","batter
+
+probe",
+bat_gp_09,bat,1,0,1_to_0,animal,sports,umpire,The wildlife officer inspected the bat before the umpire ruled it illegal.,The equipment manager inspected the bat before the umpire ruled it illegal.,probe,"The wildlife officer inspected the
+
+probe","The wildlife officer inspected the bat
+
+probe","The wildlife officer inspected the bat before the umpire
+
+probe","The equipment manager inspected the bat before the umpire
+
+probe","umpire
+
+probe",
+bat_gp_10,bat,1,0,1_to_0,animal,sports,batsman,The zoologist photographed the bat that the batsman had cracked during practice.,The sports reporter photographed the bat that the batsman had cracked during practice.,probe,"The zoologist photographed the
+
+probe","The zoologist photographed the bat
+
+probe","The zoologist photographed the bat that the batsman
+
+probe","The sports reporter photographed the bat that the batsman
+
+probe","batsman
+
+probe",
+bat_gp_11,bat,1,0,1_to_0,animal,sports,coach,The cave guide returned the bat to the coach's equipment bag.,The cricket player returned the bat to the coach's equipment bag.,probe,"The cave guide returned the
+
+probe","The cave guide returned the bat
+
+probe","The cave guide returned the bat to the coach
+
+probe","The cricket player returned the bat to the coach
+
+probe","coach
+
+probe",
+bat_gp_12,bat,1,0,1_to_0,animal,sports,wicket,"At dusk, the ranger spotted the bat lying beside the wicket.","During practice, the player spotted the bat lying beside the wicket.",probe,"At dusk, the ranger spotted the
+
+probe","At dusk, the ranger spotted the bat
+
+probe","At dusk, the ranger spotted the bat lying beside the wicket
+
+probe","During practice, the player spotted the bat lying beside the wicket
+
+probe","wicket
+
+probe",
+bat_gp_13,bat,1,0,1_to_0,animal,sports,slugger,The conservationist tagged the bat before the slugger took it to home plate.,The equipment assistant tagged the bat before the slugger took it to home plate.,probe,"The conservationist tagged the
+
+probe","The conservationist tagged the bat
+
+probe","The conservationist tagged the bat before the slugger
+
+probe","The equipment assistant tagged the bat before the slugger
+
+probe","slugger
+
+probe",
+bat_gp_14,bat,1,0,1_to_0,animal,sports,pitcher,The cave researcher found the bat before the pitcher asked to use it during warm-up.,The clubhouse attendant found the bat before the pitcher asked to use it during warm-up.,probe,"The cave researcher found the
+
+probe","The cave researcher found the bat
+
+probe","The cave researcher found the bat before the pitcher
+
+probe","The clubhouse attendant found the bat before the pitcher
+
+probe","pitcher
+
+probe",
+crane_gp_01,crane,1,0,1_to_0,machine,bird,reeds,The site manager watched the crane step into the reeds.,The ornithologist watched the crane step into the reeds.,probe,"The site manager watched the
+
+probe","The site manager watched the crane
+
+probe","The site manager watched the crane step into the reeds
+
+probe","The ornithologist watched the crane step into the reeds
+
+probe","reeds
+
+probe",
+crane_gp_02,crane,1,0,1_to_0,machine,bird,wings,The operator waited beside the crane until it spread its wings and flew over the scaffolding.,The birdwatcher waited beside the crane until it spread its wings and flew over the scaffolding.,probe,"The operator waited beside the
+
+probe","The operator waited beside the crane
+
+probe","The operator waited beside the crane until it spread its wings
+
+probe","The birdwatcher waited beside the crane until it spread its wings
+
+probe","wings
+
+probe",
+crane_gp_03,crane,1,0,1_to_0,machine,bird,beak,"The foreman pointed to the crane, which dipped its beak into the drainage ditch.","The ornithologist pointed to the crane, which dipped its beak into the drainage ditch.",probe,"The foreman pointed to the
+
+probe","The foreman pointed to the crane
+
+probe","The foreman pointed to the crane, which dipped its beak
+
+probe","The ornithologist pointed to the crane, which dipped its beak
+
+probe","beak
+
+probe",
+crane_gp_04,crane,1,0,1_to_0,machine,bird,wing,"The safety inspector examined the crane, which tucked its head beneath one wing.","The wildlife veterinarian examined the crane, which tucked its head beneath one wing.",probe,"The safety inspector examined the
+
+probe","The safety inspector examined the crane
+
+probe","The safety inspector examined the crane, which tucked its head beneath one wing
+
+probe","The wildlife veterinarian examined the crane, which tucked its head beneath one wing
+
+probe","wing
+
+probe",
+crane_gp_05,crane,1,0,1_to_0,machine,bird,preen,"The steelworkers watched the crane arrive, fold its legs, and begin to preen.","The birdwatchers watched the crane arrive, fold its legs, and begin to preen.",probe,"The steelworkers watched the
+
+probe","The steelworkers watched the crane
+
+probe","The steelworkers watched the crane arrive, fold its legs, and begin to preen
+
+probe","The birdwatchers watched the crane arrive, fold its legs, and begin to preen
+
+probe","preen
+
+probe",
+crane_gp_06,crane,1,0,1_to_0,machine,bird,fish,"The contractor followed the crane to the drainage ditch, where it speared a fish.","The ornithologist followed the crane to the drainage ditch, where it speared a fish.",probe,"The contractor followed the
+
+probe","The contractor followed the crane
+
+probe","The contractor followed the crane to the drainage ditch, where it speared a fish
+
+probe","The ornithologist followed the crane to the drainage ditch, where it speared a fish
+
+probe","fish
+
+probe",
+crane_gp_07,crane,0,1,0_to_1,bird,machine,operator,The ornithologist watched the crane until the operator lifted a steel girder.,The site manager watched the crane until the operator lifted a steel girder.,probe,"The ornithologist watched the
+
+probe","The ornithologist watched the crane
+
+probe","The ornithologist watched the crane until the operator
+
+probe","The site manager watched the crane until the operator
+
+probe","operator
+
+probe",
+crane_gp_08,crane,0,1,0_to_1,bird,machine,pallet,The birdwatcher pointed to the crane as it raised a pallet above the roof.,The foreman pointed to the crane as it raised a pallet above the roof.,probe,"The birdwatcher pointed to the
+
+probe","The birdwatcher pointed to the crane
+
+probe","The birdwatcher pointed to the crane as it raised a pallet
+
+probe","The foreman pointed to the crane as it raised a pallet
+
+probe","pallet
+
+probe",
+crane_gp_09,crane,0,1,0_to_1,bird,machine,hoisted,"The ornithologists tracked the crane to the site, where it hoisted concrete panels.","The construction supervisor tracked the crane to the site, where it hoisted concrete panels.",probe,"The ornithologists tracked the
+
+probe","The ornithologists tracked the crane
+
+probe","The ornithologists tracked the crane to the site, where it hoisted
+
+probe","The construction supervisor tracked the crane to the site, where it hoisted
+
+probe","hoisted
+
+probe",
+crane_gp_10,crane,0,1,0_to_1,bird,machine,hook,The wildlife photographer examined the crane while the foreman attached a load to its hook.,The safety inspector examined the crane while the foreman attached a load to its hook.,probe,"The wildlife photographer examined the
+
+probe","The wildlife photographer examined the crane
+
+probe","The wildlife photographer examined the crane while the foreman attached a load to its hook
+
+probe","The safety inspector examined the crane while the foreman attached a load to its hook
+
+probe","hook
+
+probe",
+crane_gp_11,crane,0,1,0_to_1,bird,machine,hydraulic,The ecologist reported the crane whose hydraulic boom had jammed above the road.,The contractor reported the crane whose hydraulic boom had jammed above the road.,probe,"The ecologist reported the
+
+probe","The ecologist reported the crane
+
+probe","The ecologist reported the crane whose hydraulic
+
+probe","The contractor reported the crane whose hydraulic
+
+probe","hydraulic
+
+probe",
+crane_gp_12,crane,0,1,0_to_1,bird,machine,construction,The ranger photographed the crane before the construction crew dismantled it.,The project manager photographed the crane before the construction crew dismantled it.,probe,"The ranger photographed the
+
+probe","The ranger photographed the crane
+
+probe","The ranger photographed the crane before the construction
+
+probe","The project manager photographed the crane before the construction
+
+probe","construction
+
+probe",
+crane_gp_13,crane,0,1,0_to_1,bird,machine,cable,"After counting the nesting birds, the ranger photographed the crane as its cable lifted a generator.","After inspecting the building site, the foreman photographed the crane as its cable lifted a generator.",probe,"After counting the nesting birds, the ranger photographed the
+
+probe","After counting the nesting birds, the ranger photographed the crane
+
+probe","After counting the nesting birds, the ranger photographed the crane as its cable
+
+probe","After inspecting the building site, the foreman photographed the crane as its cable
+
+probe","cable
+
+probe",
+crane_gp_14,crane,1,0,1_to_0,machine,bird,swallowed,"After inspecting the construction equipment, the engineer watched the crane as it swallowed a frog.","During the wetland survey, the ornithologist watched the crane as it swallowed a frog.",probe,"After inspecting the construction equipment, the engineer watched the
+
+probe","After inspecting the construction equipment, the engineer watched the crane
+
+probe","After inspecting the construction equipment, the engineer watched the crane as it swallowed
+
+probe","During the wetland survey, the ornithologist watched the crane as it swallowed
+
+probe","swallowed
+
+probe",
+spring_gp_01,spring,0,1,0_to_1,season,water,bubbled,"They waited all winter for the spring, which finally bubbled from the rocks.","They searched the hillside for the spring, which finally bubbled from the rocks.",probe,"They waited all winter for the
+
+probe","They waited all winter for the spring
+
+probe","They waited all winter for the spring, which finally bubbled
+
+probe","They searched the hillside for the spring, which finally bubbled
+
+probe","bubbled
+
+probe",
+spring_gp_02,spring,0,1,0_to_1,season,water,dry,"After the harsh winter, the villagers celebrated the spring until it ran dry.","After weeks of drought, the villagers celebrated the spring until it ran dry.",probe,"After the harsh winter, the villagers celebrated the
+
+probe","After the harsh winter, the villagers celebrated the spring
+
+probe","After the harsh winter, the villagers celebrated the spring until it ran dry
+
+probe","After weeks of drought, the villagers celebrated the spring until it ran dry
+
+probe","dry
+
+probe",
+spring_gp_03,spring,0,1,0_to_1,season,water,swept,The valley welcomed the spring until it swept away the pasture fence.,The surveyors monitored the spring until it swept away the pasture fence.,probe,"The valley welcomed the
+
+probe","The valley welcomed the spring
+
+probe","The valley welcomed the spring until it swept
+
+probe","The surveyors monitored the spring until it swept
+
+probe","swept
+
+probe",
+spring_gp_04,spring,0,1,0_to_1,season,water,drink,"The children hurried outside to see the spring, then knelt to drink from it.","The hikers hurried outside to see the spring, then knelt to drink from it.",probe,"The children hurried outside to see the
+
+probe","The children hurried outside to see the spring
+
+probe","The children hurried outside to see the spring, then knelt to drink
+
+probe","The hikers hurried outside to see the spring, then knelt to drink
+
+probe","drink
+
+probe",
+spring_gp_05,spring,1,0,1_to_0,water,season,blossoms,"After months without water, they prayed for the spring, which arrived with blossoms and longer days.","After months of cold weather, they prayed for the spring, which arrived with blossoms and longer days.",probe,"After months without water, they prayed for the
+
+probe","After months without water, they prayed for the spring
+
+probe","After months without water, they prayed for the spring, which arrived with blossoms
+
+probe","After months of cold weather, they prayed for the spring, which arrived with blossoms
+
+probe","blossoms
+
+probe",
+spring_gp_06,spring,0,1,0_to_1,season,water,bubbling,"The estate expected the spring in March, but the surveyor found it bubbling beneath the old wall.","The hydrologist expected the spring in March, but the surveyor found it bubbling beneath the old wall.",probe,"The estate expected the
+
+probe","The estate expected the spring
+
+probe","The estate expected the spring in March, but the surveyor found it bubbling
+
+probe","The hydrologist expected the spring in March, but the surveyor found it bubbling
+
+probe","bubbling
+
+probe",
+spring_gp_07,spring,1,0,1_to_0,water,season,orchards,"After testing the village well, they waited for the spring, when the orchards would bloom.","After enduring the long winter, they waited for the spring, when the orchards would bloom.",probe,"After testing the village well, they waited for the
+
+probe","After testing the village well, they waited for the spring
+
+probe","After testing the village well, they waited for the spring, when the orchards
+
+probe","After enduring the long winter, they waited for the spring, when the orchards
+
+probe","orchards
+
+probe",
+spring_gp_08,spring,1,0,1_to_0,water,season,warmer,The hydrologist predicted the spring would bring warmer days to the valley.,The meteorologist predicted the spring would bring warmer days to the valley.,probe,"The hydrologist predicted the
+
+probe","The hydrologist predicted the spring
+
+probe","The hydrologist predicted the spring would bring warmer
+
+probe","The meteorologist predicted the spring would bring warmer
+
+probe","warmer
+
+probe",
+spring_gp_09,spring,1,0,1_to_0,water,season,snowstorms,"During the drought survey, she wrote about the spring that began with late snowstorms.","During the climate survey, she wrote about the spring that began with late snowstorms.",probe,"During the drought survey, she wrote about the
+
+probe","During the drought survey, she wrote about the spring
+
+probe","During the drought survey, she wrote about the spring that began with late snowstorms
+
+probe","During the climate survey, she wrote about the spring that began with late snowstorms
+
+probe","snowstorms
+
+probe",
+spring_gp_10,spring,1,0,1_to_0,water,season,seeds,"After mapping the underground water, they prepared for the spring by ordering seeds.","After checking the planting calendar, they prepared for the spring by ordering seeds.",probe,"After mapping the underground water, they prepared for the
+
+probe","After mapping the underground water, they prepared for the spring
+
+probe","After mapping the underground water, they prepared for the spring by ordering seeds
+
+probe","After checking the planting calendar, they prepared for the spring by ordering seeds
+
+probe","seeds
+
+probe",
+spring_gp_11,spring,0,1,0_to_1,season,water,water,"After celebrating the end of winter, the villagers welcomed the spring, which supplied their drinking water throughout the drought.","After the village well failed, the villagers welcomed the spring, which supplied their drinking water throughout the drought.",probe,"After celebrating the end of winter, the villagers welcomed the
+
+probe","After celebrating the end of winter, the villagers welcomed the spring
+
+probe","After celebrating the end of winter, the villagers welcomed the spring, which supplied their drinking water
+
+probe","After the village well failed, the villagers welcomed the spring, which supplied their drinking water
+
+probe","water
+
+probe",
+spring_gp_12,spring,0,1,0_to_1,season,water,stream,"After pruning the orchard, she wrote about the spring that fed a stream below the ridge.","After mapping the aquifer, she wrote about the spring that fed a stream below the ridge.",probe,"After pruning the orchard, she wrote about the
+
+probe","After pruning the orchard, she wrote about the spring
+
+probe","After pruning the orchard, she wrote about the spring that fed a stream
+
+probe","After mapping the aquifer, she wrote about the spring that fed a stream
+
+probe","stream
+
+probe",
+spring_gp_13,spring,1,0,1_to_0,water,season,arrived,"After inspecting the dried-up well, the hydrologist described the spring that arrived unusually early that year.","After reviewing the winter temperatures, the meteorologist described the spring that arrived unusually early that year.",probe,"After inspecting the dried-up well, the hydrologist described the
+
+probe","After inspecting the dried-up well, the hydrologist described the spring
+
+probe","After inspecting the dried-up well, the hydrologist described the spring that arrived
+
+probe","After reviewing the winter temperatures, the meteorologist described the spring that arrived
+
+probe","arrived
+
+probe",
+spring_gp_14,spring,1,0,1_to_0,water,season,winter,"After surveying the aquifer, the engineer described the spring that followed the coldest winter on record.","After analysing the climate records, the meteorologist described the spring that followed the coldest winter on record.",probe,"After surveying the aquifer, the engineer described the
+
+probe","After surveying the aquifer, the engineer described the spring
+
+probe","After surveying the aquifer, the engineer described the spring that followed the coldest winter
+
+probe","After analysing the climate records, the meteorologist described the spring that followed the coldest winter
+
+probe","winter
+
+probe",
+match_gp_01,match,0,1,0_to_1,sport,fire,struck,"The referee held up the match, then struck it against the box.","The camper held up the match, then struck it against the box.",probe,"The referee held up the
+
+probe","The referee held up the match
+
+probe","The referee held up the match, then struck
+
+probe","The camper held up the match, then struck
+
+probe","struck
+
+probe",
+match_gp_02,match,0,1,0_to_1,sport,fire,fire,"The boxer threw the match, which landed in the dry grass and started a fire.","The camper threw the match, which landed in the dry grass and started a fire.",probe,"The boxer threw the
+
+probe","The boxer threw the match
+
+probe","The boxer threw the match, which landed in the dry grass and started a fire
+
+probe","The camper threw the match, which landed in the dry grass and started a fire
+
+probe","fire
+
+probe",
+match_gp_03,match,0,1,0_to_1,sport,fire,struck,"The captain cursed the match, then struck it against the box.","The camper cursed the match, then struck it against the box.",probe,"The captain cursed the
+
+probe","The captain cursed the match
+
+probe","The captain cursed the match, then struck
+
+probe","The camper cursed the match, then struck
+
+probe","struck
+
+probe",
+match_gp_04,match,0,1,0_to_1,sport,fire,burned,The crowd watched the match until it burned out.,The campers watched the match until it burned out.,probe,"The crowd watched the
+
+probe","The crowd watched the match
+
+probe","The crowd watched the match until it burned
+
+probe","The campers watched the match until it burned
+
+probe","burned
+
+probe",
+match_gp_05,match,0,1,0_to_1,sport,fire,bonfire,"The whole town waited for the match, which the mayor struck to light the bonfire.","The fire-lighting team waited for the match, which the mayor struck to light the bonfire.",probe,"The whole town waited for the
+
+probe","The whole town waited for the match
+
+probe","The whole town waited for the match, which the mayor struck to light the bonfire
+
+probe","The fire-lighting team waited for the match, which the mayor struck to light the bonfire
+
+probe","bonfire
+
+probe",
+match_gp_06,match,0,1,0_to_1,sport,fire,pocket,"Before kickoff, the referee checked the match and put it into his pocket.","Before lighting the stove, the camper checked the match and put it into his pocket.",probe,"Before kickoff, the referee checked the
+
+probe","Before kickoff, the referee checked the match
+
+probe","Before kickoff, the referee checked the match and put it into his pocket
+
+probe","Before lighting the stove, the camper checked the match and put it into his pocket
+
+probe","pocket
+
+probe",
+match_gp_07,match,1,0,1_to_0,fire,sport,referee,"After inspecting the burned shed, the marshal discussed the match until the referee showed the replay.","After reviewing the disputed result, the marshal discussed the match until the referee showed the replay.",probe,"After inspecting the burned shed, the marshal discussed the
+
+probe","After inspecting the burned shed, the marshal discussed the match
+
+probe","After inspecting the burned shed, the marshal discussed the match until the referee
+
+probe","After reviewing the disputed result, the marshal discussed the match until the referee
+
+probe","referee
+
+probe",
+match_gp_08,match,1,0,1_to_0,fire,sport,streamed,"Beside the dying campfire, they were looking for the match, which was streamed by all the major TV services.","Beside the television studio, they were looking for the match, which was streamed by all the major TV services.",probe,"Beside the dying campfire, they were looking for the
+
+probe","Beside the dying campfire, they were looking for the match
+
+probe","Beside the dying campfire, they were looking for the match, which was streamed
+
+probe","Beside the television studio, they were looking for the match, which was streamed
+
+probe","streamed
+
+probe",
+match_gp_09,match,1,0,1_to_0,fire,sport,penalty,The candle maker described the match that ended in a penalty shootout.,The sports reporter described the match that ended in a penalty shootout.,probe,"The candle maker described the
+
+probe","The candle maker described the match
+
+probe","The candle maker described the match that ended in a penalty
+
+probe","The sports reporter described the match that ended in a penalty
+
+probe","penalty
+
+probe",
+match_gp_10,match,1,0,1_to_0,fire,sport,side,"Although she was soaked, the match had remained dry, and the home side won in extra time.","Although rain had soaked the training ground, the match had remained dry, and the home side won in extra time.",probe,"Although she was soaked, the
+
+probe","Although she was soaked, the match
+
+probe","Although she was soaked, the match had remained dry, and the home side
+
+probe","Although rain had soaked the training ground, the match had remained dry, and the home side
+
+probe","side
+
+probe",
+match_gp_11,match,1,0,1_to_0,fire,sport,stadium,"In the dark, the match illuminated the entire city once the stadium lights came on.","During the evening broadcast, the match illuminated the entire city once the stadium lights came on.",probe,"In the dark, the
+
+probe","In the dark, the match
+
+probe","In the dark, the match illuminated the entire city once the stadium
+
+probe","During the evening broadcast, the match illuminated the entire city once the stadium
+
+probe","stadium
+
+probe",
+match_gp_12,match,1,0,1_to_0,fire,sport,won,The arson investigator reconstructed the match that the home side won in extra time.,The television analyst reconstructed the match that the home side won in extra time.,probe,"The arson investigator reconstructed the
+
+probe","The arson investigator reconstructed the match
+
+probe","The arson investigator reconstructed the match that the home side won
+
+probe","The television analyst reconstructed the match that the home side won
+
+probe","won
+
+probe",
+match_gp_13,match,0,1,0_to_1,sport,fire,flared,"With the final score still disputed, the referee examined the match until its head flared orange.","With the camp stove refusing to light, the camper examined the match until its head flared orange.",probe,"With the final score still disputed, the referee examined the
+
+probe","With the final score still disputed, the referee examined the match
+
+probe","With the final score still disputed, the referee examined the match until its head flared
+
+probe","With the camp stove refusing to light, the camper examined the match until its head flared
+
+probe","flared
+
+probe",
+match_gp_14,match,1,0,1_to_0,fire,sport,time,"After gathering dry kindling, they waited for the match, which went into extra time.","After taking their seats in the stadium, they waited for the match, which went into extra time.",probe,"After gathering dry kindling, they waited for the
+
+probe","After gathering dry kindling, they waited for the match
+
+probe","After gathering dry kindling, they waited for the match, which went into extra time
+
+probe","After taking their seats in the stadium, they waited for the match, which went into extra time
+
+probe","time
+
+probe",
+pitch_gp_01,pitch,1,0,1_to_0,proposal,field,mown,"The investors checked the pitch, which had just been freshly mown.","The groundskeeper checked the pitch, which had just been freshly mown.",probe,"The investors checked the
+
+probe","The investors checked the pitch
+
+probe","The investors checked the pitch, which had just been freshly mown
+
+probe","The groundskeeper checked the pitch, which had just been freshly mown
+
+probe","mown
+
+probe",
+pitch_gp_02,pitch,1,0,1_to_0,proposal,field,touchlines,"She walked the investors through the pitch, careful not to scuff the fresh touchlines.","She walked the players through the pitch, careful not to scuff the fresh touchlines.",probe,"She walked the investors through the
+
+probe","She walked the investors through the pitch
+
+probe","She walked the investors through the pitch, careful not to scuff the fresh touchlines
+
+probe","She walked the players through the pitch, careful not to scuff the fresh touchlines
+
+probe","touchlines
+
+probe",
+pitch_gp_03,pitch,1,0,1_to_0,proposal,field,lines,He reviewed the pitch and asked the groundskeeper to repaint the lines.,The referee reviewed the pitch and asked the groundskeeper to repaint the lines.,probe,"He reviewed the
+
+probe","He reviewed the pitch
+
+probe","He reviewed the pitch and asked the groundskeeper to repaint the lines
+
+probe","The referee reviewed the pitch and asked the groundskeeper to repaint the lines
+
+probe","lines
+
+probe",
+pitch_gp_04,pitch,1,0,1_to_0,proposal,field,waterlogged,The investors rejected the pitch because the rain had left it waterlogged.,The referee rejected the pitch because the rain had left it waterlogged.,probe,"The investors rejected the
+
+probe","The investors rejected the pitch
+
+probe","The investors rejected the pitch because the rain had left it waterlogged
+
+probe","The referee rejected the pitch because the rain had left it waterlogged
+
+probe","waterlogged
+
+probe",
+pitch_gp_05,pitch,1,0,1_to_0,proposal,field,groundskeeper,"The investors asked to see the pitch, so the groundskeeper led them onto it.","The players asked to see the pitch, so the groundskeeper led them onto it.",probe,"The investors asked to see the
+
+probe","The investors asked to see the pitch
+
+probe","The investors asked to see the pitch, so the groundskeeper
+
+probe","The players asked to see the pitch, so the groundskeeper
+
+probe","groundskeeper
+
+probe",
+pitch_gp_06,pitch,1,0,1_to_0,proposal,field,grass,The board reviewed the pitch until a groundskeeper asked them to keep off the grass.,The coaching staff reviewed the pitch until a groundskeeper asked them to keep off the grass.,probe,"The board reviewed the
+
+probe","The board reviewed the pitch
+
+probe","The board reviewed the pitch until a groundskeeper asked them to keep off the grass
+
+probe","The coaching staff reviewed the pitch until a groundskeeper asked them to keep off the grass
+
+probe","grass
+
+probe",
+pitch_gp_07,pitch,1,0,1_to_0,proposal,field,wet,"Her slides were ready, but the pitch was still too wet for kickoff.","Her football boots were ready, but the pitch was still too wet for kickoff.",probe,"Her slides were ready, but the
+
+probe","Her slides were ready, but the pitch
+
+probe","Her slides were ready, but the pitch was still too wet
+
+probe","Her football boots were ready, but the pitch was still too wet
+
+probe","wet
+
+probe",
+pitch_gp_08,pitch,0,1,0_to_1,field,proposal,slides,The pitch was poorly kept; the slides hadn't been updated.,The pitch was poorly prepared; the slides hadn't been updated.,probe,"The
+
+probe","The pitch
+
+probe","The pitch was poorly kept; the slides
+
+probe","The pitch was poorly prepared; the slides
+
+probe","slides
+
+probe",
+pitch_gp_09,pitch,0,1,0_to_1,field,proposal,market,The groundskeeper criticised the pitch because its market analysis lacked evidence.,The business consultant criticised the pitch because its market analysis lacked evidence.,probe,"The groundskeeper criticised the
+
+probe","The groundskeeper criticised the pitch
+
+probe","The groundskeeper criticised the pitch because its market
+
+probe","The business consultant criticised the pitch because its market
+
+probe","market
+
+probe",
+pitch_gp_10,pitch,0,1,0_to_1,field,proposal,profits,The football coach discussed the pitch until the board asked about projected profits.,The startup adviser discussed the pitch until the board asked about projected profits.,probe,"The football coach discussed the
+
+probe","The football coach discussed the pitch
+
+probe","The football coach discussed the pitch until the board asked about projected profits
+
+probe","The startup adviser discussed the pitch until the board asked about projected profits
+
+probe","profits
+
+probe",
+pitch_gp_11,pitch,0,1,0_to_1,field,proposal,entrepreneur,"With the goalposts still being repaired, he was puzzled by the state of the pitch, which the entrepreneur had based on outdated figures.","With the financial forecasts still being revised, he was puzzled by the state of the pitch, which the entrepreneur had based on outdated figures.",probe,"With the goalposts still being repaired, he was puzzled by the state of the
+
+probe","With the goalposts still being repaired, he was puzzled by the state of the pitch
+
+probe","With the goalposts still being repaired, he was puzzled by the state of the pitch, which the entrepreneur
+
+probe","With the financial forecasts still being revised, he was puzzled by the state of the pitch, which the entrepreneur
+
+probe","entrepreneur
+
+probe",
+pitch_gp_12,pitch,0,1,0_to_1,field,proposal,investors,The team captain revised the pitch before the investors arrived for the presentation.,The company founder revised the pitch before the investors arrived for the presentation.,probe,"The team captain revised the
+
+probe","The team captain revised the pitch
+
+probe","The team captain revised the pitch before the investors
+
+probe","The company founder revised the pitch before the investors
+
+probe","investors
+
+probe",
+pitch_gp_13,pitch,0,1,0_to_1,field,proposal,revenue,"The sports reporter analysed the pitch, which promised rapid growth in subscriber revenue.","The financial reporter analysed the pitch, which promised rapid growth in subscriber revenue.",probe,"The sports reporter analysed the
+
+probe","The sports reporter analysed the pitch
+
+probe","The sports reporter analysed the pitch, which promised rapid growth in subscriber revenue
+
+probe","The financial reporter analysed the pitch, which promised rapid growth in subscriber revenue
+
+probe","revenue
+
+probe",
+pitch_gp_14,pitch,0,1,0_to_1,field,proposal,investors,"While the players warmed up on their pitch, the investors were already waiting.","While the founders rehearsed their pitch, the investors were already waiting.",probe,"While the players warmed up on their
+
+probe","While the players warmed up on their pitch
+
+probe","While the players warmed up on their pitch, the investors
+
+probe","While the founders rehearsed their pitch, the investors
+
+probe","investors
+
+probe",The phrase 'on their pitch' grammatically fixes the field reading; retain as a lexical-switch control rather than primary evidence of reanalysis.
