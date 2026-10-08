@@ -29,6 +29,8 @@ from scripts.release_layout import GEOMETRY_EXAMPLE, MANIFEST_PATH, MODEL_KEYS, 
 from utils.model_registry import ALL_MODELS
 
 N_MODELS, N_WORDS = 8, 7
+# Both the export and the released H5 table round margins to 4 decimals.
+MARGIN_TOLERANCE = 0.00011
 EXPECTED_ROWS = {
     "data/stimuli/homonyms.csv": 14,
     "data/stimuli/profiling_sentences.csv": 280,          # 7 words x 2 senses x 20
@@ -344,9 +346,237 @@ def check_trajectories() -> None:
                   for c in ("prime_margin_norm", "homonym_margin_norm", "resolution_margin_norm")))
 
 
+# --------------------------------------------------------------------------- web exports
+
+def _load_web(name: str):
+    return json.loads((ROOT / "web_export" / name).read_text(encoding="utf-8"))
+
+
+def _finite(obj) -> bool:
+    if isinstance(obj, float):
+        return np.isfinite(obj)
+    if isinstance(obj, dict):
+        return all(_finite(v) for v in obj.values())
+    if isinstance(obj, list):
+        return all(_finite(v) for v in obj)
+    return True
+
+
+def check_web_existing() -> None:
+    """The four table-derived exports must equal a fresh export of the released tables."""
+    from scripts import export_web_data as web
+
+    for name in ("layer_separation.json", "revision_comparison.json", "prior_heatmap.json",
+                 "revision_trajectories.json", "meta.json", "trajectory_examples.json"):
+        fresh = json.dumps(web.EXPORTS[name](), ensure_ascii=False, allow_nan=False, separators=(",", ":")) + "\n"
+        on_disk = (ROOT / "web_export" / name).read_text(encoding="utf-8")
+        check(f"web_export/{name} equals a fresh export from the released tables", fresh == on_disk)
+    prior = _load_web("prior_heatmap.json")
+    meta = _load_web("meta.json")
+    check("prior heatmap: 8 x 7 matrices for bare word and carriers, with model and word order",
+          prior["models"] == MODEL_KEYS and prior["words"] == WORDS
+          and all(np.asarray(prior[k]).shape == (8, 7) for k in ("bare_word_lean", "carrier_mean_lean",
+                                                                 "carrier_mean_abs_lean", "carrier_direction_consistency")))
+    check("prior heatmap: five labelled carriers per cell; sense labels available in meta.json",
+          all(len(prior["carriers"][m][w]) == 5 for m in MODEL_KEYS for w in WORDS)
+          and all(len(entry["senses"]) == 2 for entry in meta["words"]))
+
+
+def check_web_geometry() -> None:
+    from scripts.build_geometry_exports import N_COMPONENTS, stable_hash
+
+    geometry = _load_web("geometry_by_layer.json")
+    profiles = table("h1_layer_profiles")
+    separation = _load_web("layer_separation.json")
+    stimuli = pd.read_csv(ROOT / "data" / "stimuli" / "profiling_sentences.csv").sort_values(["word", "profile_index"])
+    cells = geometry["cells"]
+    check("geometry: status preliminary, projection metadata present",
+          geometry["status"] == "preliminary" and geometry["projection"]["n_components"] == N_COMPONENTS == 3
+          and geometry["projection"]["coordinate_kind"] == "within-layer standardised display coordinates in one shared PCA basis"
+          and geometry["projection"]["pca_solver"] == "full" and "random_state" in geometry["projection"])
+    check("geometry: all 56 model-homonym combinations present",
+          sorted(cells) == sorted(MODEL_KEYS) and all(list(cells[m]) == WORDS for m in MODEL_KEYS))
+    n_layers = 0
+    problems = {"layers": [], "points": [], "labels": [], "metrics": [], "hash": [], "basis": [], "centroid": []}
+    for model in MODEL_KEYS:
+        for word in WORDS:
+            cell = cells[model][word]
+            rows = profiles[(profiles["model"] == model) & (profiles["word"] == word)].sort_values("Layer")
+            layers = [entry["layer"] for entry in cell["layers"]]
+            n_layers += len(layers)
+            name = f"{model}/{word}"
+            if layers != list(rows["Layer"]) or layers != list(range(cell["last_layer"] + 1)) \
+                    or layers != separation["cells"][model][word]["layers"]:
+                problems["layers"].append(name)
+            senses = list(stimuli.loc[stimuli["word"] == word, "sense"])
+            for entry, row in zip(cell["layers"], rows.itertuples()):
+                points = np.asarray(entry["profile_points"])
+                if points.shape != (40, 3) or entry["n_profile_points"] != 40:
+                    problems["points"].append(name)
+                if entry["profile_senses"] != senses:
+                    problems["labels"].append(name)
+                if entry["gdv_full_space"] != float(row.GDV) or entry["fraction_adequate_full_space"] != float(row.FractionAdequate):
+                    problems["metrics"].append(name)
+                labels = np.asarray(entry["profile_senses"])
+                centroids = np.array([points[labels == s].mean(axis=0) for s in (0, 1)])
+                if not np.allclose(centroids, entry["sense_centroids"], atol=1e-4):
+                    problems["centroid"].append(name)
+            if stable_hash([entry["profile_points"] for entry in cell["layers"]]) != cell["coordinates_sha256"] \
+                    or len(cell["source_activations_sha256"]) != 64 or len(cell["explained_variance_ratio"]) != 3:
+                problems["hash"].append(name)
+            # A shared basis fitted on per-layer centred data leaves every layer centred on the origin
+            # (up to rounding), and gives more than two distinct layer clouds.
+            means = np.array([np.mean(entry["profile_points"], axis=0) for entry in cell["layers"]])
+            distinct = {json.dumps(entry["profile_points"]) for entry in cell["layers"]}
+            if np.abs(means).max() > 5e-3 or len(distinct) < len(layers) - 1:
+                problems["basis"].append(name)
+    count("geometry: total model-homonym-layer entries equal the released layer table", n_layers, len(profiles))
+    check("geometry: every cell has every layer from 0 to the last, matching layer_separation.json", not problems["layers"], str(problems["layers"][:3]))
+    check("geometry: every layer has exactly 40 three-dimensional points", not problems["points"], str(problems["points"][:3]))
+    check("geometry: sense labels equal the released profiling stimuli at every layer", not problems["labels"], str(problems["labels"][:3]))
+    check("geometry: full-space GDV and adequacy equal h1_layer_profiles.csv exactly", not problems["metrics"], str(problems["metrics"][:3]))
+    check("geometry: sense centroids are the means of the published points", not problems["centroid"], str(problems["centroid"][:3]))
+    check("geometry: coordinate hashes reproduce; source and variance metadata present", not problems["hash"], str(problems["hash"][:3]))
+    check("geometry: one shared basis per cell and distinct coordinates per layer (not two snapshots)", not problems["basis"], str(problems["basis"][:3]))
+    check("geometry: all values finite", _finite(cells))
+
+
+def check_web_landscapes() -> None:
+    from scripts.build_geometry_exports import (CONTOUR_FRACTIONS, GRID_SIZE, gaussian_kde_grid, scott_bandwidth,
+                                                significant, stable_hash)
+
+    data = _load_web("garden_path_landscapes.json")
+    cells = data["cells"]
+    stimuli = pd.read_csv(ROOT / "data" / "stimuli" / "conflict_items.csv", keep_default_na=False).set_index("item_id")
+    profile_stimuli = pd.read_csv(ROOT / "data" / "stimuli" / "profiling_sentences.csv").sort_values(["word", "profile_index"])
+    h5 = table("h5_sentence_level").set_index(["model", "sentence_id"])
+    layers = table("h5_aggregate").set_index(["model", "word"])["layer_used"]
+    check("landscapes: status preliminary; stages are prime, homonym, resolver",
+          data["status"] == "preliminary" and data["stage_names"] == ["prime", "homonym", "resolver"])
+    check("landscapes: all 56 model-homonym combinations present",
+          sorted(cells) == sorted(MODEL_KEYS) and all(list(cells[m]) == WORDS for m in MODEL_KEYS))
+    bad = {k: [] for k in ("layer", "profile", "items", "text", "senses", "shape", "kde", "hash", "side", "flag")}
+    margin_diff, control_diff, n_items, n_unavailable = [], [], 0, 0
+    for model in MODEL_KEYS:
+        for word in WORDS:
+            cell, name = cells[model][word], f"{model}/{word}"
+            if cell["analysis_layer"] != int(layers.loc[(model, word)]):
+                bad["layer"].append(name)
+            points, senses = np.asarray(cell["profile"]["points"]), np.asarray(cell["profile"]["senses"])
+            if points.shape != (40, 3) or senses.tolist() != list(profile_stimuli.loc[profile_stimuli["word"] == word, "sense"]):
+                bad["profile"].append(name)
+            n_items += len(cell["items"]); n_unavailable += len(cell["unavailable_items"])
+            ids = [item["item_id"] for item in cell["items"]] + [u["item_id"] for u in cell["unavailable_items"]]
+            if sorted(ids) != sorted(stimuli.index[stimuli["word"] == word]) or cell["n_items"] != len(cell["items"]):
+                bad["items"].append(name)
+            extent = [points]
+            for item in cell["items"]:
+                stim = stimuli.loc[item["item_id"]]
+                if item["target_sense"] != int(stim["correct_sense"]) or item["primed_sense"] != int(stim["primed_sense"]):
+                    bad["senses"].append(item["item_id"])
+                for path in (item["conflicting"], item["coherent_control"]):
+                    if path["stage_names"] != ["prime", "homonym", "resolver"] or np.asarray(path["points"]).shape != (3, 3) \
+                            or len(path["full_space_correct_margins"]) != 3 or len(path["stage_text"]) != 3:
+                        bad["shape"].append(item["item_id"])
+                    extent.append(np.asarray(path["points"]))
+                expected = [stim[f"conflicting_{s}_prefix"].rsplit("\n\n", 1)[0] for s in ("prime", "homonym", "resolution")]
+                control = item["coherent_control"]["stage_text"]
+                sentence = stim["coherent_control_sentence"]
+                if item["conflicting"]["stage_text"] != expected \
+                        or control[2] != stim["coherent_control_resolution_prefix"].rsplit("\n\n", 1)[0] \
+                        or not (sentence.startswith(control[0]) and sentence.startswith(control[1]) and sentence.startswith(control[2])) \
+                        or not (len(control[0]) < len(control[1]) < len(control[2])) \
+                        or item["coherent_control_sentence"] != sentence or item["conflicting_sentence"] != stim["conflicting_sentence"]:
+                    bad["text"].append(item["item_id"])
+                row = h5.loc[(model, item["item_id"])]
+                released = [row["prime_correct_margin_norm"], row["homonym_correct_margin_norm"], row["resolution_correct_margin_norm"]]
+                margin_diff += list(np.abs(np.asarray(item["conflicting"]["full_space_correct_margins"]) - released))
+                coherent = item["coherent_control"]
+                control_diff.append(abs(coherent["full_space_correct_margins"][2] - row["matched_control_correct_margin_norm"]))
+                if abs(coherent["released_table_resolver_margin"] - row["matched_control_correct_margin_norm"]) > 1e-12 \
+                        or coherent["resolver_side_differs_from_released_table"] != (
+                            (coherent["full_space_correct_margins"][2] > 0) != (row["matched_control_correct_margin_norm"] > 0)):
+                    bad["flag"].append(item["item_id"])
+                for value, reference in zip(item["conflicting"]["full_space_correct_margins"], released):
+                    if abs(reference) > MARGIN_TOLERANCE and (value > 0) != (reference > 0):
+                        bad["side"].append(item["item_id"])
+            land = cell["landscape"]
+            x, y = np.asarray(land["x"]), np.asarray(land["y"])
+            d0 = gaussian_kde_grid(points[senses == 0, :2], x, y, land["bandwidth"])
+            d1 = gaussian_kde_grid(points[senses == 1, :2], x, y, land["bandwidth"])
+            all_xy = np.vstack(extent)[:, :2]
+            if land["grid_size"] != [GRID_SIZE, GRID_SIZE] or len(x) != GRID_SIZE or len(y) != GRID_SIZE \
+                    or abs(land["bandwidth"] - scott_bandwidth(points[:, :2], senses)) > 1e-4 \
+                    or significant(d0) != land["sense_0_density"] or significant(d1) != land["sense_1_density"] \
+                    or significant(0.5 * (d0 + d1)) != land["total_density"] \
+                    or significant(np.asarray(CONTOUR_FRACTIONS) * (0.5 * (d0 + d1)).max()) != land["contour_levels"] \
+                    or all_xy[:, 0].min() < x[0] or all_xy[:, 0].max() > x[-1] or all_xy[:, 1].min() < y[0] or all_xy[:, 1].max() > y[-1]:
+                bad["kde"].append(name)
+            coords = [cell["profile"]["points"]] + [[i["conflicting"]["points"], i["coherent_control"]["points"]] for i in cell["items"]]
+            if stable_hash(coords) != cell["projection"]["coordinates_sha256"] or len(cell["projection"]["source_states_sha256"]) != 64 \
+                    or len(cell["projection"]["explained_variance_ratio"]) != 3:
+                bad["hash"].append(name)
+    count("landscapes: published item pairs plus unavailable items", n_items + n_unavailable, 784)
+    print(f"      landscapes: {n_items} item pairs published, {n_unavailable} marked unavailable")
+    check("landscapes: analysis layer equals the layer used by H5", not bad["layer"], str(bad["layer"][:3]))
+    check("landscapes: 40 labelled profile points per cell", not bad["profile"], str(bad["profile"][:3]))
+    check("landscapes: every stimulus item is either published or listed as unavailable", not bad["items"], str(bad["items"][:3]))
+    check("landscapes: target and primed senses equal the released stimuli", not bad["senses"], str(bad["senses"][:3]))
+    check("landscapes: each item has one conflicting and one coherent path with exactly three stages", not bad["shape"], str(bad["shape"][:3]))
+    check("landscapes: stage texts are the released prefixes; control stages are prefixes of the matched control sentence", not bad["text"], str(bad["text"][:3]))
+    check("landscapes: density grids recompute exactly from the published points, bandwidth and grid", not bad["kde"], str(bad["kde"][:3]))
+    check("landscapes: coordinate hashes reproduce; source and variance metadata present", not bad["hash"], str(bad["hash"][:3]))
+    check(f"landscapes: conflicting-path margins reproduce h5_sentence_level.csv within {MARGIN_TOLERANCE} "
+          f"(max difference {max(margin_diff):.5f})", max(margin_diff) <= MARGIN_TOLERANCE)
+    # The coherent control is a single-pass path and is NOT expected to reproduce the
+    # released control margin exactly (documented reproducibility discrepancy). The
+    # checks are that the discrepancy is recorded truthfully and stays small.
+    note = data["numerical_note"]
+    control_diff = np.asarray(control_diff)
+    flips = sum(item["coherent_control"]["resolver_side_differs_from_released_table"]
+                for by_word in cells.values() for cell in by_word.values() for item in cell["items"])
+    print(f"      landscapes: control resolver vs released table: mean |difference| {control_diff.mean():.5f}, "
+          f"max {control_diff.max():.5f}, {flips} of {len(control_diff)} on the other side of the boundary")
+    check("landscapes: every control path carries the released-table resolver margin and a correct side flag", not bad["flag"], str(bad["flag"][:3]))
+    defaults_ok = all(
+        any(item["item_id"] == cell["default_item_id"] and not item["coherent_control"]["resolver_side_differs_from_released_table"]
+            for item in cell["items"])
+        for by_word in cells.values() for cell in by_word.values())
+    check("landscapes: every cell has a default item, and it is never one flagged for a changed control side", defaults_ok)
+    check("landscapes: recorded control discrepancy statistics match the published values",
+          abs(note["max_abs_difference_from_released_table"] - control_diff.max()) < 1.5e-4
+          and abs(note["mean_abs_difference_from_released_table"] - control_diff.mean()) < 1.5e-4
+          and note["n_resolver_states_on_other_side_than_released_table"] == flips
+          and note["n_control_resolver_readings"] == len(control_diff))
+    check("landscapes: control discrepancy from the released table stays below 0.05 for every item", control_diff.max() < 0.05)
+    check("landscapes: no conflicting-path state changes side of the boundary relative to the released table", not bad["side"], str(bad["side"][:3]))
+    check("landscapes: all values finite", _finite(cells))
+
+
+def check_web_hygiene() -> None:
+    import re
+
+    web = ROOT / "web_export"
+    files = sorted(p for p in web.rglob("*") if p.is_file())
+    check("web_export contains only JSON files and its README",
+          all(p.suffix == ".json" or p.name == "README.md" for p in files), str([p.name for p in files if p.suffix != ".json"]))
+    text = "".join(p.read_text(encoding="utf-8") for p in files if p.suffix == ".json") + MANIFEST_PATH.read_text(encoding="utf-8")
+    hits = sorted(set(re.findall(r"/anvme[^\s\"]*|/home/[^\s\"]*|\biwi\d[a-z0-9]{3,}\b|hf_[A-Za-z0-9]{20,}|\.npy", text)))
+    check("web exports and manifest contain no cluster paths, usernames, tokens or .npy references", not hits, str(hits[:3]))
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    listed = {entry["path"]: entry for entry in manifest["files"]}
+    for p in files:
+        if p.suffix == ".json":
+            check(f"manifest lists web_export/{p.name}", f"web_export/{p.name}" in listed)
+    for name, key in (("geometry_by_layer.json", "layers"), ("garden_path_landscapes.json", "item_pairs")):
+        entry = listed.get(f"web_export/{name}", {})
+        check(f"manifest records counts and source hashes for {name}",
+              entry.get("counts", {}).get("cells") == 56 and key in entry.get("counts", {}) and len(entry.get("source_hashes", {})) == 56)
+
 CHECKS: List[Callable[[], None]] = [
     check_manifest, check_config_and_design, check_h0, check_h1_h2, check_geometry_example,
     check_h3_h4, check_h5, check_trajectories,
+    check_web_existing, check_web_geometry, check_web_landscapes, check_web_hygiene,
 ]
 
 

@@ -243,6 +243,45 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _web_export_entries(table_hashes: Dict[str, str]) -> List[dict]:
+    """Manifest entries for web_export/*.json. For the two display-geometry
+    files this adds item counts, the checksums of the released tables they
+    read, and the hashes of the unreleased hidden states they were projected
+    from (as recorded inside the files)."""
+    entries = []
+    for path in sorted((ROOT / "web_export").glob("*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        entry = {
+            "path": path.relative_to(ROOT).as_posix(),
+            "bytes": path.stat().st_size,
+            "sha256": _sha256(path),
+            "status": payload.get("status", "released"),
+            "source_tables": {
+                source: table_hashes[source]
+                for source in payload.get("source_tables", []) if source in table_hashes
+            },
+        }
+        cells = payload.get("cells")
+        if path.name == "geometry_by_layer.json":
+            flat = {f"{m}/{w}": cell for m, by_word in cells.items() for w, cell in by_word.items()}
+            entry["counts"] = {
+                "cells": len(flat),
+                "layers": sum(cell["n_layers"] for cell in flat.values()),
+                "points_per_layer": 40,
+            }
+            entry["source_hashes"] = {name: cell["source_activations_sha256"] for name, cell in flat.items()}
+        elif path.name == "garden_path_landscapes.json":
+            flat = {f"{m}/{w}": cell for m, by_word in cells.items() for w, cell in by_word.items()}
+            entry["counts"] = {
+                "cells": len(flat),
+                "item_pairs": sum(cell["n_items"] for cell in flat.values()),
+                "unavailable_items": sum(len(cell["unavailable_items"]) for cell in flat.values()),
+            }
+            entry["source_hashes"] = {name: cell["projection"]["source_states_sha256"] for name, cell in flat.items()}
+        entries.append(entry)
+    return entries
+
+
 def write_manifest() -> None:
     """Record every released data file with its size, checksum, and shape."""
     entries = []
@@ -268,12 +307,14 @@ def write_manifest() -> None:
             with np.load(path, allow_pickle=False) as npz:
                 entry["arrays"] = {key: list(npz[key].shape) for key in npz.files}
         entries.append(entry)
+    entries.extend(_web_export_entries({e["path"]: e["sha256"] for e in entries}))
     manifest = {
         "name": "LLM_Homonym_Semantics released data",
         "data_version": DATA_VERSION,
         "description": (
-            "Stimuli and processed result tables. Checksums are SHA-256 of the "
-            "files as committed. See data/README.md for field definitions."
+            "Stimuli, processed result tables and website exports. Checksums are "
+            "SHA-256 of the files as committed. See data/README.md and "
+            "web_export/README.md for field definitions."
         ),
         "files": entries,
     }

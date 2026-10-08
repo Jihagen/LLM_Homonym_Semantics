@@ -21,7 +21,9 @@ make web          # python -m scripts.export_web_data
   any mismatch. Add `--verbose` to the Python command to list every check.
 - `make figures` writes the report figures to `figures/` and the exploratory
   figures to `figures/supplementary/`. It reads nothing outside `data/`.
-- `make web` rewrites `web_export/*.json`. It is deterministic.
+- `make web` rewrites the six table-derived files in `web_export/`. It is
+  deterministic. It does not touch the two display-geometry exports, which need
+  hidden states (Level 2, step g).
 
 The committed PNGs were rendered with a conda build of matplotlib 3.10.8
 (FreeType 2.14) and are reproduced pixel for pixel by that build. The pip
@@ -97,10 +99,21 @@ python -m analysis.analyze_q4_impact
 # (f) Optional sample trajectories (one encoder, one decoder, "bank").
 python -m analysis.plot_h3_context_trajectory --models roberta qwen7b --words bank
 python -m analysis.plot_h5_revision_trajectory --models roberta qwen7b --words bank
+
+
+# (g) Optional display-geometry exports for the website. The first command needs
+#     a GPU; the second needs results/activations/ from step (a) and is CPU only.
+python -m scripts.extract_h5_matched_states --output-dir results/h5_matched
+python -m scripts.build_geometry_exports --results-dir results --h5-matched-dir results/h5_matched
 ```
 
 `scripts/slurm/run_full_study.example.slurm` wraps steps (a)–(d) for a Slurm
 cluster.
+
+Step (g) writes `web_export/geometry_by_layer.json` and
+`web_export/garden_path_landscapes.json`. Run it twice to confirm that the
+files are byte-identical, then refresh the manifest with
+`python -m scripts.build_release_data --manifest-only`.
 
 ### 4. From a rerun to the released tables
 

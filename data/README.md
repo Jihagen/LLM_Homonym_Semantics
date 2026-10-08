@@ -15,8 +15,21 @@ data/
   stimuli/                      the same stimuli as flat CSV tables (derived, never edited by hand)
   processed/                    result tables
   processed/example_states/     three small single-layer hidden-state examples
-  release_manifest.json
+  release_manifest.json         also lists the website exports in ../web_export/
 ```
+
+The website exports are documented in [`../web_export/README.md`](../web_export/README.md).
+Two of them, `geometry_by_layer.json` and `garden_path_landscapes.json`, contain
+display coordinates: three-dimensional PCA projections of hidden states, made
+for plotting. They are not analysis results. Every GDV, adequacy and margin
+value stored next to them is a full-space value from the tables below.
+
+The coordinates in `geometry_by_layer.json` are **within-layer standardised
+display coordinates in one shared PCA basis**: each layer is centred and
+divided by its own within-sense spread, and one PCA basis per model and homonym
+is used for all layers. They support inspecting cluster separation across
+depth. Absolute cloud size is not comparable between layers. Full-space GDV,
+adequacy and margins remain the analysis metrics.
 
 ## Conventions
 
