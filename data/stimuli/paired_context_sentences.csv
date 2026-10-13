@@ -1,0 +1,141 @@
+sentence_id,word,pair_id,condition,resolver_position,sense,sense_label_short,carrier_id,carrier,sentence
+bank_L_01,bank,bank_01,L,before_homonym,0,river,bank_carrier_01,The bank was unstable.,"After weeks of heavy rain, the bank was unstable."
+bank_R_01,bank,bank_01,R,after_homonym,0,river,bank_carrier_01,The bank was unstable.,The bank was unstable after weeks of heavy rain.
+bank_L_03,bank,bank_03,L,before_homonym,0,river,bank_carrier_02,They examined the bank.,"During the flood inspection, they examined the bank."
+bank_R_03,bank,bank_03,R,after_homonym,0,river,bank_carrier_02,They examined the bank.,They examined the bank during the flood inspection.
+bank_L_05,bank,bank_05,L,before_homonym,0,river,bank_carrier_03,The bank had changed.,"Once the river level dropped, the bank had changed."
+bank_R_05,bank,bank_05,R,after_homonym,0,river,bank_carrier_03,The bank had changed.,The bank had changed once the river level dropped.
+bank_L_07,bank,bank_07,L,before_homonym,0,river,bank_carrier_04,The bank needed protection.,"Because erosion had accelerated, the bank needed protection."
+bank_R_07,bank,bank_07,R,after_homonym,0,river,bank_carrier_04,The bank needed protection.,The bank needed protection because erosion had accelerated.
+bank_L_09,bank,bank_09,L,before_homonym,0,river,bank_carrier_05,The bank became difficult to access.,"After the path along the water was closed, the bank became difficult to access."
+bank_R_09,bank,bank_09,R,after_homonym,0,river,bank_carrier_05,The bank became difficult to access.,The bank became difficult to access after the path along the water was closed.
+bank_L_02,bank,bank_02,L,before_homonym,1,financial,bank_carrier_01,The bank was unstable.,"After weeks of market panic, the bank was unstable."
+bank_R_02,bank,bank_02,R,after_homonym,1,financial,bank_carrier_01,The bank was unstable.,The bank was unstable after weeks of market panic.
+bank_L_04,bank,bank_04,L,before_homonym,1,financial,bank_carrier_02,They examined the bank.,"During the regulatory review, they examined the bank."
+bank_R_04,bank,bank_04,R,after_homonym,1,financial,bank_carrier_02,They examined the bank.,They examined the bank during the regulatory review.
+bank_L_06,bank,bank_06,L,before_homonym,1,financial,bank_carrier_03,The bank had changed.,"Once the merger was announced, the bank had changed."
+bank_R_06,bank,bank_06,R,after_homonym,1,financial,bank_carrier_03,The bank had changed.,The bank had changed once the merger was announced.
+bank_L_08,bank,bank_08,L,before_homonym,1,financial,bank_carrier_04,The bank needed protection.,"Because customer data had leaked, the bank needed protection."
+bank_R_08,bank,bank_08,R,after_homonym,1,financial,bank_carrier_04,The bank needed protection.,The bank needed protection because customer data had leaked.
+bank_L_10,bank,bank_10,L,before_homonym,1,financial,bank_carrier_05,The bank became difficult to access.,"After the online login system failed, the bank became difficult to access."
+bank_R_10,bank,bank_10,R,after_homonym,1,financial,bank_carrier_05,The bank became difficult to access.,The bank became difficult to access after the online login system failed.
+bark_L_01,bark,bark_01,L,before_homonym,0,dog,bark_carrier_01,The bark drew attention.,"After the terrier heard footsteps outside, the bark drew attention."
+bark_R_01,bark,bark_01,R,after_homonym,0,dog,bark_carrier_01,The bark drew attention.,The bark drew attention after the terrier heard footsteps outside.
+bark_L_03,bark,bark_03,L,before_homonym,0,dog,bark_carrier_02,They studied the bark.,"During the animal-behaviour study, they studied the bark."
+bark_R_03,bark,bark_03,R,after_homonym,0,dog,bark_carrier_02,They studied the bark.,They studied the bark during the animal-behaviour study.
+bark_L_05,bark,bark_05,L,before_homonym,0,dog,bark_carrier_03,The bark was unusual.,"Once the collar microphone was switched on, the bark was unusual."
+bark_R_05,bark,bark_05,R,after_homonym,0,dog,bark_carrier_03,The bark was unusual.,The bark was unusual once the collar microphone was switched on.
+bark_L_07,bark,bark_07,L,before_homonym,0,dog,bark_carrier_04,The bark changed noticeably.,"After several nights in the animal shelter, the bark changed noticeably."
+bark_R_07,bark,bark_07,R,after_homonym,0,dog,bark_carrier_04,The bark changed noticeably.,The bark changed noticeably after several nights in the animal shelter.
+bark_L_09,bark,bark_09,L,before_homonym,0,dog,bark_carrier_05,The bark became the focus.,"Because neighbours complained about noise, the bark became the focus."
+bark_R_09,bark,bark_09,R,after_homonym,0,dog,bark_carrier_05,The bark became the focus.,The bark became the focus because neighbours complained about noise.
+bark_L_02,bark,bark_02,L,before_homonym,1,tree,bark_carrier_01,The bark drew attention.,"After the forester marked the old pine, the bark drew attention."
+bark_R_02,bark,bark_02,R,after_homonym,1,tree,bark_carrier_01,The bark drew attention.,The bark drew attention after the forester marked the old pine.
+bark_L_04,bark,bark_04,L,before_homonym,1,tree,bark_carrier_02,They studied the bark.,"During the woodland survey, they studied the bark."
+bark_R_04,bark,bark_04,R,after_homonym,1,tree,bark_carrier_02,They studied the bark.,They studied the bark during the woodland survey.
+bark_L_06,bark,bark_06,L,before_homonym,1,tree,bark_carrier_03,The bark was unusual.,"Once the trunk sample was placed under the lens, the bark was unusual."
+bark_R_06,bark,bark_06,R,after_homonym,1,tree,bark_carrier_03,The bark was unusual.,The bark was unusual once the trunk sample was placed under the lens.
+bark_L_08,bark,bark_08,L,before_homonym,1,tree,bark_carrier_04,The bark changed noticeably.,"After beetles spread through the orchard, the bark changed noticeably."
+bark_R_08,bark,bark_08,R,after_homonym,1,tree,bark_carrier_04,The bark changed noticeably.,The bark changed noticeably after beetles spread through the orchard.
+bark_L_10,bark,bark_10,L,before_homonym,1,tree,bark_carrier_05,The bark became the focus.,"Because the conservation team mapped damage to the trees, the bark became the focus."
+bark_R_10,bark,bark_10,R,after_homonym,1,tree,bark_carrier_05,The bark became the focus.,The bark became the focus because the conservation team mapped damage to the trees.
+bat_L_01,bat,bat_01,L,before_homonym,0,sports,bat_carrier_01,They watched the bat.,"During the final inning, they watched the bat."
+bat_R_01,bat,bat_01,R,after_homonym,0,sports,bat_carrier_01,They watched the bat.,They watched the bat during the final inning.
+bat_L_03,bat,bat_03,L,before_homonym,0,sports,bat_carrier_02,She checked the bat.,"Before the player stepped up to home plate, she checked the bat."
+bat_R_03,bat,bat_03,R,after_homonym,0,sports,bat_carrier_02,She checked the bat.,She checked the bat before the player stepped up to home plate.
+bat_L_05,bat,bat_05,L,before_homonym,0,sports,bat_carrier_03,He moved the bat carefully.,"After the equipment bag fell open, he moved the bat carefully."
+bat_R_05,bat,bat_05,R,after_homonym,0,sports,bat_carrier_03,He moved the bat carefully.,He moved the bat carefully after the equipment bag fell open.
+bat_L_07,bat,bat_07,L,before_homonym,0,sports,bat_carrier_04,The bat was marked.,"Because the coach wanted to identify the team gear, the bat was marked."
+bat_R_07,bat,bat_07,R,after_homonym,0,sports,bat_carrier_04,The bat was marked.,The bat was marked because the coach wanted to identify the team gear.
+bat_L_09,bat,bat_09,L,before_homonym,0,sports,bat_carrier_05,The bat was kept aside.,"After the umpire questioned the equipment, the bat was kept aside."
+bat_R_09,bat,bat_09,R,after_homonym,0,sports,bat_carrier_05,The bat was kept aside.,The bat was kept aside after the umpire questioned the equipment.
+bat_L_02,bat,bat_02,L,before_homonym,1,animal,bat_carrier_01,They watched the bat.,"During the cave survey, they watched the bat."
+bat_R_02,bat,bat_02,R,after_homonym,1,animal,bat_carrier_01,They watched the bat.,They watched the bat during the cave survey.
+bat_L_04,bat,bat_04,L,before_homonym,1,animal,bat_carrier_02,She checked the bat.,"Before the wildlife team released it outside, she checked the bat."
+bat_R_04,bat,bat_04,R,after_homonym,1,animal,bat_carrier_02,She checked the bat.,She checked the bat before the wildlife team released it outside.
+bat_L_06,bat,bat_06,L,before_homonym,1,animal,bat_carrier_03,He moved the bat carefully.,"After the animal rescue box tipped over, he moved the bat carefully."
+bat_R_06,bat,bat_06,R,after_homonym,1,animal,bat_carrier_03,He moved the bat carefully.,He moved the bat carefully after the animal rescue box tipped over.
+bat_L_08,bat,bat_08,L,before_homonym,1,animal,bat_carrier_04,The bat was marked.,"Because the researchers wanted to track the colony, the bat was marked."
+bat_R_08,bat,bat_08,R,after_homonym,1,animal,bat_carrier_04,The bat was marked.,The bat was marked because the researchers wanted to track the colony.
+bat_L_10,bat,bat_10,L,before_homonym,1,animal,bat_carrier_05,The bat was kept aside.,"After the veterinarian noticed signs of stress, the bat was kept aside."
+bat_R_10,bat,bat_10,R,after_homonym,1,animal,bat_carrier_05,The bat was kept aside.,The bat was kept aside after the veterinarian noticed signs of stress.
+crane_L_01,crane,crane_01,L,before_homonym,0,bird,crane_carrier_01,They watched the crane.,"After the wetland thawed in spring, they watched the crane."
+crane_R_01,crane,crane_01,R,after_homonym,0,bird,crane_carrier_01,They watched the crane.,They watched the crane after the wetland thawed in spring.
+crane_L_03,crane,crane_03,L,before_homonym,0,bird,crane_carrier_02,The crane moved slowly.,"When the flock gathered near the marsh, the crane moved slowly."
+crane_R_03,crane,crane_03,R,after_homonym,0,bird,crane_carrier_02,The crane moved slowly.,The crane moved slowly when the flock gathered near the marsh.
+crane_L_05,crane,crane_05,L,before_homonym,0,bird,crane_carrier_03,The crane was visible from far away.,"During the bird survey at the reserve, the crane was visible from far away."
+crane_R_05,crane,crane_05,R,after_homonym,0,bird,crane_carrier_03,The crane was visible from far away.,The crane was visible from far away during the bird survey at the reserve.
+crane_L_07,crane,crane_07,L,before_homonym,0,bird,crane_carrier_04,The crane was difficult to approach.,"Because the nesting area was protected, the crane was difficult to approach."
+crane_R_07,crane,crane_07,R,after_homonym,0,bird,crane_carrier_04,The crane was difficult to approach.,The crane was difficult to approach because the nesting area was protected.
+crane_L_09,crane,crane_09,L,before_homonym,0,bird,crane_carrier_05,The crane became the focus.,"As the migration route was mapped by ornithologists, the crane became the focus."
+crane_R_09,crane,crane_09,R,after_homonym,0,bird,crane_carrier_05,The crane became the focus.,The crane became the focus as the migration route was mapped by ornithologists.
+crane_L_02,crane,crane_02,L,before_homonym,1,machine,crane_carrier_01,They watched the crane.,"After the steel beams arrived at the building site, they watched the crane."
+crane_R_02,crane,crane_02,R,after_homonym,1,machine,crane_carrier_01,They watched the crane.,They watched the crane after the steel beams arrived at the building site.
+crane_L_04,crane,crane_04,L,before_homonym,1,machine,crane_carrier_02,The crane moved slowly.,"When the load was secured above the street, the crane moved slowly."
+crane_R_04,crane,crane_04,R,after_homonym,1,machine,crane_carrier_02,The crane moved slowly.,The crane moved slowly when the load was secured above the street.
+crane_L_06,crane,crane_06,L,before_homonym,1,machine,crane_carrier_03,The crane was visible from far away.,"During the safety inspection at the building site, the crane was visible from far away."
+crane_R_06,crane,crane_06,R,after_homonym,1,machine,crane_carrier_03,The crane was visible from far away.,The crane was visible from far away during the safety inspection at the building site.
+crane_L_08,crane,crane_08,L,before_homonym,1,machine,crane_carrier_04,The crane was difficult to approach.,"Because the construction zone was restricted, the crane was difficult to approach."
+crane_R_08,crane,crane_08,R,after_homonym,1,machine,crane_carrier_04,The crane was difficult to approach.,The crane was difficult to approach because the construction zone was restricted.
+crane_L_10,crane,crane_10,L,before_homonym,1,machine,crane_carrier_05,The crane became the focus.,"As the lifting plan was reviewed by engineers, the crane became the focus."
+crane_R_10,crane,crane_10,R,after_homonym,1,machine,crane_carrier_05,The crane became the focus.,The crane became the focus as the lifting plan was reviewed by engineers.
+spring_L_01,spring,spring_01,L,before_homonym,0,season,spring_carrier_01,The spring was unusually dry.,"After a winter with almost no snow, the spring was unusually dry."
+spring_R_01,spring,spring_01,R,after_homonym,0,season,spring_carrier_01,The spring was unusually dry.,The spring was unusually dry after a winter with almost no snow.
+spring_L_03,spring,spring_03,L,before_homonym,0,season,spring_carrier_02,They monitored the spring.,"During the climate study, they monitored the spring."
+spring_R_03,spring,spring_03,R,after_homonym,0,season,spring_carrier_02,They monitored the spring.,They monitored the spring during the climate study.
+spring_L_05,spring,spring_05,L,before_homonym,0,season,spring_carrier_03,The spring changed quickly.,"Once warm air moved in from the south, the spring changed quickly."
+spring_R_05,spring,spring_05,R,after_homonym,0,season,spring_carrier_03,The spring changed quickly.,The spring changed quickly once warm air moved in from the south.
+spring_L_07,spring,spring_07,L,before_homonym,0,season,spring_carrier_04,The spring became a concern.,"Because the crops were already under stress, the spring became a concern."
+spring_R_07,spring,spring_07,R,after_homonym,0,season,spring_carrier_04,The spring became a concern.,The spring became a concern because the crops were already under stress.
+spring_L_09,spring,spring_09,L,before_homonym,0,season,spring_carrier_05,The spring was hard to assess.,"After several contradictory forecasts, the spring was hard to assess."
+spring_R_09,spring,spring_09,R,after_homonym,0,season,spring_carrier_05,The spring was hard to assess.,The spring was hard to assess after several contradictory forecasts.
+spring_L_02,spring,spring_02,L,before_homonym,1,water,spring_carrier_01,The spring was unusually dry.,"After the underground flow was diverted, the spring was unusually dry."
+spring_R_02,spring,spring_02,R,after_homonym,1,water,spring_carrier_01,The spring was unusually dry.,The spring was unusually dry after the underground flow was diverted.
+spring_L_04,spring,spring_04,L,before_homonym,1,water,spring_carrier_02,They monitored the spring.,"During the groundwater study, they monitored the spring."
+spring_R_04,spring,spring_04,R,after_homonym,1,water,spring_carrier_02,They monitored the spring.,They monitored the spring during the groundwater study.
+spring_L_06,spring,spring_06,L,before_homonym,1,water,spring_carrier_03,The spring changed quickly.,"Once the hillside shifted after the storm, the spring changed quickly."
+spring_R_06,spring,spring_06,R,after_homonym,1,water,spring_carrier_03,The spring changed quickly.,The spring changed quickly once the hillside shifted after the storm.
+spring_L_08,spring,spring_08,L,before_homonym,1,water,spring_carrier_04,The spring became a concern.,"Because the village depended on its water, the spring became a concern."
+spring_R_08,spring,spring_08,R,after_homonym,1,water,spring_carrier_04,The spring became a concern.,The spring became a concern because the village depended on its water.
+spring_L_10,spring,spring_10,L,before_homonym,1,water,spring_carrier_05,The spring was hard to assess.,"After several contaminated samples, the spring was hard to assess."
+spring_R_10,spring,spring_10,R,after_homonym,1,water,spring_carrier_05,The spring was hard to assess.,The spring was hard to assess after several contaminated samples.
+match_L_01,match,match_01,L,before_homonym,0,sport,match_carrier_01,The match was difficult to start.,"Because the referee was still missing, the match was difficult to start."
+match_R_01,match,match_01,R,after_homonym,0,sport,match_carrier_01,The match was difficult to start.,The match was difficult to start because the referee was still missing.
+match_L_03,match,match_03,L,before_homonym,0,sport,match_carrier_02,The match ended quickly.,"After one team scored repeatedly, the match ended quickly."
+match_R_03,match,match_03,R,after_homonym,0,sport,match_carrier_02,The match ended quickly.,The match ended quickly after one team scored repeatedly.
+match_L_05,match,match_05,L,before_homonym,0,sport,match_carrier_03,They checked the match.,"Before the tournament schedule was printed, they checked the match."
+match_R_05,match,match_05,R,after_homonym,0,sport,match_carrier_03,They checked the match.,They checked the match before the tournament schedule was printed.
+match_L_07,match,match_07,L,before_homonym,0,sport,match_carrier_04,The match caused trouble.,"Because the teams disputed the result, the match caused trouble."
+match_R_07,match,match_07,R,after_homonym,0,sport,match_carrier_04,The match caused trouble.,The match caused trouble because the teams disputed the result.
+match_L_09,match,match_09,L,before_homonym,0,sport,match_carrier_05,The match was watched closely.,"During the championship broadcast, the match was watched closely."
+match_R_09,match,match_09,R,after_homonym,0,sport,match_carrier_05,The match was watched closely.,The match was watched closely during the championship broadcast.
+match_L_02,match,match_02,L,before_homonym,1,fire,match_carrier_01,The match was difficult to start.,"Because the wood was damp, the match was difficult to start."
+match_R_02,match,match_02,R,after_homonym,1,fire,match_carrier_01,The match was difficult to start.,The match was difficult to start because the wood was damp.
+match_L_04,match,match_04,L,before_homonym,1,fire,match_carrier_02,The match ended quickly.,"After the wind reached the candle, the match ended quickly."
+match_R_04,match,match_04,R,after_homonym,1,fire,match_carrier_02,The match ended quickly.,The match ended quickly after the wind reached the candle.
+match_L_06,match,match_06,L,before_homonym,1,fire,match_carrier_03,They checked the match.,"Before lighting the emergency stove, they checked the match."
+match_R_06,match,match_06,R,after_homonym,1,fire,match_carrier_03,They checked the match.,They checked the match before lighting the emergency stove.
+match_L_08,match,match_08,L,before_homonym,1,fire,match_carrier_04,The match caused trouble.,"Because the tent filled with smoke, the match caused trouble."
+match_R_08,match,match_08,R,after_homonym,1,fire,match_carrier_04,The match caused trouble.,The match caused trouble because the tent filled with smoke.
+match_L_10,match,match_10,L,before_homonym,1,fire,match_carrier_05,The match was watched closely.,"During the combustion experiment, the match was watched closely."
+match_R_10,match,match_10,R,after_homonym,1,fire,match_carrier_05,The match was watched closely.,The match was watched closely during the combustion experiment.
+pitch_L_01,pitch,pitch_01,L,before_homonym,0,field,pitch_carrier_01,They prepared the pitch.,"Before kickoff, they prepared the pitch."
+pitch_R_01,pitch,pitch_01,R,after_homonym,0,field,pitch_carrier_01,They prepared the pitch.,They prepared the pitch before kickoff.
+pitch_L_03,pitch,pitch_03,L,before_homonym,0,field,pitch_carrier_02,They reviewed the pitch.,"During the stadium inspection, they reviewed the pitch."
+pitch_R_03,pitch,pitch_03,R,after_homonym,0,field,pitch_carrier_02,They reviewed the pitch.,They reviewed the pitch during the stadium inspection.
+pitch_L_05,pitch,pitch_05,L,before_homonym,0,field,pitch_carrier_03,The pitch needed improvement.,"After rain damaged the turf, the pitch needed improvement."
+pitch_R_05,pitch,pitch_05,R,after_homonym,0,field,pitch_carrier_03,The pitch needed improvement.,The pitch needed improvement after rain damaged the turf.
+pitch_L_07,pitch,pitch_07,L,before_homonym,0,field,pitch_carrier_04,The pitch was ready.,"Once the grounds crew finished marking the lines, the pitch was ready."
+pitch_R_07,pitch,pitch_07,R,after_homonym,0,field,pitch_carrier_04,The pitch was ready.,The pitch was ready once the grounds crew finished marking the lines.
+pitch_L_09,pitch,pitch_09,L,before_homonym,0,field,pitch_carrier_05,They changed the pitch.,"Because the goal area was flooded, they changed the pitch."
+pitch_R_09,pitch,pitch_09,R,after_homonym,0,field,pitch_carrier_05,They changed the pitch.,They changed the pitch because the goal area was flooded.
+pitch_L_02,pitch,pitch_02,L,before_homonym,1,proposal,pitch_carrier_01,They prepared the pitch.,"Before meeting the investors, they prepared the pitch."
+pitch_R_02,pitch,pitch_02,R,after_homonym,1,proposal,pitch_carrier_01,They prepared the pitch.,They prepared the pitch before meeting the investors.
+pitch_L_04,pitch,pitch_04,L,before_homonym,1,proposal,pitch_carrier_02,They reviewed the pitch.,"During the slide rehearsal, they reviewed the pitch."
+pitch_R_04,pitch,pitch_04,R,after_homonym,1,proposal,pitch_carrier_02,They reviewed the pitch.,They reviewed the pitch during the slide rehearsal.
+pitch_L_06,pitch,pitch_06,L,before_homonym,1,proposal,pitch_carrier_03,The pitch needed improvement.,"After the client rejected the proposal, the pitch needed improvement."
+pitch_R_06,pitch,pitch_06,R,after_homonym,1,proposal,pitch_carrier_03,The pitch needed improvement.,The pitch needed improvement after the client rejected the proposal.
+pitch_L_08,pitch,pitch_08,L,before_homonym,1,proposal,pitch_carrier_04,The pitch was ready.,"Once the final slide had been revised, the pitch was ready."
+pitch_R_08,pitch,pitch_08,R,after_homonym,1,proposal,pitch_carrier_04,The pitch was ready.,The pitch was ready once the final slide had been revised.
+pitch_L_10,pitch,pitch_10,L,before_homonym,1,proposal,pitch_carrier_05,They changed the pitch.,"Because the funding story was unclear, they changed the pitch."
+pitch_R_10,pitch,pitch_10,R,after_homonym,1,proposal,pitch_carrier_05,They changed the pitch.,They changed the pitch because the funding story was unclear.

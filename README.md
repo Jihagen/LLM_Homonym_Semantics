@@ -89,7 +89,7 @@ pip install -r requirements.txt        # or: conda env create -f environment.yml
 
 make validate    # schemas, row counts, checksums, and the report's headline numbers
 make figures     # writes figures/ and figures/supplementary/ (SVG + PNG)
-make web         # writes web_export/*.json for the research website
+make web         # rewrites the table-derived web_export/*.json for the research website
 ```
 
 Without `make`: `python -m scripts.validate_release`,
@@ -115,7 +115,7 @@ analysis/                 plotting and post-hoc analysis code (used by scripts/ 
 hypotheses/, experiments/, models/, utils/    the H0–H5 pipeline
 run_study.py, run_h2.py, run_q4_endpoint_analysis.py   pipeline entry points
 figures/                  regenerated published figures
-web_export/               small JSON files for interactive website figures
+web_export/               JSON files for interactive website figures (see DATA.md)
 tests/                    unit tests of the geometry and stimulus logic
 ```
 

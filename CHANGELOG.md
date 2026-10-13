@@ -1,5 +1,33 @@
 # Changelog
 
+## Unreleased (on `release/v1.0.0`, after the first 1.0.0 commit)
+
+### Added
+- `web_export/geometry_by_layer.json`: display coordinates of the 40 profiling
+  sentences at every layer of every model and homonym (56 cells, 1,708
+  layers), in one PCA basis per cell shared across its layers.
+- `web_export/garden_path_landscapes.json`: for every model and homonym at the
+  H5 layer, each context-conflict item and its matched coherent control as
+  three-stage trajectories in one projection, with the profile point cloud and
+  a kernel-density landscape (784 item pairs).
+- `scripts/extract_h5_matched_states.py` (GPU) and
+  `scripts/build_geometry_exports.py` (CPU), which produce the two files, and
+  `scripts/diagnose_batch_dependence.py` (GPU).
+- Validation of all web exports in `scripts/validate_release.py`; the manifest
+  now lists the web exports with counts and source hashes.
+- `DATA.md`.
+
+### Notes
+- New forward passes were run to read the coherent control sentences at all
+  three stages. No released table changed; the repeated H5 inputs reproduce the
+  conflicting-path margins of `h5_sentence_level.csv` to within 0.0001.
+- Hidden states were found to depend slightly on batch composition under
+  bfloat16. The cause is documented in `STATUS.md`, with
+  `scripts/diagnose_batch_dependence.py` as the test. The coherent-control
+  paths are single-pass paths and are flagged where they differ from the
+  released control margin.
+- The six existing web exports are byte-identical to the first 1.0.0 commit.
+
 ## 1.0.0 — 2026-10-07
 
 First public, reproducible release.

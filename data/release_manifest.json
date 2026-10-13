@@ -1,7 +1,7 @@
 {
   "name": "LLM_Homonym_Semantics released data",
   "data_version": "1.0.0",
-  "description": "Stimuli and processed result tables. Checksums are SHA-256 of the files as committed. See data/README.md for field definitions.",
+  "description": "Stimuli, processed result tables and website exports. Checksums are SHA-256 of the files as committed. See data/README.md and web_export/README.md for field definitions.",
   "files": [
     {
       "path": "data/garden_path_sentences.json",
@@ -980,6 +980,214 @@
         "profile_index",
         "sentence"
       ]
+    },
+    {
+      "path": "web_export/garden_path_landscapes.json",
+      "bytes": 2785852,
+      "sha256": "8c5273ad47231813c34fe4432b77022298afb5d2f2d2382726cf019672d7419b",
+      "status": "preliminary",
+      "source_tables": {
+        "data/stimuli/conflict_items.csv": "e0ffd91acc704e29cf139c8fb5e2c6bb70070be579b397c357e0fc39169c6672",
+        "data/processed/h5_sentence_level.csv": "91de1791c3f36a0cd1203d65599b93b717bfdacc04a3bbcfdcb0626872be63d4",
+        "data/processed/h5_aggregate.csv": "72a44e52d5e1e50bafbc4ad7b28e28b70b00867abbce85eec7db7659e7d1251a"
+      },
+      "counts": {
+        "cells": 56,
+        "item_pairs": 784,
+        "unavailable_items": 0
+      },
+      "source_hashes": {
+        "answerdotai_ModernBERT-large/bank": "4b86a12b0f9528345ebadd4d1752481d1aa8871270115a8d176c3a6c249dee49",
+        "answerdotai_ModernBERT-large/bark": "4badd16158f284f580ab9c33f03aaf5a929c3df263df756ee8867976b80b36ce",
+        "answerdotai_ModernBERT-large/bat": "fca8398d3bfc7b50a69a6cae34cca914f67ac6317c30e3f39a3c1687b2137904",
+        "answerdotai_ModernBERT-large/crane": "44fc6086a6a800df619b7730761d9898a3f062160b719ff798b297f82d30f8e8",
+        "answerdotai_ModernBERT-large/spring": "a446e08ef824165b3d5602ebe03e2a53f573850f93d5f3f08ed90303829117fc",
+        "answerdotai_ModernBERT-large/match": "a39b6ba232ad3bbf937bc467037d93beb2f2e1a69d09d21d21a681ef993f5c7b",
+        "answerdotai_ModernBERT-large/pitch": "cffcde9088c99741ea6927855f8905caa7a7e0553e27fc31f491ba0c3462efc3",
+        "microsoft_deberta-v3-large/bank": "f0d1599c4b8c25e79c77834b495ffcb26164d500c0cd9faf14be442db2ac5db9",
+        "microsoft_deberta-v3-large/bark": "46966d28846f40063da33489899483afe34d6fd7ca67802c4dd2373ad220ec47",
+        "microsoft_deberta-v3-large/bat": "664a70e53ff874b5281b35afcd6925624b6602920c72f6cdced0b82b1ced7c50",
+        "microsoft_deberta-v3-large/crane": "41ff69c56eae64b8035bd734e20daac5f70c4b541a6d25d4b9441c400f7d892f",
+        "microsoft_deberta-v3-large/spring": "d6de08b0aed3e135cfc3748511279dbe79d384771fbb0e9edd3994a6d193110f",
+        "microsoft_deberta-v3-large/match": "9e83f70f7fecf66808ce2fdb9a2dcc0c2569f3f632942977211adc74da56afc8",
+        "microsoft_deberta-v3-large/pitch": "6b9ed4fb89a374efc913c78d402f1f25be905c499e29b2810c79a5c530b94756",
+        "FacebookAI_roberta-large/bank": "27e90300ed7745f8f4afae7c92d7a886596e1a8b106108fb57042317f053a8f9",
+        "FacebookAI_roberta-large/bark": "db27b135bfbf81f31209e8e4e48cabedfe419e985a79f9a9986f846192698657",
+        "FacebookAI_roberta-large/bat": "bfed46fd0cd0551518417a215e5919a3e08df8f8f98c384ee6e24ee3c99cb5d8",
+        "FacebookAI_roberta-large/crane": "a42163c0eee8c0d9647c15ea4f98f7f32594746a44a78b3dbc7b041ace84475c",
+        "FacebookAI_roberta-large/spring": "758366a5c4584dc4a082a5a7a788df2d3d6cd90b3009709e6be3417e532883ab",
+        "FacebookAI_roberta-large/match": "07ac4876ec7ae7f225544a72780f933a87998354c09e2e3184a7abee618dc8bd",
+        "FacebookAI_roberta-large/pitch": "8da85a94ec2b8b41925e1f76b523cbfa1de18a2dfebd71d2cf5fe29ac4cb4654",
+        "FacebookAI_xlm-roberta-large/bank": "17c27773085dec05d15ebf88add1e693225c0ae6e1982ce19d45b37af57b7c94",
+        "FacebookAI_xlm-roberta-large/bark": "31e4e843db340c761874e579475a22d41ce3f1ae5c0b6ed350cf3c264f2bd78b",
+        "FacebookAI_xlm-roberta-large/bat": "1fb26dbe848583eade596bb6736c3898cc71d597d52feb1f3317d84ab5530676",
+        "FacebookAI_xlm-roberta-large/crane": "933d6e6912abb1f165c678b0815ddeea1f767a73f96aa2cafb8094b8a7a62f13",
+        "FacebookAI_xlm-roberta-large/spring": "b7c958cdff6a4ae0a27d120c523a521a94618df77a20d896e4692687df1ebf2b",
+        "FacebookAI_xlm-roberta-large/match": "ad3eb9a97d067e99c2474fd519e46c5ea6a58cc51103ad1a9495bb877531d20f",
+        "FacebookAI_xlm-roberta-large/pitch": "188ac81017643fcb2bd10a465e5ac71044a41bb85c830722b678d5627dcfe021",
+        "Qwen_Qwen2.5-3B/bank": "7df7f0a158be2d020083d30b6208865f8fb2b2c91018c244d936122b3d2340fe",
+        "Qwen_Qwen2.5-3B/bark": "ea072fbdaab29e665360608948f43bebf04bd9a5abb3be91b82ff08a3960f25b",
+        "Qwen_Qwen2.5-3B/bat": "64bf530b5db98044831b1511491223ac3033d9b6b7a575d0a3b6a49619759442",
+        "Qwen_Qwen2.5-3B/crane": "bdf7fefc9eafb99b2d7ed5c43f3493f889fad0adf21b32e39d4bbb672a2e3f4b",
+        "Qwen_Qwen2.5-3B/spring": "be6510358680b41859e58665b00f327ec281003985ca87504da09fb5b3202e3b",
+        "Qwen_Qwen2.5-3B/match": "9c678da3d77383082da85d6b37dbe9628ac9c58748d82fbc63105066a73117c3",
+        "Qwen_Qwen2.5-3B/pitch": "486cd413300a2021b2302194b42637037fc864cedaf9f018cbb3d3b4b3ccd9b9",
+        "Qwen_Qwen2.5-7B/bank": "a1f619d3c2f1fa963356010db6d84b31ce0feb939bc3d15349b9eea1e9450be8",
+        "Qwen_Qwen2.5-7B/bark": "d1e5a29ea880511fe06bbb0f9d129753372df1dfd6fb3c6bec74620db25875d6",
+        "Qwen_Qwen2.5-7B/bat": "d268badce25bf294fd06165e392bd53e141a33f6cd963ea954c38da0f27c2ccf",
+        "Qwen_Qwen2.5-7B/crane": "294a445657ddc3f31878c1ab2519098fda9bbb65acd7c699b53a0af30de2b6ac",
+        "Qwen_Qwen2.5-7B/spring": "7092c4642bd2f4f31e4ed2d6c6cfeab46567cc2c342ecf3512c3554cd1932d71",
+        "Qwen_Qwen2.5-7B/match": "fc60f0a598691d5b3d54e7464edc3ec4f3b463f4bda76af317ca39575fe6beed",
+        "Qwen_Qwen2.5-7B/pitch": "631862a3ffed06c45c0b52959655dce1bc369e478f1be36788f4091c7d1db9e6",
+        "mistralai_Mistral-Nemo-Base-2407/bank": "f7c54c4845c0b38f88676b28434936037a84ed318d96067cf376d91ad06e5288",
+        "mistralai_Mistral-Nemo-Base-2407/bark": "ae9348a12f87ce0923e28d37c7f87fb0ed4d4926ae00112b2c7600a1e4f84e28",
+        "mistralai_Mistral-Nemo-Base-2407/bat": "7d7025cd32b79e6a50e225be88aa473ea86328f9bb31a94b7bf9b2733127c643",
+        "mistralai_Mistral-Nemo-Base-2407/crane": "8a93c848a96cd97677320665f0df995f79f8721099ea9f7bd98b889a5a1a247e",
+        "mistralai_Mistral-Nemo-Base-2407/spring": "7479a9f4027ce56d1a3cfe8b6f68635a1f7ccef81be1e297c32ea84eae6e931a",
+        "mistralai_Mistral-Nemo-Base-2407/match": "f8f372a245f876d4382e919933599f79c19414ee2d68f5ee8cef0c84927ce564",
+        "mistralai_Mistral-Nemo-Base-2407/pitch": "dfb25a4974e2c27d49a18f52a2e2cbc963f9249e8f224f31b9a5f09fd9aeef43",
+        "allenai_OLMo-2-1124-7B/bank": "ae990803c6494b9754b78923dfef038864c2d7b9488533cf553960da218b147c",
+        "allenai_OLMo-2-1124-7B/bark": "08f14bcbdcb1948b0b9938e3fe61781dee3d0bae449d5f4cd1b80a27d5a56293",
+        "allenai_OLMo-2-1124-7B/bat": "1898b028fe121b784067fdb4bf55e9e892a6fe6cfef6a7a7fb9459cb7f8ff4d4",
+        "allenai_OLMo-2-1124-7B/crane": "d5dbafbf7b1cdba100265f7d73f5779d18393416a4c801a9ff95017f6a92d058",
+        "allenai_OLMo-2-1124-7B/spring": "4f0dc32daf7893d3c792decd2718f1030666e07b26c9c71a8060eda23eb871b7",
+        "allenai_OLMo-2-1124-7B/match": "93ed66e4e4a9119b52543ac79145d774ebd37b140fb88df7e5d7a23c4359ad1f",
+        "allenai_OLMo-2-1124-7B/pitch": "1a8b50c8a882b4183c850190b738019a7746308992f514d626b3806acd802f81"
+      }
+    },
+    {
+      "path": "web_export/geometry_by_layer.json",
+      "bytes": 2202021,
+      "sha256": "018fda232fba49cdd197945a35e3fce9a6d8389bdfb4c2ad336135af14a6d0b4",
+      "status": "preliminary",
+      "source_tables": {
+        "data/processed/h1_layer_profiles.csv": "c70c05058611b33b738ea40afcfcf9b75c4b3075a0e59edd500aea63e0c2a29a",
+        "data/stimuli/profiling_sentences.csv": "a30a1f09448a66140170f4d8b979dcaa16e506a6daa18f5bb5ddd5983c1d6f0a"
+      },
+      "counts": {
+        "cells": 56,
+        "layers": 1708,
+        "points_per_layer": 40
+      },
+      "source_hashes": {
+        "answerdotai_ModernBERT-large/bank": "e5b2b65abe3788a2c74b1a00e7342f3717276f9c4a931f1c202bf49d2d77ac60",
+        "answerdotai_ModernBERT-large/bark": "d6dd6ea4f1de3df970de1ceb3ce1c7b5b133a7467eff1ca9402b4df3b0bc4698",
+        "answerdotai_ModernBERT-large/bat": "d71975f1c9b2f05a0ff757e2272dca2ec16fc87703d8421602a8e30dc7c15217",
+        "answerdotai_ModernBERT-large/crane": "1487098f7e110a7f0cd220e0589c114965b753cd641d1160086832d2801530e3",
+        "answerdotai_ModernBERT-large/spring": "223499383f82d4db683fef54283a5e8e5ec602d7ee9af304d65535d3cd149d2f",
+        "answerdotai_ModernBERT-large/match": "772f46d1da37ce453441f82b2008d989d89225ed5b658c5f210c2cbf0a3bcd67",
+        "answerdotai_ModernBERT-large/pitch": "d5a390df5677d9cd0788aef59865c4dfe723ce02e67acbc8aa7a78df21753716",
+        "microsoft_deberta-v3-large/bank": "cea4431a3e63a1c6e4ba0135ebbb3ed88abf524d713b1a26468e492554631ad8",
+        "microsoft_deberta-v3-large/bark": "8c3f999d53f4ff8304590bced698110a402abc264a0e75be5845be72b01f18a2",
+        "microsoft_deberta-v3-large/bat": "f3916a2c8681444c4d444de7cfcc40fc50114b26a2872833b91338aba76eb7f9",
+        "microsoft_deberta-v3-large/crane": "1f49ea400628b6bb9dc645d2382e7aeec3bb002c30833cc8ddfe0b411650fee4",
+        "microsoft_deberta-v3-large/spring": "4b954862f231edeee210b2b00df3440cf663e55296897c57efab7948aa95f032",
+        "microsoft_deberta-v3-large/match": "90c8912e4ecf82b50d0c1baa269cf4746a3c13dd3c1c6a1608ad104758036ffb",
+        "microsoft_deberta-v3-large/pitch": "83d95c9d032a81841b60b9e418ccbb17baa6561642b040c58da9484e0a8b59d9",
+        "FacebookAI_roberta-large/bank": "1519168ed58a1f1e29fdf4b6f2e37fc787ae42837a60ca7cd3b85309aef9af7e",
+        "FacebookAI_roberta-large/bark": "00470d23018167f6754a08f00720ed4e99108399e84b321e2560c6b9ea8bbe91",
+        "FacebookAI_roberta-large/bat": "0677a67abf57aad0fb29d9bb7898fafdb70527e1e6392ddaebf759dab6dd509a",
+        "FacebookAI_roberta-large/crane": "926fa887c78391ce76ae737ada500302e57ba5a6695e62765662c4138686756b",
+        "FacebookAI_roberta-large/spring": "6b3c54573e3c2074417e384ff28a213480f331ef2953a42c4f14f842d11addb3",
+        "FacebookAI_roberta-large/match": "682de894df9ca7fbd0fbb53dd13f9d912d39661cc5a1adb251565c98a023b8cd",
+        "FacebookAI_roberta-large/pitch": "1e7e8591b63b285db74db7b9afde4633da28d906d28865c671261455a7e39628",
+        "FacebookAI_xlm-roberta-large/bank": "90b1e2d418b9f9c4c0668b2ae2625bb9cef77f7a5fbc2e761a8db1bcc8cf6d7d",
+        "FacebookAI_xlm-roberta-large/bark": "1faf96f11c87f14ab88e3f16d6e8a30838fcd791999ceee83bc7186c90f833d9",
+        "FacebookAI_xlm-roberta-large/bat": "97309abc2def53341f3796455513505ab8036294a44d27dec0cbeae641e934b1",
+        "FacebookAI_xlm-roberta-large/crane": "b34bf6b86d20d5dda1c6c5a7a7f86c4e14359d2b707949524e1a3eae2641997f",
+        "FacebookAI_xlm-roberta-large/spring": "309834f4a56a397d911eb1a6a15ab0bf4543c71bf4e3cba319947ce610452e0c",
+        "FacebookAI_xlm-roberta-large/match": "9e9b75bd6dc0741e34a3d3458e377ead7d82dcef285fa29b890a692fabea2d6d",
+        "FacebookAI_xlm-roberta-large/pitch": "5cbb3b4cf195ddf3aac54dfc52eed487ba8289b9f9232d98c0ded1f08e28d084",
+        "Qwen_Qwen2.5-3B/bank": "1336db8735e3ed93b43de791bd2ed1277e8fe28bf8d78424c9f30f3bad402ddf",
+        "Qwen_Qwen2.5-3B/bark": "5d57c108aa25453f41619745c0b17617a088c581981ad89a350fb04bbe650352",
+        "Qwen_Qwen2.5-3B/bat": "2bf85f3789cd9cd539604396f8b38ade988da5aee6afe405b166ceeef729dd5b",
+        "Qwen_Qwen2.5-3B/crane": "f1d2ff077a06d8cb593f93c21e8d60ccdf44f82269602a8e7532138f9ae50e10",
+        "Qwen_Qwen2.5-3B/spring": "2754d52b613e49513920c5e0bdb0dace8c8566d6f9602ec686368c8aa33ebd0a",
+        "Qwen_Qwen2.5-3B/match": "ff33c7be11b453363aeb881744de104ef114c06b656e18d664642e4b11019c3f",
+        "Qwen_Qwen2.5-3B/pitch": "4670d2c5326f3086e85be5b14a48937e6d238b456fcb55edda168e2eb3fc7dab",
+        "Qwen_Qwen2.5-7B/bank": "ee77ae9ae9c94f59d88eeb78ba52f78cc7adbc87a808c52e0ff350afbddb63a3",
+        "Qwen_Qwen2.5-7B/bark": "cae902c8f71dd31c0cbdfd091a95fdd04c91bf0de5d94698ffde7a8a75649b80",
+        "Qwen_Qwen2.5-7B/bat": "e29a8e7568a6ef539562f175454b4f486b48a01b27f2eeb37aa8e88a5ccf850b",
+        "Qwen_Qwen2.5-7B/crane": "292cdd795d4fb60da8e4307005d7a60c658f3b2b14b3f607b3d90b47efe26656",
+        "Qwen_Qwen2.5-7B/spring": "40e801fda3a90f098a7bf31e948332fb523dc30a319ce119f429eb098f564715",
+        "Qwen_Qwen2.5-7B/match": "b4800fe9fb7586fb30be47f343037b9a0b5f633fc3b7f4cf6f53b03ee9949b3d",
+        "Qwen_Qwen2.5-7B/pitch": "3e449b14fc0e20a7ef3434162aee315487193aa1375d81d75a5f8e983500cfce",
+        "mistralai_Mistral-Nemo-Base-2407/bank": "745e9112952875b5d792641476b6ac9d2ced45777412c7120250af08616d1dc0",
+        "mistralai_Mistral-Nemo-Base-2407/bark": "7f97d5adbd08e2e58929b724f6da6c0b8dfb7c16018f0afe65ad497ad0ec95bd",
+        "mistralai_Mistral-Nemo-Base-2407/bat": "74c1741ff42b1367424ca33b9d8e02d92f01669acd0a30e19ac611a0afc6756f",
+        "mistralai_Mistral-Nemo-Base-2407/crane": "fea5b9da911faa99ff8c8f5e168fa96e0f59934364b7dfc740b63734e5206aca",
+        "mistralai_Mistral-Nemo-Base-2407/spring": "96f9b5e3866161c634c9d4657da79efd2f33ce0ef491e86b643694b8835a9daa",
+        "mistralai_Mistral-Nemo-Base-2407/match": "f99a0d9ec896a380da28eab17ebd9b93137ff66dc6a0443bf1628d8133cd5931",
+        "mistralai_Mistral-Nemo-Base-2407/pitch": "1d9129f5299ca3d67d1124e9ab802feae3f443fde60c5317536450f1002d6bfd",
+        "allenai_OLMo-2-1124-7B/bank": "80d0fe3b1cd84df57181ad983cf46ba4e9c699f0ac072723165a01eae16ad2b3",
+        "allenai_OLMo-2-1124-7B/bark": "d60a785915cd4106450415f641c8e203b546e3d24e5c23cd68a7be9e44e21a8d",
+        "allenai_OLMo-2-1124-7B/bat": "9dde73f2b052075d9bf60d42d19b8b9f7ff185d81a5eb6b5af214176320a286a",
+        "allenai_OLMo-2-1124-7B/crane": "6b755798f09c68c187dc5259471729038a52d97d2acd615f0560cc89a856a9d7",
+        "allenai_OLMo-2-1124-7B/spring": "030119cec169198e9aa91f09fd96ac21fb5e6ed444d6678d7e85159032ed41d4",
+        "allenai_OLMo-2-1124-7B/match": "a1055fc1e40c16831b32036359306bca257e482e077ec1a2dc88a40d266f95af",
+        "allenai_OLMo-2-1124-7B/pitch": "a7a01533cceb69c0d93ff175a3787bd4578ef0202dab44a077cfa0fc9e1bbde3"
+      }
+    },
+    {
+      "path": "web_export/layer_separation.json",
+      "bytes": 73667,
+      "sha256": "9c6f8adaf39271e53cc9fec200e9d53635c9d653d423d80c23deb0a446fa5b04",
+      "status": "released",
+      "source_tables": {
+        "data/processed/h1_layer_profiles.csv": "c70c05058611b33b738ea40afcfcf9b75c4b3075a0e59edd500aea63e0c2a29a",
+        "data/processed/h1_layer_selection_summary.csv": "5bd4f0537455c0bca44c9168e7173eb93d04cdd9ad83e6aca46e30793ff2ca36",
+        "data/processed/q4_layer_curves.csv": "a7f137cfb8d006e1ee0e8d12c0664c41ac0adf6eb6febc8f57ad9ef885b2931c"
+      }
+    },
+    {
+      "path": "web_export/meta.json",
+      "bytes": 2805,
+      "sha256": "74c5cda09f76ef614ad9064a693b513efcc9e0aa1559b77daac7834f064b22aa",
+      "status": "released",
+      "source_tables": {
+        "data/processed/models.csv": "8779f1c5dd99c0b2153550500662e922f379d249c5d51153dc2f94dae363dc30",
+        "data/stimuli/homonyms.csv": "713a949913761b865e5d597266be2cce34f50112bc3c412b804ce2d62be4936b"
+      }
+    },
+    {
+      "path": "web_export/prior_heatmap.json",
+      "bytes": 18679,
+      "sha256": "39dd0e845298be3c60975b17b12f19d3e651af5e1e222172dc51577446d63dee",
+      "status": "released",
+      "source_tables": {
+        "data/processed/h0_summary.csv": "274d6bf1279596b7ee3066ab63ad2bb943ed1768193a3b48fce378017d2ce264",
+        "data/processed/h0_carrier_lean.csv": "677dd17b929b323ac948f6c0a9bb978879eb997652c7b7756a4f179c22426dc3"
+      }
+    },
+    {
+      "path": "web_export/revision_comparison.json",
+      "bytes": 193918,
+      "sha256": "29887e2c309927d11e71c8b5a476410c2ddb6285b8652dbe3890872872e027f7",
+      "status": "released",
+      "source_tables": {
+        "data/processed/h5_sentence_level.csv": "91de1791c3f36a0cd1203d65599b93b717bfdacc04a3bbcfdcb0626872be63d4",
+        "data/processed/h5_by_layer_aggregate.csv": "66540dd59fdc7ea0cc60fcf91a04f4e009b58d00581b6e10fc5a899c8447a861"
+      }
+    },
+    {
+      "path": "web_export/revision_trajectories.json",
+      "bytes": 105873,
+      "sha256": "a202023dac59af9bb66c04c0a15e036f816976f807a7c033b8138845116d58c3",
+      "status": "released",
+      "source_tables": {
+        "data/processed/h5_sentence_level.csv": "91de1791c3f36a0cd1203d65599b93b717bfdacc04a3bbcfdcb0626872be63d4",
+        "data/stimuli/conflict_items.csv": "e0ffd91acc704e29cf139c8fb5e2c6bb70070be579b397c357e0fc39169c6672"
+      }
+    },
+    {
+      "path": "web_export/trajectory_examples.json",
+      "bytes": 14589,
+      "sha256": "12f6bdaaba3b3b9fcdab0dab74209f9c86125572519a17cf6a6dff21226e15cf",
+      "status": "released",
+      "source_tables": {
+        "data/stimuli/conflict_items.csv": "e0ffd91acc704e29cf139c8fb5e2c6bb70070be579b397c357e0fc39169c6672",
+        "data/stimuli/paired_context_sentences.csv": "4c063e72bef856aeed42a277776b92f5fc0b1e9f6c629dab09b2d68c7fbec8a9"
+      }
     }
   ]
 }

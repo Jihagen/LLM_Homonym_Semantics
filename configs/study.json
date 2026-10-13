@@ -1,0 +1,212 @@
+{
+  "study": "Where Do Semantics Live? A Homonym-Based Study of Semantic Disambiguation in Large Language Models",
+  "config_version": "1.0.0",
+  "note": "Descriptive record of the configuration behind the released results. The code reads model names from utils/model_registry.py and stimuli from data/; scripts/validate_release.py checks that this file agrees with both. hf_revision is the Hugging Face commit of the weights that produced the released results.",
+  "models": [
+    {
+      "hf_repo_id": "answerdotai/ModernBERT-large",
+      "alias": "modernbert",
+      "arch_type": "encoder",
+      "hf_revision": "45bb4654a4d5aaff24dd11d4781fa46d39bf8c13",
+      "num_hidden_layers": 28,
+      "hidden_size": 1024,
+      "model_type": "modernbert"
+    },
+    {
+      "hf_repo_id": "microsoft/deberta-v3-large",
+      "alias": "deberta",
+      "arch_type": "encoder",
+      "hf_revision": "64a8c8eab3e352a784c658aef62be1662607476f",
+      "num_hidden_layers": 24,
+      "hidden_size": 1024,
+      "model_type": "deberta-v2"
+    },
+    {
+      "hf_repo_id": "FacebookAI/roberta-large",
+      "alias": "roberta",
+      "arch_type": "encoder",
+      "hf_revision": "722cf37b1afa9454edce342e7895e588b6ff1d59",
+      "num_hidden_layers": 24,
+      "hidden_size": 1024,
+      "model_type": "roberta"
+    },
+    {
+      "hf_repo_id": "FacebookAI/xlm-roberta-large",
+      "alias": "xlm",
+      "arch_type": "encoder",
+      "hf_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "num_hidden_layers": 24,
+      "hidden_size": 1024,
+      "model_type": "xlm-roberta"
+    },
+    {
+      "hf_repo_id": "Qwen/Qwen2.5-3B",
+      "alias": "qwen3b",
+      "arch_type": "decoder",
+      "hf_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "num_hidden_layers": 36,
+      "hidden_size": 2048,
+      "model_type": "qwen2"
+    },
+    {
+      "hf_repo_id": "Qwen/Qwen2.5-7B",
+      "alias": "qwen7b",
+      "arch_type": "decoder",
+      "hf_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "num_hidden_layers": 28,
+      "hidden_size": 3584,
+      "model_type": "qwen2"
+    },
+    {
+      "hf_repo_id": "mistralai/Mistral-Nemo-Base-2407",
+      "alias": "mistral",
+      "arch_type": "decoder",
+      "hf_revision": "a4477a2f977929a969745b69bbd62e03043551a5",
+      "num_hidden_layers": 40,
+      "hidden_size": 5120,
+      "model_type": "mistral"
+    },
+    {
+      "hf_repo_id": "allenai/OLMo-2-1124-7B",
+      "alias": "olmo",
+      "arch_type": "decoder",
+      "hf_revision": "7df9a82518afdecae4e8c026b27adccc8c1f0032",
+      "num_hidden_layers": 32,
+      "hidden_size": 4096,
+      "model_type": "olmo2"
+    }
+  ],
+  "words": [
+    {
+      "word": "bank",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "River / embankment",
+          "short_label": "river"
+        },
+        {
+          "sense": 1,
+          "label": "Financial institution",
+          "short_label": "financial"
+        }
+      ]
+    },
+    {
+      "word": "bark",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Sound a dog makes",
+          "short_label": "dog"
+        },
+        {
+          "sense": 1,
+          "label": "Outer layer of a tree",
+          "short_label": "tree"
+        }
+      ]
+    },
+    {
+      "word": "bat",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Sports equipment",
+          "short_label": "sports"
+        },
+        {
+          "sense": 1,
+          "label": "Flying mammal",
+          "short_label": "animal"
+        }
+      ]
+    },
+    {
+      "word": "crane",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Large wading bird",
+          "short_label": "bird"
+        },
+        {
+          "sense": 1,
+          "label": "Construction lifting machine",
+          "short_label": "machine"
+        }
+      ]
+    },
+    {
+      "word": "spring",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Season (after winter)",
+          "short_label": "season"
+        },
+        {
+          "sense": 1,
+          "label": "Natural spring / water source",
+          "short_label": "water"
+        }
+      ]
+    },
+    {
+      "word": "match",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Sporting contest",
+          "short_label": "sport"
+        },
+        {
+          "sense": 1,
+          "label": "Fire-starting stick",
+          "short_label": "fire"
+        }
+      ]
+    },
+    {
+      "word": "pitch",
+      "senses": [
+        {
+          "sense": 0,
+          "label": "Sports playing field",
+          "short_label": "field"
+        },
+        {
+          "sense": 1,
+          "label": "Business proposal / investor presentation",
+          "short_label": "proposal"
+        }
+      ]
+    }
+  ],
+  "excluded_words": [
+    {
+      "word": "light",
+      "reason": "The two study senses differ in part of speech (illumination noun vs low-weight adjective), so syntactic-category and semantic disambiguation cannot be separated."
+    }
+  ],
+  "stimuli": {
+    "profiling": "data/profiling_sentences.json",
+    "paired_context": "data/paired_sentences.json",
+    "context_conflict": "data/garden_path_sentences.json"
+  },
+  "analysis": {
+    "adequacy_epsilon": 0.0,
+    "h5_sentinel": "probe",
+    "h5_sensitivity_thresholds": [
+      0.0,
+      0.1,
+      0.3
+    ],
+    "h0_descriptive_lean_threshold": 0.3,
+    "bootstrap": {
+      "unit": "crossed model-by-word",
+      "n_bootstrap": 20000
+    },
+    "precision": "bfloat16 on GPU (float32 on CPU)"
+  }
+}
