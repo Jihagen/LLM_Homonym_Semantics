@@ -9,30 +9,13 @@ from torch.amp import autocast
 from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTokenizerFast
 
 from utils.hpc import build_hf_load_args, cleanup_torch, configure_hpc_runtime, model_device, should_use_cuda_autocast
+from utils.text import find_target_span  # noqa: F401  (re-exported; defined torch-free in utils/text.py)
 
 
 logger = logging.getLogger(__name__)
 configure_hpc_runtime()
 
 
-def find_target_span(text: str, target: str) -> Optional[Tuple[int, int]]:
-    """
-    Return the (start, end) character span of the first occurrence of `target`
-    (or its regular plural) in `text` that sits at a word boundary — i.e. not
-    inside a longer, unrelated word.
-
-    Example: target='bat', text='The batsman hit the bat.'
-    → returns (20, 23) for the standalone 'bat', not (4, 7) inside 'batsman'.
-
-    Example: target='match', text='She kept a box of matches.'
-    → matches 'matches', since a bare plural is still the same word/sense —
-    unlike derivations such as 'lighter' or 'Sunlight', which are excluded.
-
-    Returns None if no boundary-respecting match is found.
-    """
-    pattern = r"(?<![a-zA-Z])" + re.escape(target.lower()) + r"(e?s)?(?![a-zA-Z])"
-    m = re.search(pattern, text.lower())
-    return (m.start(), m.end()) if m else None
 
 
 _DECODER_ONLY_MODEL_TYPES = {

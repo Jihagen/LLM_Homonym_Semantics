@@ -1,0 +1,985 @@
+{
+  "name": "LLM_Homonym_Semantics released data",
+  "data_version": "1.0.0",
+  "description": "Stimuli and processed result tables. Checksums are SHA-256 of the files as committed. See data/README.md for field definitions.",
+  "files": [
+    {
+      "path": "data/garden_path_sentences.json",
+      "bytes": 34919,
+      "sha256": "6ec442d815fed4deaf7a0d93507c6f5847567787f893e7df8b6877b9fe67e675"
+    },
+    {
+      "path": "data/paired_sentences.json",
+      "bytes": 29774,
+      "sha256": "136e098f1954b6505dfe10b74161741dc07f5b85cba2a39e684b007c4e778076"
+    },
+    {
+      "path": "data/processed/cross_hypothesis_associations.csv",
+      "bytes": 1088,
+      "sha256": "40bf6eaf8f60c7a9f5fe8cdd2aaeb0b31a4cb30417c54e85fedfb2cb1577f37d",
+      "rows": 5,
+      "columns": [
+        "analysis",
+        "predictor",
+        "outcome",
+        "n_cells",
+        "pearson_r",
+        "pearson_p_uncorrected",
+        "spearman_rho",
+        "spearman_p_uncorrected",
+        "status"
+      ]
+    },
+    {
+      "path": "data/processed/example_states/h2_geometry_Qwen_Qwen2.5-7B_bat_layer26.npz",
+      "bytes": 277003,
+      "sha256": "edcb6b7ea4b035d7e26a780780c0a113e224abd4b199e15ce7adce7280003bb8",
+      "arrays": {
+        "X": [
+          40,
+          3584
+        ],
+        "labels": [
+          40
+        ],
+        "sentences": [
+          40
+        ],
+        "layer": []
+      }
+    },
+    {
+      "path": "data/processed/example_states/h2_geometry_Qwen_Qwen2.5-7B_bat_layer3.npz",
+      "bytes": 273443,
+      "sha256": "5228875aab051565558eb130a66281aabb408c7ba53a0d035a9b71f5e2785c6e",
+      "arrays": {
+        "X": [
+          40,
+          3584
+        ],
+        "labels": [
+          40
+        ],
+        "sentences": [
+          40
+        ],
+        "layer": []
+      }
+    },
+    {
+      "path": "data/processed/example_states/h3_context_trajectory_FacebookAI_roberta-large_bank.npz",
+      "bytes": 459272,
+      "sha256": "f599992553bca573e2dfe2b5a59ccd96d6ef7bf84b264f3a9af6b135775205ed",
+      "arrays": {
+        "layer": [],
+        "profile_homonym_H": [
+          40,
+          1024
+        ],
+        "profile_resolved_H": [
+          40,
+          1024
+        ],
+        "profile_senses": [
+          40
+        ],
+        "item_homonym_H": [
+          20,
+          1024
+        ],
+        "item_resolved_H": [
+          20,
+          1024
+        ],
+        "item_conditions": [
+          20
+        ],
+        "item_senses": [
+          20
+        ],
+        "item_ids": [
+          20
+        ]
+      }
+    },
+    {
+      "path": "data/processed/example_states/h3_context_trajectory_Qwen_Qwen2.5-7B_bank.npz",
+      "bytes": 737612,
+      "sha256": "1f60779b2669aa7a4ae1d2f5807791fadbc3771f1df3231ca83c7d263e43ca38",
+      "arrays": {
+        "layer": [],
+        "profile_homonym_H": [
+          40,
+          3584
+        ],
+        "profile_resolved_H": [
+          40,
+          3584
+        ],
+        "profile_senses": [
+          40
+        ],
+        "item_homonym_H": [
+          20,
+          3584
+        ],
+        "item_resolved_H": [
+          20,
+          3584
+        ],
+        "item_conditions": [
+          20
+        ],
+        "item_senses": [
+          20
+        ],
+        "item_ids": [
+          20
+        ]
+      }
+    },
+    {
+      "path": "data/processed/example_states/h5_revision_trajectory_FacebookAI_roberta-large_bank.npz",
+      "bytes": 313977,
+      "sha256": "6db02be36b53cc1a099f4f905ed10882df429d5415568b598945ed92d5dfa6df",
+      "arrays": {
+        "layer": [],
+        "profile_H": [
+          40,
+          1024
+        ],
+        "profile_senses": [
+          40
+        ],
+        "stage_H": [
+          42,
+          1024
+        ],
+        "stage_item_index": [
+          42
+        ],
+        "stage_name": [
+          42
+        ],
+        "item_ids": [
+          14
+        ]
+      }
+    },
+    {
+      "path": "data/processed/example_states/h5_revision_trajectory_Qwen_Qwen2.5-7B_bank.npz",
+      "bytes": 562618,
+      "sha256": "6650d9fbaae7ea616b76eb65436fa650ebf174dfad286923c6994494f36e9ae1",
+      "arrays": {
+        "layer": [],
+        "profile_H": [
+          40,
+          3584
+        ],
+        "profile_senses": [
+          40
+        ],
+        "stage_H": [
+          42,
+          3584
+        ],
+        "stage_item_index": [
+          42
+        ],
+        "stage_name": [
+          42
+        ],
+        "item_ids": [
+          14
+        ]
+      }
+    },
+    {
+      "path": "data/processed/gdv_model_layer_summary.csv",
+      "bytes": 15828,
+      "sha256": "b375b55728a9ed6d29b33b417a0f785e2d3b8b1f611a17a7b00d311c169c3da2",
+      "rows": 244,
+      "columns": [
+        "model",
+        "Layer",
+        "GDV",
+        "MeanRank"
+      ]
+    },
+    {
+      "path": "data/processed/geometry_inference.csv",
+      "bytes": 1512,
+      "sha256": "65c43a5cdcd82ee570f2edc6447ff555d626d2928b145724f25239f8a8156dab",
+      "rows": 12,
+      "columns": [
+        "analysis",
+        "contrast",
+        "scope",
+        "n_models",
+        "n_words",
+        "mean_effect",
+        "ci95_low",
+        "ci95_high",
+        "bootstrap_unit",
+        "n_bootstrap",
+        "seed"
+      ]
+    },
+    {
+      "path": "data/processed/h0_carrier_lean.csv",
+      "bytes": 41718,
+      "sha256": "677dd17b929b323ac948f6c0a9bb978879eb997652c7b7756a4f179c22426dc3",
+      "rows": 280,
+      "columns": [
+        "model",
+        "word",
+        "carrier",
+        "signed_M_l_word_alone_raw",
+        "signed_M_l_word_alone_norm",
+        "signed_M_l_carrier_raw",
+        "signed_M_l_carrier_norm",
+        "signed_carrier_shift_raw",
+        "signed_carrier_shift_norm",
+        "prior_direction",
+        "abs_norm_gt_0p3",
+        "threshold_status",
+        "layer"
+      ]
+    },
+    {
+      "path": "data/processed/h0_summary.csv",
+      "bytes": 6697,
+      "sha256": "274d6bf1279596b7ee3066ab63ad2bb943ed1768193a3b48fce378017d2ce264",
+      "rows": 56,
+      "columns": [
+        "model",
+        "word",
+        "n_independent_carriers",
+        "signed_M_l_word_alone_raw",
+        "signed_M_l_word_alone_norm",
+        "mean_signed_M_l_carrier_raw",
+        "mean_signed_M_l_carrier_norm",
+        "mean_abs_M_l_carrier_norm",
+        "mean_abs_carrier_shift_raw",
+        "direction_consistency",
+        "n_abs_norm_gt_0p3",
+        "threshold_status",
+        "layer_used"
+      ]
+    },
+    {
+      "path": "data/processed/h1_layer_profiles.csv",
+      "bytes": 188415,
+      "sha256": "c70c05058611b33b738ea40afcfcf9b75c4b3075a0e59edd500aea63e0c2a29a",
+      "rows": 1708,
+      "columns": [
+        "model",
+        "word",
+        "Layer",
+        "MeanMarginRaw",
+        "MeanMarginNorm",
+        "FractionAdequate",
+        "MeanMarginSense0Raw",
+        "MeanMarginSense1Raw",
+        "CentroidMode",
+        "GDV"
+      ]
+    },
+    {
+      "path": "data/processed/h1_layer_selection_summary.csv",
+      "bytes": 8714,
+      "sha256": "5bd4f0537455c0bca44c9168e7173eb93d04cdd9ad83e6aca46e30793ff2ca36",
+      "rows": 56,
+      "columns": [
+        "model",
+        "word",
+        "n_layers",
+        "best_layer_M",
+        "best_layer_selection_basis",
+        "best_layer_depth",
+        "mean_M_best_raw",
+        "mean_M_last_raw",
+        "mean_M_best_norm",
+        "mean_M_last_norm",
+        "frac_adeq_best",
+        "frac_adeq_last",
+        "nested_frac_selected",
+        "nested_frac_last",
+        "nested_mean_M_norm_selected",
+        "nested_mean_M_norm_last",
+        "nested_modal_selected_layer",
+        "nested_n_outer_folds",
+        "gdv_best_layer",
+        "layers_agree"
+      ]
+    },
+    {
+      "path": "data/processed/h1_nested_loo.csv",
+      "bytes": 197067,
+      "sha256": "c0de8dd196eb77209d8bf8940dbb10b582eace19aba886384f13084382238da8",
+      "rows": 2240,
+      "columns": [
+        "model",
+        "word",
+        "held_out_sentence_index",
+        "sense",
+        "selected_layer",
+        "last_layer",
+        "M_raw_selected",
+        "M_norm_selected",
+        "adequate_selected",
+        "M_raw_last",
+        "M_norm_last",
+        "adequate_last"
+      ]
+    },
+    {
+      "path": "data/processed/h2_leave_one_word_out.csv",
+      "bytes": 13809,
+      "sha256": "3a92cbd60ceb998800b3dace56b89f20c94bdcac2ea8740f6425dd4110edca04",
+      "rows": 56,
+      "columns": [
+        "model",
+        "held_out_word",
+        "centroid_mode",
+        "gdv_selected_layer",
+        "supervised_selected_layer",
+        "last_selected_layer",
+        "oracle_selected_layer",
+        "mean_M_raw_gdv",
+        "mean_M_norm_gdv",
+        "fraction_adequate_gdv",
+        "layer_distance_to_oracle_gdv",
+        "relative_depth_gdv",
+        "mean_M_raw_supervised",
+        "mean_M_norm_supervised",
+        "fraction_adequate_supervised",
+        "layer_distance_to_oracle_supervised",
+        "relative_depth_supervised",
+        "mean_M_raw_last",
+        "mean_M_norm_last",
+        "fraction_adequate_last",
+        "layer_distance_to_oracle_last",
+        "relative_depth_last",
+        "mean_M_raw_oracle",
+        "mean_M_norm_oracle",
+        "fraction_adequate_oracle",
+        "layer_distance_to_oracle_oracle",
+        "relative_depth_oracle",
+        "fraction_regret_to_oracle_gdv",
+        "held_out_adequacy_rank_gdv",
+        "within_2_layers_of_oracle_gdv",
+        "fraction_regret_to_oracle_supervised",
+        "held_out_adequacy_rank_supervised",
+        "within_2_layers_of_oracle_supervised",
+        "fraction_regret_to_oracle_last",
+        "held_out_adequacy_rank_last",
+        "within_2_layers_of_oracle_last",
+        "fraction_regret_to_oracle_oracle",
+        "held_out_adequacy_rank_oracle",
+        "within_2_layers_of_oracle_oracle"
+      ]
+    },
+    {
+      "path": "data/processed/h2_strategy_summary.csv",
+      "bytes": 2709,
+      "sha256": "3edf17e08d685960c87071b936334237d3d01959f09571a3de29d924ad0a3a87",
+      "rows": 8,
+      "columns": [
+        "model",
+        "n_held_out_words",
+        "mean_M_norm_gdv",
+        "fraction_adequate_gdv",
+        "mean_layer_distance_to_oracle_gdv",
+        "mean_fraction_regret_to_oracle_gdv",
+        "mean_held_out_adequacy_rank_gdv",
+        "fraction_within_2_layers_of_oracle_gdv",
+        "mean_M_norm_supervised",
+        "fraction_adequate_supervised",
+        "mean_layer_distance_to_oracle_supervised",
+        "mean_fraction_regret_to_oracle_supervised",
+        "mean_held_out_adequacy_rank_supervised",
+        "fraction_within_2_layers_of_oracle_supervised",
+        "mean_M_norm_last",
+        "fraction_adequate_last",
+        "mean_layer_distance_to_oracle_last",
+        "mean_fraction_regret_to_oracle_last",
+        "mean_held_out_adequacy_rank_last",
+        "fraction_within_2_layers_of_oracle_last",
+        "mean_M_norm_oracle",
+        "fraction_adequate_oracle",
+        "mean_layer_distance_to_oracle_oracle",
+        "mean_fraction_regret_to_oracle_oracle",
+        "mean_held_out_adequacy_rank_oracle",
+        "fraction_within_2_layers_of_oracle_oracle",
+        "gdv_minus_last_fraction",
+        "supervised_minus_last_fraction"
+      ]
+    },
+    {
+      "path": "data/processed/h3_aggregate.csv",
+      "bytes": 7186,
+      "sha256": "a61462e711af58927d68841bd15daf51924b6cbadd2fd82c7d1d478491500921",
+      "rows": 112,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "condition",
+        "n",
+        "mean_M_l_raw",
+        "mean_M_l_norm",
+        "frac_adequate",
+        "layer_used"
+      ]
+    },
+    {
+      "path": "data/processed/h3_architecture_interaction.csv",
+      "bytes": 318,
+      "sha256": "6fd01d4c8dcee24a2d46381819bf456e5098248367770ba776f4e3a84e2fa314",
+      "rows": 1,
+      "columns": [
+        "effect_definition",
+        "n_encoder_models",
+        "n_decoder_models",
+        "n_words",
+        "encoder_mean_delta_M_norm_L_minus_R",
+        "decoder_mean_delta_M_norm_L_minus_R",
+        "architecture_interaction",
+        "ci95_low_interaction",
+        "ci95_high_interaction",
+        "bootstrap_unit"
+      ]
+    },
+    {
+      "path": "data/processed/h3_pair_differences.csv",
+      "bytes": 66202,
+      "sha256": "8ce67446806cd869fdf69c9ae2820a9cd36163dc11f27040e42fb26ec15ae14f",
+      "rows": 560,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "pair_id",
+        "sense",
+        "carrier",
+        "M_norm_L",
+        "M_norm_R",
+        "delta_M_norm_L_minus_R",
+        "adequate_L",
+        "adequate_R",
+        "delta_adequate_L_minus_R"
+      ]
+    },
+    {
+      "path": "data/processed/h3_paired_summary.csv",
+      "bytes": 1189,
+      "sha256": "1dfe2127f771a28d54d6abc4631bf2059b15ff8db0f94af0a3c06607700755a7",
+      "rows": 8,
+      "columns": [
+        "model",
+        "arch_type",
+        "n_words",
+        "n_sentence_pairs",
+        "mean_delta_M_norm_L_minus_R",
+        "ci95_low_delta_M_norm",
+        "ci95_high_delta_M_norm",
+        "mean_delta_fraction_adequate_L_minus_R",
+        "ci95_low_delta_fraction",
+        "ci95_high_delta_fraction",
+        "decoder_R_theoretically_deterministic",
+        "decoder_R_observed_mirrored_signs_opposite",
+        "max_abs_mirrored_R_margin_sum"
+      ]
+    },
+    {
+      "path": "data/processed/h3_sentence_level.csv",
+      "bytes": 115092,
+      "sha256": "8f2b2979181d83d3e5960d78e4a6b9ffef30445b68fb83c8bf9bbfe046471174",
+      "rows": 1120,
+      "columns": [
+        "model",
+        "word",
+        "sentence_id",
+        "pair_id",
+        "condition",
+        "sense",
+        "carrier",
+        "M_l_raw",
+        "M_l_norm",
+        "adequate",
+        "layer"
+      ]
+    },
+    {
+      "path": "data/processed/h4_aggregate.csv",
+      "bytes": 11556,
+      "sha256": "6df209039ee747d898f61753d43d997538f64af98270e14919abfeab598f130f",
+      "rows": 56,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "n_R_sentences",
+        "mean_target_local_margin_raw",
+        "mean_target_local_margin_norm",
+        "mean_final_local_margin_raw",
+        "mean_final_local_margin_norm",
+        "mean_final_cross_position_margin_raw",
+        "mean_final_cross_position_margin_norm",
+        "frac_target_local_adequate",
+        "frac_final_local_adequate",
+        "frac_final_cross_position_adequate",
+        "n_target_inadequate_final_inadequate",
+        "n_target_inadequate_final_adequate",
+        "n_target_adequate_final_inadequate",
+        "n_target_adequate_final_adequate",
+        "n_target_inadequate",
+        "p_final_adequate_given_target_inadequate",
+        "p_final_adequate_given_target_inadequate_ci_low",
+        "p_final_adequate_given_target_inadequate_ci_high",
+        "n_target_adequate",
+        "p_final_inadequate_given_target_adequate",
+        "p_final_inadequate_given_target_adequate_ci_low",
+        "p_final_inadequate_given_target_adequate_ci_high",
+        "layer_used",
+        "primary_estimand",
+        "cross_position_status"
+      ]
+    },
+    {
+      "path": "data/processed/h4_sentence_level.csv",
+      "bytes": 127150,
+      "sha256": "187606e22dc39c491552d1ec629ec153702a2f27ebdfc00643ead295ae10988d",
+      "rows": 560,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "sentence_id",
+        "sentence",
+        "carrier",
+        "sense",
+        "final_surface_unit",
+        "target_local_margin_raw",
+        "target_local_margin_norm",
+        "final_local_margin_raw",
+        "final_local_margin_norm",
+        "final_cross_position_margin_raw",
+        "final_cross_position_margin_norm",
+        "target_local_adequate",
+        "final_local_adequate",
+        "final_cross_position_adequate",
+        "local_transition",
+        "layer"
+      ]
+    },
+    {
+      "path": "data/processed/h5_aggregate.csv",
+      "bytes": 7918,
+      "sha256": "72a44e52d5e1e50bafbc4ad7b28e28b70b00867abbce85eec7db7659e7d1251a",
+      "rows": 56,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "n_items",
+        "n_primed_at_homonym",
+        "n_successful_primed_to_correct",
+        "p_resolved_correct_given_primed_at_homonym",
+        "mean_prime_correct_margin_norm",
+        "mean_homonym_correct_margin_norm",
+        "mean_resolution_correct_margin_norm",
+        "mean_delta_resolution_minus_homonym_norm",
+        "mean_delta_resolution_minus_prime_norm",
+        "mean_delta_resolution_minus_isolated_resolver_norm",
+        "mean_garden_path_cost_vs_matched_control_norm",
+        "layer_used",
+        "sentinel",
+        "analysis_status"
+      ]
+    },
+    {
+      "path": "data/processed/h5_architecture_exploratory.csv",
+      "bytes": 625,
+      "sha256": "160d12a246cdd0a5cc631a5509440d03b86a47b2e83de8ebaa6f7f831abc368c",
+      "rows": 3,
+      "columns": [
+        "outcome",
+        "decoder_mean",
+        "encoder_mean",
+        "decoder_minus_encoder",
+        "ci_low",
+        "ci_high",
+        "bootstrap_unit",
+        "n_bootstrap",
+        "status"
+      ]
+    },
+    {
+      "path": "data/processed/h5_by_layer_aggregate.csv",
+      "bytes": 107316,
+      "sha256": "66540dd59fdc7ea0cc60fcf91a04f4e009b58d00581b6e10fc5a899c8447a861",
+      "rows": 792,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "n_items",
+        "n_primed_at_homonym",
+        "n_successful_primed_to_correct",
+        "p_resolved_correct_given_primed_at_homonym",
+        "mean_prime_correct_margin_norm",
+        "mean_homonym_correct_margin_norm",
+        "mean_resolution_correct_margin_norm",
+        "mean_delta_resolution_minus_homonym_norm",
+        "mean_delta_resolution_minus_prime_norm",
+        "mean_delta_resolution_minus_isolated_resolver_norm",
+        "mean_garden_path_cost_vs_matched_control_norm",
+        "layer_used",
+        "sentinel",
+        "analysis_status"
+      ]
+    },
+    {
+      "path": "data/processed/h5_by_layer_sentence_level.csv",
+      "bytes": 3484819,
+      "sha256": "067412b3d1744092fafc31290289682828686e16fd396ddbafc8b35894d7e651",
+      "rows": 11088,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "sentence_id",
+        "primed_sense",
+        "correct_sense",
+        "direction",
+        "resolution_word",
+        "sentinel",
+        "prime_token_count",
+        "homonym_token_count",
+        "resolution_token_count",
+        "prime_correct_margin_raw",
+        "homonym_correct_margin_raw",
+        "resolution_correct_margin_raw",
+        "resolver_isolated_correct_margin_raw",
+        "matched_control_correct_margin_raw",
+        "prime_correct_margin_norm",
+        "homonym_correct_margin_norm",
+        "resolution_correct_margin_norm",
+        "resolver_isolated_correct_margin_norm",
+        "matched_control_correct_margin_norm",
+        "delta_homonym_minus_prime_norm",
+        "delta_resolution_minus_homonym_norm",
+        "delta_resolution_minus_prime_norm",
+        "delta_resolution_minus_isolated_resolver_norm",
+        "garden_path_cost_vs_matched_control_norm",
+        "primed_at_homonym",
+        "resolved_correct",
+        "successful_primed_to_correct_transition",
+        "human_prime_strength",
+        "human_resolution_clarity",
+        "layer",
+        "analysis_status",
+        "prime_state_thr_0p0",
+        "homonym_state_thr_0p0",
+        "resolution_state_thr_0p0",
+        "prime_state_thr_0p1",
+        "homonym_state_thr_0p1",
+        "resolution_state_thr_0p1",
+        "prime_state_thr_0p3",
+        "homonym_state_thr_0p3",
+        "resolution_state_thr_0p3"
+      ]
+    },
+    {
+      "path": "data/processed/h5_design_audit.csv",
+      "bytes": 1103,
+      "sha256": "2225d12031ae43c8ae21d31ecef5c6ea9f1f0a0bbf46c2bad8bc259c39c0351d",
+      "rows": 8,
+      "columns": [
+        "word",
+        "eligible_for_h5",
+        "exclusion_reason",
+        "n_items",
+        "n_primed0_to_correct1",
+        "n_primed1_to_correct0",
+        "both_directions_present",
+        "directions_balanced",
+        "n_matched_controls",
+        "matched_controls_complete",
+        "n_human_normed",
+        "human_norms_complete",
+        "human_validation_status",
+        "n_structurally_invalid",
+        "model_internal_ready"
+      ]
+    },
+    {
+      "path": "data/processed/h5_sentence_level.csv",
+      "bytes": 451083,
+      "sha256": "91de1791c3f36a0cd1203d65599b93b717bfdacc04a3bbcfdcb0626872be63d4",
+      "rows": 784,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "sentence_id",
+        "sentence",
+        "primed_sense",
+        "correct_sense",
+        "direction",
+        "resolution_word",
+        "sentinel",
+        "prime_prefix",
+        "homonym_prefix",
+        "resolution_prefix",
+        "prime_token_count",
+        "homonym_token_count",
+        "resolution_token_count",
+        "prime_correct_margin_raw",
+        "homonym_correct_margin_raw",
+        "resolution_correct_margin_raw",
+        "resolver_isolated_correct_margin_raw",
+        "matched_control_correct_margin_raw",
+        "prime_correct_margin_norm",
+        "homonym_correct_margin_norm",
+        "resolution_correct_margin_norm",
+        "resolver_isolated_correct_margin_norm",
+        "matched_control_correct_margin_norm",
+        "delta_homonym_minus_prime_norm",
+        "delta_resolution_minus_homonym_norm",
+        "delta_resolution_minus_prime_norm",
+        "delta_resolution_minus_isolated_resolver_norm",
+        "garden_path_cost_vs_matched_control_norm",
+        "primed_at_homonym",
+        "resolved_correct",
+        "successful_primed_to_correct_transition",
+        "human_prime_strength",
+        "human_resolution_clarity",
+        "layer",
+        "analysis_status",
+        "prime_state_thr_0p0",
+        "homonym_state_thr_0p0",
+        "resolution_state_thr_0p0",
+        "prime_state_thr_0p1",
+        "homonym_state_thr_0p1",
+        "resolution_state_thr_0p1",
+        "prime_state_thr_0p3",
+        "homonym_state_thr_0p3",
+        "resolution_state_thr_0p3"
+      ]
+    },
+    {
+      "path": "data/processed/models.csv",
+      "bytes": 991,
+      "sha256": "8779f1c5dd99c0b2153550500662e922f379d249c5d51153dc2f94dae363dc30",
+      "rows": 8,
+      "columns": [
+        "model",
+        "hf_repo_id",
+        "display_name",
+        "arch_type",
+        "n_hidden_states",
+        "last_layer_index",
+        "hf_revision"
+      ]
+    },
+    {
+      "path": "data/processed/q4_candidate_layers.csv",
+      "bytes": 42859,
+      "sha256": "fa643caa4aa98dec3c31e1e643d8e555893eee2d2f5c5b10a229213ba7077ba9",
+      "rows": 792,
+      "columns": [
+        "model",
+        "word",
+        "layer",
+        "relative_depth",
+        "adequacy",
+        "mean_margin"
+      ]
+    },
+    {
+      "path": "data/processed/q4_h1_layer_shift.csv",
+      "bytes": 5588,
+      "sha256": "b58105d73d8e455aecb753f46de7032d9ed6e6f75922c02cb5d15dfe460d7cf3",
+      "rows": 56,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "h1_layer",
+        "h1_relative_depth",
+        "h1_frac_adeq_best",
+        "q4_adequacy_at_h1_layer",
+        "q4_adequacy_minus_h1",
+        "h1_layer_is_q4_candidate",
+        "n_q4_candidates",
+        "nearest_q4_candidate",
+        "relative_depth_shift_to_nearest_candidate",
+        "q4_peak_layer",
+        "q4_peak_adequacy"
+      ]
+    },
+    {
+      "path": "data/processed/q4_h5_outcome_comparison.csv",
+      "bytes": 5253,
+      "sha256": "657a82032363cbc503f09e96d605f2117f3331354f6df5ec7ec4fddc98697168",
+      "rows": 56,
+      "columns": [
+        "model",
+        "arch_type",
+        "word",
+        "h1_layer_used",
+        "h1_layer_is_q4_candidate",
+        "orig_p_resolved",
+        "orig_delta_resolution_minus_homonym",
+        "best_q4_layer",
+        "best_q4_p_resolved",
+        "best_q4_delta_resolution_minus_homonym",
+        "delta_p_resolved_best_q4_minus_orig",
+        "n_q4_layers_tested"
+      ]
+    },
+    {
+      "path": "data/processed/q4_layer_curves.csv",
+      "bytes": 125141,
+      "sha256": "a7f137cfb8d006e1ee0e8d12c0664c41ac0adf6eb6febc8f57ad9ef885b2931c",
+      "rows": 1708,
+      "columns": [
+        "model",
+        "architecture",
+        "homonym",
+        "layer",
+        "relative_depth",
+        "adequacy",
+        "mean_margin",
+        "is_candidate",
+        "peak_adequacy",
+        "best_layer"
+      ]
+    },
+    {
+      "path": "data/processed/trajectory_h3_context.csv",
+      "bytes": 3560,
+      "sha256": "dc0f7401a8583d8d094b94aad355f24fe10c3b4bee131302d13b422971e6f5c9",
+      "rows": 40,
+      "columns": [
+        "model",
+        "word",
+        "item_index",
+        "item_id",
+        "condition",
+        "sense",
+        "homonym_margin_norm",
+        "resolved_margin_norm",
+        "resolved_correct"
+      ]
+    },
+    {
+      "path": "data/processed/trajectory_h5_revision.csv",
+      "bytes": 3217,
+      "sha256": "8cfdc7cd9967d0d932f506497aea8dd9fa5c5ae4aff467d2ba90e711de22d412",
+      "rows": 28,
+      "columns": [
+        "model",
+        "word",
+        "item_index",
+        "sentence_id",
+        "primed_sense",
+        "correct_sense",
+        "resolved_correct",
+        "prime_margin_norm",
+        "homonym_margin_norm",
+        "resolution_margin_norm"
+      ]
+    },
+    {
+      "path": "data/profiling_sentences.json",
+      "bytes": 23853,
+      "sha256": "e963855627f0a8719415825cdfd07ea1bf333a788a26db16b03ae014ea99cf74"
+    },
+    {
+      "path": "data/stimuli/carrier_contexts.csv",
+      "bytes": 2593,
+      "sha256": "32c7fe57e3a2eee5e6da7d194e24cb2b62517b915b546fc82cf6dd93efa51c72",
+      "rows": 42,
+      "columns": [
+        "carrier_id",
+        "word",
+        "condition",
+        "text"
+      ]
+    },
+    {
+      "path": "data/stimuli/conflict_items.csv",
+      "bytes": 49614,
+      "sha256": "e0ffd91acc704e29cf139c8fb5e2c6bb70070be579b397c357e0fc39169c6672",
+      "rows": 98,
+      "columns": [
+        "item_id",
+        "word",
+        "primed_sense",
+        "correct_sense",
+        "direction",
+        "primed_sense_label_short",
+        "correct_sense_label_short",
+        "resolution_word",
+        "conflicting_sentence",
+        "coherent_control_sentence",
+        "sentinel",
+        "conflicting_prime_prefix",
+        "conflicting_homonym_prefix",
+        "conflicting_resolution_prefix",
+        "coherent_control_resolution_prefix",
+        "resolver_only_text",
+        "design_note"
+      ]
+    },
+    {
+      "path": "data/stimuli/homonyms.csv",
+      "bytes": 607,
+      "sha256": "713a949913761b865e5d597266be2cce34f50112bc3c412b804ce2d62be4936b",
+      "rows": 14,
+      "columns": [
+        "word",
+        "sense",
+        "sense_label",
+        "short_label",
+        "n_profiling_sentences"
+      ]
+    },
+    {
+      "path": "data/stimuli/paired_context_sentences.csv",
+      "bytes": 22301,
+      "sha256": "4c063e72bef856aeed42a277776b92f5fc0b1e9f6c629dab09b2d68c7fbec8a9",
+      "rows": 140,
+      "columns": [
+        "sentence_id",
+        "word",
+        "pair_id",
+        "condition",
+        "resolver_position",
+        "sense",
+        "sense_label_short",
+        "carrier_id",
+        "carrier",
+        "sentence"
+      ]
+    },
+    {
+      "path": "data/stimuli/profiling_sentences.csv",
+      "bytes": 31418,
+      "sha256": "a30a1f09448a66140170f4d8b979dcaa16e506a6daa18f5bb5ddd5983c1d6f0a",
+      "rows": 280,
+      "columns": [
+        "sentence_id",
+        "word",
+        "sense",
+        "sense_label",
+        "profile_index",
+        "sentence"
+      ]
+    }
+  ]
+}

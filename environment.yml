@@ -1,0 +1,11 @@
+# conda env create -f environment.yml && conda activate llm-homonym-semantics
+# Lightweight environment for `make figures`, `make validate`, `make web`.
+# For full model reruns, additionally: pip install -r requirements-full.txt
+name: llm-homonym-semantics
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt

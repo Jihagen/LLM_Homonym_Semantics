@@ -4,8 +4,6 @@ import sys
 from pathlib import Path
 from typing import Dict
 
-import torch
-
 
 logger = logging.getLogger(__name__)
 
@@ -62,8 +60,6 @@ def configure_hpc_runtime() -> None:
     except Exception:
         logger.debug("transformers validator patch unavailable", exc_info=True)
 
-    Path(os.environ["OFFLOAD_DIR"]).mkdir(parents=True, exist_ok=True)
-    hf_home.mkdir(parents=True, exist_ok=True)
     _RUNTIME_CONFIGURED = True
 
 
@@ -121,6 +117,11 @@ def resolve_model_source(model_name: str) -> str:
 
 def build_hf_load_args(model_name: str, model_type: str = "default") -> Dict[str, object]:
     configure_hpc_runtime()
+    # Created here, when a model is actually about to be loaded, rather than in
+    # configure_hpc_runtime(): importing the analysis modules must not leave
+    # cache directories behind.
+    Path(os.environ["OFFLOAD_DIR"]).mkdir(parents=True, exist_ok=True)
+    Path(os.environ["HF_HOME"]).mkdir(parents=True, exist_ok=True)
 
     resolved_source = resolve_model_source(model_name)
     load_args: Dict[str, object] = {
@@ -136,6 +137,8 @@ def build_hf_load_args(model_name: str, model_type: str = "default") -> Dict[str
             raise ValueError(
                 f"Authentication token required for {model_name} and no local mirror was found."
             )
+
+    import torch
 
     if torch.cuda.is_available():
         load_args["torch_dtype"] = torch.bfloat16
@@ -154,10 +157,14 @@ def build_hf_load_args(model_name: str, model_type: str = "default") -> Dict[str
 
 
 def should_use_cuda_autocast() -> bool:
+    import torch
+
     return torch.cuda.is_available()
 
 
-def model_device(model: torch.nn.Module) -> torch.device:
+def model_device(model: "torch.nn.Module") -> "torch.device":
+    import torch
+
     if hasattr(model, "device"):
         try:
             return torch.device(model.device)
@@ -171,6 +178,8 @@ def model_device(model: torch.nn.Module) -> torch.device:
 
 
 def cleanup_torch() -> None:
+    import torch
+
     if torch.cuda.is_available():
         try:
             torch.cuda.empty_cache()

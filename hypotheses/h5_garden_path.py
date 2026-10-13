@@ -42,20 +42,15 @@ import numpy as np
 
 from experiments.adequacy import normalized_adequacy_margin
 from hypotheses.h3_context_position import H3_MODELS, _select_layer
-from models import (
-    find_target_span,
-    get_dual_position_activations,
-    is_decoder_only,
-    load_model_and_tokenizer,
-)
 from utils.hpc import configure_hpc_runtime
+from utils.text import find_target_span
 
 configure_hpc_runtime()
 logger = logging.getLogger(__name__)
 
 RESULTS_DIR = "results"
 GP_DATA_PATH = "data/garden_path_sentences.json"
-PROFILING_DATA_PATH = "data/synthetic_data_h2.pkl"
+PROFILING_DATA_PATH = "data/profiling_sentences.json"
 OUTPUT_BASE = Path("results/study/H5")
 DEFAULT_WORDS = ["bank", "bark", "bat", "crane", "spring", "match", "pitch"]
 H5_EXCLUSIONS = {
@@ -280,9 +275,9 @@ def run_design_audit(
 
 def _load_profiling_examples(path: str, word: str) -> Tuple[List[str], np.ndarray]:
     """Load ordinary disambiguated examples; pandas is imported only when needed."""
-    import pandas as pd
+    from data import load_profiling_dataframe
 
-    df = pd.read_pickle(path)
+    df = load_profiling_dataframe(path)
     rows = df[df["word"] == word]
     sentences: List[str] = []
     senses: List[int] = []
@@ -308,6 +303,7 @@ def _sentinel_activations(
     pass; every input must end in the same sentinel. Returns {layer: array},
     so scoring several candidate layers for the same word only costs one
     forward pass, not one per candidate."""
+    from models import get_dual_position_activations
     _, final_acts = get_dual_position_activations(
         model,
         tokenizer,
@@ -411,6 +407,7 @@ def run_h5(
         safe_model = model_name.replace("/", "_")
         model_out = output_base / safe_model
         model_out.mkdir(parents=True, exist_ok=True)
+        from models import is_decoder_only, load_model_and_tokenizer
         model, tokenizer = load_model_and_tokenizer(model_name)
         arch_type = "decoder" if is_decoder_only(model) else "encoder"
 

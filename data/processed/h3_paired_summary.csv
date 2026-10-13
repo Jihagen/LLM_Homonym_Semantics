@@ -1,0 +1,9 @@
+model,arch_type,n_words,n_sentence_pairs,mean_delta_M_norm_L_minus_R,ci95_low_delta_M_norm,ci95_high_delta_M_norm,mean_delta_fraction_adequate_L_minus_R,ci95_low_delta_fraction,ci95_high_delta_fraction,decoder_R_theoretically_deterministic,decoder_R_observed_mirrored_signs_opposite,max_abs_mirrored_R_margin_sum
+FacebookAI_roberta-large,encoder,7,70,0.016043,-0.027891,0.069643,0.028571,-0.042857,0.128571,False,not_applicable,
+FacebookAI_xlm-roberta-large,encoder,7,70,0.004639,-0.012179,0.020717,-0.042857,-0.085714,-0.014286,False,not_applicable,
+Qwen_Qwen2.5-3B,decoder,7,70,0.360564,0.255807,0.461604,0.4,0.285714,0.485714,True,True,0.003
+Qwen_Qwen2.5-7B,decoder,7,70,0.22209,0.1488,0.288634,0.371429,0.228571,0.485714,True,True,0.0347
+allenai_OLMo-2-1124-7B,decoder,7,70,0.380194,0.317091,0.43964,0.485714,0.457143,0.5,True,True,0.0028
+answerdotai_ModernBERT-large,encoder,7,70,-0.00691,-0.037486,0.024689,-0.057143,-0.128571,0.014286,False,not_applicable,
+microsoft_deberta-v3-large,encoder,7,70,-0.003177,-0.021811,0.01622,0.0,-0.042857,0.042857,False,not_applicable,
+mistralai_Mistral-Nemo-Base-2407,decoder,7,70,0.405277,0.299141,0.500747,0.414286,0.271429,0.5,True,True,0.0043

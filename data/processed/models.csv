@@ -1,0 +1,9 @@
+model,hf_repo_id,display_name,arch_type,n_hidden_states,last_layer_index,hf_revision
+answerdotai_ModernBERT-large,answerdotai/ModernBERT-large,ModernBERT,encoder,29,28,45bb4654a4d5aaff24dd11d4781fa46d39bf8c13
+microsoft_deberta-v3-large,microsoft/deberta-v3-large,DeBERTa,encoder,25,24,64a8c8eab3e352a784c658aef62be1662607476f
+FacebookAI_roberta-large,FacebookAI/roberta-large,RoBERTa,encoder,25,24,722cf37b1afa9454edce342e7895e588b6ff1d59
+FacebookAI_xlm-roberta-large,FacebookAI/xlm-roberta-large,XLM-R,encoder,25,24,c23d21b0620b635a76227c604d44e43a9f0ee389
+Qwen_Qwen2.5-3B,Qwen/Qwen2.5-3B,Qwen-3B,decoder,37,36,3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
+Qwen_Qwen2.5-7B,Qwen/Qwen2.5-7B,Qwen-7B,decoder,29,28,d149729398750b98c0af14eb82c78cfe92750796
+mistralai_Mistral-Nemo-Base-2407,mistralai/Mistral-Nemo-Base-2407,Mistral-Nemo,decoder,41,40,a4477a2f977929a969745b69bbd62e03043551a5
+allenai_OLMo-2-1124-7B,allenai/OLMo-2-1124-7B,OLMo-7B,decoder,33,32,7df9a82518afdecae4e8c026b27adccc8c1f0032

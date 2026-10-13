@@ -1,0 +1,2 @@
+effect_definition,n_encoder_models,n_decoder_models,n_words,encoder_mean_delta_M_norm_L_minus_R,decoder_mean_delta_M_norm_L_minus_R,architecture_interaction,ci95_low_interaction,ci95_high_interaction,bootstrap_unit
+(decoder L-R) - (encoder L-R),4,4,7,0.002649,0.342031,0.339383,0.235791,0.435548,crossed model-by-word

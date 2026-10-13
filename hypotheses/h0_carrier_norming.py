@@ -50,7 +50,6 @@ from experiments.adequacy import (
     load_centroids,
 )
 from hypotheses.h3_context_position import H3_MODELS, PAIRED_DATA_PATH, _select_layer
-from models import load_model_and_tokenizer
 from utils.hpc import configure_hpc_runtime
 
 configure_hpc_runtime()
@@ -153,6 +152,7 @@ def run_h0(
         model_out  = OUTPUT_BASE / safe_model
         model_out.mkdir(parents=True, exist_ok=True)
 
+        from models import load_model_and_tokenizer
         model, tokenizer = load_model_and_tokenizer(model_name)
         logger.info("[H0] %s", model_name)
 

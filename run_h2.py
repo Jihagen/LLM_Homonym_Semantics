@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from data import PROFILING_DATA_PATH, load_profiling_dataframe
 from experiments import run_gdv_experiment
 from utils.file_manager import FileManager
 from utils.hpc import configure_hpc_runtime
@@ -64,10 +65,10 @@ def main():
     file_manager = FileManager()
     del file_manager
 
-    data_file = "data/synthetic_data_h2.pkl"
+    data_file = PROFILING_DATA_PATH
     if not os.path.exists(data_file):
         raise FileNotFoundError(f"File {data_file} not found.")
-    df = pd.read_pickle(data_file)
+    df = load_profiling_dataframe(data_file)
     logging.info(
         "Loaded %s: %d word-sense pairs across %d unique words",
         data_file, len(df), df['word'].nunique(),

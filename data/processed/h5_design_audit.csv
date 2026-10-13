@@ -1,0 +1,9 @@
+word,eligible_for_h5,exclusion_reason,n_items,n_primed0_to_correct1,n_primed1_to_correct0,both_directions_present,directions_balanced,n_matched_controls,matched_controls_complete,n_human_normed,human_norms_complete,human_validation_status,n_structurally_invalid,model_internal_ready
+bank,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+bark,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+bat,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+crane,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+spring,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+match,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+pitch,True,,14,7,7,True,True,14,True,0,False,not_collected_not_required,0,True
+light,False,"The study senses are different parts of speech (illumination noun vs low-weight adjective), so syntactic-category disambiguation cannot be separated from semantic garden-path resolution.",0,0,0,False,False,0,False,0,False,not_collected_not_required,0,False

@@ -9,11 +9,9 @@ import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import torch
 from scipy.spatial.distance import cdist
 from sklearn.decomposition import PCA
 
-from models import find_target_span, get_dual_position_activations, load_model_and_tokenizer
 from data import flatten_dataframe
 
 
@@ -236,7 +234,7 @@ def save_target_activations(
     base_dir: str,
     word: str,
     model_name: str,
-    activations: Dict[int, torch.Tensor],
+    activations: Dict[int, "torch.Tensor"],
     labels: np.ndarray,
     sentences: np.ndarray,
     words: np.ndarray,
@@ -287,6 +285,11 @@ def run_gdv_experiment(
         full left context, which is more informative than the homonym position
         that may precede the disambiguating context).
     """
+    # torch/transformers-backed helpers are imported here, not at module level,
+    # so compute_gdv and the cache-only recompute path stay importable on CPU-only
+    # installs without them.
+    from models import find_target_span, get_dual_position_activations, load_model_and_tokenizer
+
     df_flat = flatten_dataframe(df)
 
     # Drop sentences where the target word (or its plain plural) does not occur

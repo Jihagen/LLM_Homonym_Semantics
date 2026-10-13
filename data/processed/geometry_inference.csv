@@ -1,0 +1,13 @@
+analysis,contrast,scope,n_models,n_words,mean_effect,ci95_low,ci95_high,bootstrap_unit,n_bootstrap,seed
+H1,nested selected - last fraction adequate,all,8,7,0.02366071,-0.00580357,0.05982143,crossed model-by-word,20000,20260714
+H1,nested selected - last fraction adequate,encoder,4,7,0.00625,-0.0125,0.04285714,crossed model-by-word,20000,20260715
+H1,nested selected - last fraction adequate,decoder,4,7,0.04107143,-0.01071429,0.09553571,crossed model-by-word,20000,20260716
+H2,gdv - last fraction adequate,all,8,7,-0.00089286,-0.03660714,0.03080357,crossed model-by-word,20000,20260717
+H2,gdv - last fraction adequate,encoder,4,7,-0.0,-0.0125,0.01428571,crossed model-by-word,20000,20260718
+H2,gdv - last fraction adequate,decoder,4,7,-0.00178571,-0.07142857,0.06428571,crossed model-by-word,20000,20260719
+H2,supervised - last fraction adequate,all,8,7,0.02098214,-0.00133929,0.04955357,crossed model-by-word,20000,20260720
+H2,supervised - last fraction adequate,encoder,4,7,0.00625,-0.01607143,0.04285714,crossed model-by-word,20000,20260721
+H2,supervised - last fraction adequate,decoder,4,7,0.03571429,0.00446429,0.08035714,crossed model-by-word,20000,20260722
+H2,oracle - last fraction adequate,all,8,7,0.03705357,0.01116071,0.07276786,crossed model-by-word,20000,20260723
+H2,oracle - last fraction adequate,encoder,4,7,0.02053571,0.00089286,0.06071429,crossed model-by-word,20000,20260724
+H2,oracle - last fraction adequate,decoder,4,7,0.05357143,0.00982143,0.10892857,crossed model-by-word,20000,20260725
