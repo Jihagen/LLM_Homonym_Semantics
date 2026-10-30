@@ -17,7 +17,6 @@
 
 # --- working drafts that are not part of the release -----------------------
 /report_revision/*
-!/report_revision/report.tex
 /data/h5_additions_proposal.md
 /legacy/
 
