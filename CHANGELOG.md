@@ -16,6 +16,10 @@
 - Validation of all web exports in `scripts/validate_release.py`; the manifest
   now lists the web exports with counts and source hashes.
 - `DATA.md`.
+- `analysis/plot_garden_path_landscape.py` and the two
+  `figures/supplementary/h5_garden_path_landscape_*` figures (*bank* in
+  RoBERTa-large and Qwen2.5-7B), written by `make figures` from the committed
+  landscape export. Exploratory display figures, not in the report.
 
 ### Notes
 - New forward passes were run to read the coherent control sentences at all

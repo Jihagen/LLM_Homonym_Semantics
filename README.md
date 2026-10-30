@@ -95,7 +95,8 @@ make web         # rewrites the table-derived web_export/*.json for the research
 Without `make`: `python -m scripts.validate_release`,
 `python -m scripts.make_figures`, `python -m scripts.export_web_data`.
 
-`make figures` reads only `data/`. It unpacks the released tables into the
+`make figures` reads only `data/` and, for the garden-path landscape figures,
+`web_export/garden_path_landscapes.json` and `web_export/meta.json`. It unpacks the released tables into the
 directory layout the plotting code expects (`build/released_results/`) and
 calls the same plotting functions that produced the report figures. The
 committed files in [`figures/`](figures) are its output.

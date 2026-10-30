@@ -20,7 +20,8 @@ make web          # python -m scripts.export_web_data
   headline numbers of the report from the released tables. It exits non-zero on
   any mismatch. Add `--verbose` to the Python command to list every check.
 - `make figures` writes the report figures to `figures/` and the exploratory
-  figures to `figures/supplementary/`. It reads nothing outside `data/`.
+  figures to `figures/supplementary/`. It reads nothing outside `data/`, except
+  the two `web_export/` files behind the garden-path landscape figures.
 - `make web` rewrites the six table-derived files in `web_export/`. It is
   deterministic. It does not touch the two display-geometry exports, which need
   hidden states (Level 2, step g).

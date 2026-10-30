@@ -2,8 +2,10 @@
 
     python -m scripts.make_figures            # or: make figures
 
-Inputs are the files under ``data/processed/`` and ``data/``; nothing is read
-from ``results/``, no model is loaded, and torch/transformers are not needed.
+Inputs are the files under ``data/processed/`` and ``data/``, plus
+``web_export/garden_path_landscapes.json`` and ``web_export/meta.json`` for the
+garden-path landscape figures; nothing is read from ``results/``, no model is
+loaded, and torch/transformers are not needed.
 The plotting code in ``analysis/`` expects the pipeline's ``results/`` layout,
 so the released tables are first unpacked into that layout under
 ``build/released_results/`` (see ``scripts.release_layout``) and the unchanged
@@ -19,6 +21,7 @@ Outputs (SVG and PNG for each):
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import shutil
 from pathlib import Path
@@ -57,6 +60,7 @@ SUPPLEMENTARY_FIGURES = [
     *[f"h3_context_trajectory_{model}_{word}" for model, word in TRAJECTORY_EXAMPLES],
     *[f"h5_revision_trajectory_{model}_{word}" for model, word in TRAJECTORY_EXAMPLES],
     *[f"h5_revision_trajectory_progressive_{model}_{word}" for model, word in TRAJECTORY_EXAMPLES],
+    *[f"h5_garden_path_landscape_{model}_{word}" for model, word in TRAJECTORY_EXAMPLES],
 ]
 
 
@@ -106,6 +110,7 @@ def make_report_figures(results: Path, out: Path) -> None:
 
 def make_supplementary_figures(results: Path, out: Path) -> None:
     from analysis import (
+        plot_garden_path_landscape,
         plot_h3_context_trajectory,
         plot_h5_revision_trajectory,
         plot_q4_curves,
@@ -114,6 +119,9 @@ def make_supplementary_figures(results: Path, out: Path) -> None:
     from utils.model_registry import ALL_MODELS
 
     hf_name = {name.replace("/", "_"): name for name in ALL_MODELS}
+    landscapes = json.loads((ROOT / plot_garden_path_landscape.LANDSCAPE_PATH).read_text(encoding="utf-8"))["cells"]
+    meta = json.loads((ROOT / plot_garden_path_landscape.META_PATH).read_text(encoding="utf-8"))
+    display_name = {model["id"]: model["name"] for model in meta["models"]}
 
     _style()
     plot_q4_curves.make_comparison(results, "bank", WORDS, out / "q4_layer_vs_homonym_curves.svg")
@@ -132,6 +140,10 @@ def make_supplementary_figures(results: Path, out: Path) -> None:
         )
         plot_h5_revision_trajectory.make_trajectory_figure_progressive(
             data, hf_name[model], word, out / f"h5_revision_trajectory_progressive_{model}_{word}.svg",
+        )
+        _style()
+        plot_garden_path_landscape.make_figure(
+            landscapes[model][word], display_name[model], word, out / f"h5_garden_path_landscape_{model}_{word}",
         )
 
 

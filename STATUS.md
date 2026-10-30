@@ -6,7 +6,7 @@ alone and what needs a model rerun.
 ## Reproducible from the released data (no models, no GPU)
 
 Verified in a fresh Python 3.10 virtual environment containing only
-`requirements.txt` (no torch, no transformers, no model cache): 278 of 278
+`requirements.txt` (no torch, no transformers, no model cache): 335 of 335
 validation checks pass, all figures are written, and the web export is
 byte-identical to the committed one.
 
@@ -17,6 +17,7 @@ byte-identical to the committed one.
 | 8 exploratory figures (Q4 curves and layer shift; sample trajectories for *bank*) | same → `figures/supplementary/` | Q4 figures pixel-identical; trajectory figures differ by at most 2/255 in isolated pixels |
 | The headline numbers in the report's abstract, text and tables | `make validate` | 73 values recomputed and compared at printed precision |
 | Stimulus design (balance, pairing, matched controls) | `make validate` | |
+| 2 exploratory garden-path landscape figures (*bank* in RoBERTa-large and Qwen2.5-7B) | same → `figures/supplementary/`, drawn from the committed `web_export/garden_path_landscapes.json` | display aid, not in the report; rebuilding the export itself needs the models (below) |
 | Website data derived from tables (6 files) | `make web` → `web_export/` | deterministic; byte-identical on re-run |
 | Structure and consistency of the two display-geometry exports | `make validate` | coordinates hash to the recorded values; density grids recompute exactly; full-space values equal the released tables |
 

@@ -1,5 +1,5 @@
 # Reproduction entry points. All targets read only the released data under
-# data/ and need only the packages in requirements.txt.
+# data/ and web_export/ and need only the packages in requirements.txt.
 PYTHON ?= python
 
 .PHONY: all figures validate web test clean
